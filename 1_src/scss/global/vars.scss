@@ -1,0 +1,28 @@
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 567px;
+$min: 359px;
+
+$m-lg: 1200px;
+$m-md: 992px;
+$m-sm: 768px;
+$m-xs: 568px;
+
+$white: #fff;
+
+$main-font: "Arial", sans-serif;
+$secondary-font: '', sans-serif;
+
+$text-primary: '';
+$text-secondary: '';
+$text-tertiary: '';
+
+
+@mixin c-pointer {
+    // cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
+}
+
+@mixin c-default {
+    // cursor: url(../img/cursor.svg) 2 0, auto;
+}
