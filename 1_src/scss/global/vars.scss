@@ -10,14 +10,21 @@ $m-sm: 768px;
 $m-xs: 568px;
 
 $white: #fff;
+$bg: #F6F6F6;
+$chip: #F0F0F0;
+$blackout: rgba(38, 29, 29, 0.25);
+$bg-footer: #6E6E6E;
 
 $main-font: "Arial", sans-serif;
 $secondary-font: '', sans-serif;
 
-$text-primary: '';
-$text-secondary: '';
-$text-tertiary: '';
+$text-primary: #0F0F0F;
+$text-secondary: #767676;
+$text-tertiary: #A9A9A9;
+$text-brand: #EF000E;
 
+$brand-primary: #FF000F;
+// $brand-primary(bg)
 
 @mixin c-pointer {
     // cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
@@ -25,4 +32,77 @@ $text-tertiary: '';
 
 @mixin c-default {
     // cursor: url(../img/cursor.svg) 2 0, auto;
+}
+
+@mixin shadow-popup {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+@mixin h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+@mixin h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+@mixin h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+@mixin body16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@mixin body16m {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@mixin body14 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+}
+
+@mixin body14m {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+}
+
+@mixin body14b {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+}
+
+@mixin tab {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+}
+
+@mixin caption {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+}
+
+@mixin search-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.4px;
 }
