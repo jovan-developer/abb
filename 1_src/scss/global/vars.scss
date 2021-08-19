@@ -14,9 +14,10 @@ $bg: #F6F6F6;
 $chip: #F0F0F0;
 $blackout: rgba(38, 29, 29, 0.25);
 $bg-footer: #6E6E6E;
+$divider: #D3D1D1;
 
-$main-font: "Arial", sans-serif;
-$secondary-font: '', sans-serif;
+$main-font: "ABBVoice", sans-serif;
+// $secondary-font: '', sans-serif;
 
 $text-primary: #0F0F0F;
 $text-secondary: #767676;
@@ -24,7 +25,6 @@ $text-tertiary: #A9A9A9;
 $text-brand: #EF000E;
 
 $brand-primary: #FF000F;
-// $brand-primary(bg)
 
 @mixin c-pointer {
     // cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
@@ -91,6 +91,7 @@ $brand-primary: #FF000F;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.2px;
+    text-transform: uppercase;
 }
 
 @mixin caption {

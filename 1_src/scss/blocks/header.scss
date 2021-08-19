@@ -1,0 +1,117 @@
+.header {
+    background-color: $white;
+    border-bottom: 0.5px solid $divider;
+
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 16px 16px;
+    }
+
+    // .header__logo
+
+    &__logo {
+        margin-right: 32px;
+    }
+
+    // .header__text
+
+    &__text {
+        margin: auto;
+        padding-left: 85px;
+
+        color: $text-secondary;
+        @include tab;
+        text-align: center;
+    }
+
+    // .header__menu
+
+    &__menu {
+        margin-top: auto;
+        margin-right: auto;
+    }
+
+    // .header__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .header__item
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 12px;
+            padding-right: 13px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                width: 1px;
+                height: 10px;
+
+                background-color: $text-tertiary;
+            }
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        color: $text-secondary;
+        @include tab;
+    }
+
+    // .header__login
+
+    &__login {
+    }
+
+    // .header__logout
+
+    &__logout {
+        display: flex;
+        align-items: center;
+        padding-right: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    // .header__profile
+
+    &__profile {
+        margin-right: 16px;
+
+        @include caption;
+        text-align: right;
+    }
+
+    // .header__name
+
+    &__name {
+    }
+
+    // .header__descr
+
+    &__descr {
+        color: $text-secondary;
+    }
+
+    // .header__logout-btn
+
+    &__logout-btn {
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+    }
+}

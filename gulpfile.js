@@ -46,8 +46,8 @@ const fonts = () => {
 
 const cb = () => { }
 
-let srcFonts = `${srcFolder}/scss/global/fonts.scss`;
-let appFonts = './app/fonts/';
+// let srcFonts = `${srcFolder}/scss/global/fonts.scss`;
+// let appFonts = './app/fonts/';
 
 const svgSprites = () => {
 	let imgDirs = fs.readdirSync(`${srcFolder}/img/svg`)
@@ -165,6 +165,7 @@ const watchFiles = () => {
 exports.styles = styles
 exports.watchFiles = watchFiles
 exports.htmlInclude = htmlInclude
+exports.fonts = fonts
 
 exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources, plugins, imgToApp, svgSprites), styles, watchFiles)
 

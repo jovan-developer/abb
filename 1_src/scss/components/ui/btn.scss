@@ -1,0 +1,53 @@
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+
+    border: none;
+    background-color: $white;
+
+    // .btn--icon
+
+    &--icon {
+        
+    }
+
+    // .btn--primary
+
+    &--primary {
+        padding: 12px 0;
+
+        @include body16m;
+        color: $white;
+
+        background-color: $brand-primary;
+        border-radius: 24px;
+    }
+
+    // .btn--secondary
+
+    &--secondary {
+        padding: 10px 14px;
+        @include body14;
+        color: $text-primary;
+
+        background-color: #fff;
+        border: 1px solid $divider;
+        border-radius: 20px;
+
+        &.btn--icon {
+            padding: 7px 14px 7px 8px;
+        }
+    }
+
+    // .btn__icon
+
+    &__icon {
+        margin-right: 4px;
+    }
+
+    // .btn__text
+
+    &__text {
+    }
+}
