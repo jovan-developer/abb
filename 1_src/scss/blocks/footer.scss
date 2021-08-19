@@ -1,0 +1,131 @@
+.footer {
+    color: $white;
+
+    background: $bg-footer;
+
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+        padding: 36px 0;
+    }
+
+    // .footer__col
+
+    &__col {
+        width: 33.33%;
+        flex-grow: 1;
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+
+    // .footer__title
+
+    &__title {
+        margin-bottom: 8px;
+
+        color: $text-tertiary;
+        @include tab;
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        padding-top: 6px;
+    }
+
+    // .footer__item
+
+    &__item {
+        .s-icon {
+            fill: #808080;
+
+            transition: 0.4s fill, 1s stroke;
+
+            &:hover {
+                fill: $brand-primary;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+
+    // .footer__link
+
+    &__link {
+    }
+
+    // .footer__list
+
+    &__list {
+        
+    }
+
+    // .footer__list-item
+
+    &__list-item {
+    }
+
+    // .footer__list-link
+
+    &__list-link {
+        @include body16;
+    }
+
+    // .footer__text
+
+    &__text {
+        margin: 16px 0 0 0;
+        @include body16;
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 22px 0;
+    }
+
+    // .footer__copy
+
+    &__copy {
+        margin: 0;
+
+        @include body14;
+
+        @at-root {
+            a#{&} {
+                position: relative;
+                color: $divider;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 2px;
+                    left: 0;
+
+                    width: 100%;
+                    height: 1px;
+
+                    background-color: $divider;
+                }
+            }
+
+            p#{&} {
+                color: $white;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 17px;
+        }
+    }
+}
