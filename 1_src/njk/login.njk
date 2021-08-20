@@ -27,7 +27,43 @@
     {% include 'parts/header.njk' %}
 
     <main class="main">
-      
+        <section class="login-page section">
+            <div class="container">
+                <div class="login-page__inner">
+                    <div class="login-page__title page-title">
+                        <h1>Вход</h1>
+                    </div>
+
+                    <form class="login-page__form">
+                        <div class="f-control error">
+                            <label class="f-control__label visually-hidden" for="email">E-mail</label>
+                            <input class="f-control__input" type="email" placeholder="E-mail" id="email">
+                            <small class="f-control__error">Error</small>
+                        </div>
+                        <div class="f-control f-control--password">
+                            <label class="f-control__label visually-hidden" for="password">Пароль</label>
+                            <input class="f-control__input" type="password" placeholder="Пароль" id="password">
+                            <button class="f-control__eye visible">
+                                <svg class="f-control__e f-control__e--on s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_visible_on"></use>
+                                </svg>
+                                <svg class="f-control__e f-control__e--off s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_visible_off"></use>
+                                </svg>
+                            </button>
+                            <!-- <small class="f-control__error">Пароль</small> -->
+                        </div>
+                        <div class="login-page__row">
+                            <a class="login-page__link" href="#">Забыли пароль?</a>
+                        </div>
+                        <div class="login-page__row">
+                            <button class="btn btn--primary">Войти</button>
+                            <a class="login-page__link" href="#">Регистрация</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     {% include 'parts/footer.njk' %}

@@ -27,11 +27,11 @@ $text-brand: #EF000E;
 $brand-primary: #FF000F;
 
 @mixin c-pointer {
-    // cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
+    cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
 }
 
 @mixin c-default {
-    // cursor: url(../img/cursor.svg) 2 0, auto;
+    cursor: url(../img/cursor.svg) 2 0, auto;
 }
 
 @mixin shadow-popup {

@@ -1,0 +1,50 @@
+.login-page {
+    // .login-page__inner
+
+    &__inner {
+        padding-bottom: 40px;
+    }
+
+    // .login-page__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .login-page__form
+
+    &__form {
+        max-width: 396px;
+    }
+
+    // .login-page__link
+
+    &__link {
+        margin-left: auto;
+
+        color: $text-brand;
+        @include body14;
+    }
+
+    // .login-page__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: -2px;
+
+        &--mt {
+            margin-top: 40px;
+        }
+    }
+
+    // .login-page__subtext
+
+    &__subtext {
+        margin: 34px 0 0;
+
+        color: $text-secondary;
+        @include body14;
+    }
+}

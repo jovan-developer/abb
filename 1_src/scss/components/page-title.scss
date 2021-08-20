@@ -1,0 +1,17 @@
+.page-title {
+    position: relative;
+
+    padding-top: 12px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 36px;
+        height: 4px;
+
+        background-color: $brand-primary;
+    }
+}

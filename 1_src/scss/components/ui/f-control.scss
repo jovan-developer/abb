@@ -1,0 +1,98 @@
+.f-control {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 16px;
+
+    &.error {
+        margin-bottom: 13px;
+
+        .f-control__label {
+            color: $text-brand;
+        }
+
+        .f-control__input {
+            border-color: $brand-primary;
+        }
+
+        .f-control__error {
+            color: $text-brand;
+        }
+    }
+
+    // .f-control__label
+
+    &__label {
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .f-control__input
+
+    &__input {
+        padding: 10px 12px;
+
+        color: $text-primary;
+        @include body14;
+        line-height: 1;
+
+        border: 1px solid $divider;
+    }
+
+    // .f-control__error
+
+    &__error {
+        margin-top: 4px;
+
+        @include caption;
+    }
+
+    // .f-control__eye
+
+    &__eye {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+        
+        &.visible {
+            .f-control__e--on {
+                display: block;
+            }
+
+            .f-control__e--off {
+                display: none;
+            }
+        }
+    }
+
+    // .f-control__e
+
+    &__e {
+        @include c-pointer;
+
+        &--on {
+            display: none;
+        }
+
+        &--off {
+            display: block;
+        }
+
+        .s-icon {
+            fill: $text-tertiary;
+
+            transition: fill 0.3s;
+
+            &:hover {
+                fill: $text-primary;
+            }
+        }
+    }
+}
