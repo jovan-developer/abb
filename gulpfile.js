@@ -36,12 +36,14 @@ const env = require('./env.json')
 let mode = 'development'
 
 const fonts = () => {
-	src(`${srcFolder}/fonts/**.ttf`)
-		.pipe(ttf2woff())
-		.pipe(dest('./app/fonts/'))
-	return src(`${srcFolder}/fonts/**.ttf`)
-		.pipe(ttf2woff2())
-		.pipe(dest('./app/fonts/'))
+	// src(`${srcFolder}/fonts/**.ttf`)
+	// 	.pipe(ttf2woff())
+	// 	.pipe(dest('./app/fonts/'))
+	// return src(`${srcFolder}/fonts/**.ttf`)
+	// 	.pipe(ttf2woff2())
+	// 	.pipe(dest('./app/fonts/'))
+	return src(`${srcFolder}/fonts/**/*`)
+		.pipe(dest('./app/fonts'))
 }
 
 const cb = () => { }
@@ -248,8 +250,8 @@ const deploy = () => {
 			base: '',
 			buffer: false
 		})
-			.pipe(conn.newer('project_name/')) // only upload newer files
-			.pipe(conn.dest('project_name/'))
+			.pipe(conn.newer('abb/')) // only upload newer files
+			.pipe(conn.dest('abb/'))
 	} else {
 		console.log('\x1b[33m', 'Warning deploy impossible because env variables undefined!!!')
 	}
