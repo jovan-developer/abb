@@ -1,0 +1,26 @@
+<div class="org-list">
+    <div class="container">
+        <div class="org-list__inner">
+            {% if orgTitle %}
+            <h2 class="org-list__title">
+                Общество с ограниченной ответственностью «Элевел»
+            </h2>
+            {% else %}
+            <div class="org-list__not-found">
+                Организация не была найдена, проверьте указанные данные и выберите тип партнерства
+            </div>
+            {% endif %}
+            <ul class="org-list__list">
+                <li class="org-list__item">
+                    <div class="org-list__name">ИНН</div>
+                    <div class="org-list__value">7702703303</div>
+                </li>
+                <li class="org-list__item">
+                    <div class="org-list__name">ОГРН</div>
+                    <div class="org-list__value">1097746051501</div>
+                </li>
+            </ul>
+            <button class="org-list__btn" href="#">Изменить данные</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+.f-checkbox {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 4px;
+
+    // .f-checkbox__input
+
+    &__input {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &:checked {
+            & + .f-checkbox__box {
+                background-color: $brand-primary;
+                border-color: $brand-primary;
+            }
+        }
+
+        &:focus {
+            & + .f-checkbox__box {
+                border-color: $text-primary;
+            }
+        }
+
+    }
+
+    // .f-checkbox__box
+
+    &__box {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+
+        background-image: url(../img/svg/sprite1.svg#check);
+        background-position: center;
+        background-size: 12px 12px;
+        background-color: $white;
+        border-radius: 2px;
+        border: 1px solid $divider;
+        @include c-pointer;
+
+        transition: 0.3s background-color, 0.2s border-color;
+    }
+
+    // .f-checkbox__text
+
+    &__text {
+        color: $text-primary;
+        @include body14;
+    }
+}

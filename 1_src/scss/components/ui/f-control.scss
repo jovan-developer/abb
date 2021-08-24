@@ -25,6 +25,8 @@
     // .f-control__label
 
     &__label {
+        margin-bottom: 4px;
+        
         color: $text-secondary;
         @include body14;
     }
@@ -39,6 +41,10 @@
         line-height: 1;
 
         border: 1px solid $divider;
+
+        &::placeholder {
+            color: $text-tertiary;
+        }
     }
 
     // .f-control__error

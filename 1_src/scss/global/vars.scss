@@ -25,6 +25,7 @@ $text-tertiary: #A9A9A9;
 $text-brand: #EF000E;
 
 $brand-primary: #FF000F;
+$brand-primary-bg: #FFEBEC;
 
 @mixin c-pointer {
     cursor: url(../img/cursor-pointer.svg) 4 0, pointer;

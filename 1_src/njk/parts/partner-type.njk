@@ -1,0 +1,237 @@
+<section class="partner-type">
+    <div class="container">
+        <div class="partner-type__inner">
+            <h2 class="partner-type__title">
+                Выберите тип партнерства c ABB
+            </h2>
+            <p class="partner-type__suptitle">
+                Если у вас нет договора поставки с ООО «АББ», то выберите «Непрямой партнер»
+            </p>
+        </div>
+
+        <div class="select partner-type__select">
+            <div class="select__header">
+                <div class="select__content" tabindex="0">
+
+                </div>
+                <svg class="s-icon select__icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
+            </div>
+            <div class="select__list" data-simplebar>
+                <div class="select__item active" data-select-value="direct" tabindex="0">
+                    <span class="select__item-inner">Прямой партнер</span>
+                </div>
+                <div class="select__item active" data-select-value="nondirect" tabindex="0">
+                    <span class="select__item-inner">Непрямой партнер</span>
+                </div>
+            </div>
+            <select class="select__data" name="partnerType" tabindex="-1">
+                <option value="direct">Прямой партнер</option>
+                <option value="nondirect">Непрямой партнер</option>
+            </select>
+        </div>
+
+        <form class="partner-type__form js-form-send">
+            <div class="partner-type__form-block">
+                <div class="partner-type__form-title">
+                    Данные компании
+                </div>
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="entity">Наименование юридического лица</label>
+                        <input class="f-control__input" type="text" placeholder="Например, ООО «Компания»" id="entity">
+                    </div>
+                </div>
+                <div class="partner-type__row">
+                    <div class="f-control error partner-type__control">
+                        <label class="f-control__label" for="company-brand">Наименование бренда компаниии</label>
+                        <input class="f-control__input" type="text" placeholder="Например, Компания"
+                            id="company-brand">
+                        <small class="f-control__error">Поле обязательно для заполнения</small>
+                    </div>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="inn">ИНН</label>
+                        <input class="f-control__input" type="text" placeholder="7702703303" id="inn">
+                    </div>
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="ogrn">ОГРН/ОГРНИП</label>
+                        <input class="f-control__input" type="text" placeholder="1097746051501" id="ogrn">
+                    </div>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="address">Адрес юридического лица</label>
+                        <input class="f-control__input" type="text"
+                            placeholder="Например: г. Москва, Ленинский проспект, д.30/11 офис 345" id="address">
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-type__form-block">
+                <div class="partner-type__form-title">
+                    Специализация партнера
+                </div>
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control partner-type__control--col6">
+                        <label class="f-control__label" for="main-spec">Основная специализация</label>
+                        <div class="select partner-type__form-select">
+                            <div class="select__header">
+                                <div class="select__content" tabindex="0">
+
+                                </div>
+                                <svg class="s-icon select__icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="select__list" data-simplebar>
+                                <div class="select__item select__item--def" data-select-value="" tabindex="0">
+                                    <span class="select__item-default">Выберите</span>
+                                </div>
+                                <div class="select__item" data-select-value="direct" tabindex="0">
+                                    <span class="select__item-inner">Прямой партнер</span>
+                                </div>
+                                <div class="select__item" data-select-value="nondirect" tabindex="0">
+                                    <span class="select__item-inner">Непрямой партнер</span>
+                                </div>
+                            </div>
+                            <select class="select__data" name="partnerType" required id="main-spec" tabindex="-1">
+                                <option value="">Выберите</option>
+                                <option value="direct">Прямой партнер</option>
+                                <option value="nondirect">Непрямой партнер</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="add-spec">Дополнительная специализация</label>
+                        <div class="select select-search partner-type__form-select">
+                            <input class="select__search" type="search" placeholder="Выберите или начните вводить">
+                            <div class="select__header">
+                                <div class="select__content" tabindex="0">
+
+                                </div>
+                                <svg class="s-icon select__icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="select__list" data-simplebar>
+                                <div class="select__item select__item--def" data-select-value="" tabindex="0">
+                                    <span class="select__item-default">Выберите или начните вводить</span>
+                                </div>
+                                <div class="select__item" data-select-value="direct" tabindex="0">
+                                    <span class="select__item-inner">Прямой партнер</span>
+                                </div>
+                                <div class="select__item" data-select-value="nondirect" tabindex="0">
+                                    <span class="select__item-inner">Непрямой партнер</span>
+                                </div>
+                            </div>
+                            <select class="select__data" name="partnerType" required id="add-spec" tabindex="-1">
+                                <option value="">Выберите или начните вводить</option>
+                                <option value="direct">Прямой партнер</option>
+                                <option value="nondirect">Непрямой партнер</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="web-site">Веб-сайт компании</label>
+                        <input class="f-control__input" type="text" id="web-site">
+                    </div>
+                    <p class="partner-type__text">
+                        Необязательно, если ваша основная или дополнительная специализация не «Интернет-магазин»
+                    </p>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="suppliers">Список поставщиков товаров ABB</label>
+                        <input class="f-control__input" type="text"
+                            placeholder="Добавляйте отдельного поставщика при помощи Enter" id="suppliers">
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-type__form-block">
+                <div class="partner-type__form-title">
+                    Ваши данные
+                </div>
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="name">Имя</label>
+                        <input class="f-control__input" type="text" id="name">
+                    </div>
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="surname">Фамилия</label>
+                        <input class="f-control__input" type="text" id="surname">
+                    </div>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control partner-type__control--col6">
+                        <label class="f-control__label" for="position">Должность</label>
+                        <input class="f-control__input" type="text" id="position">
+                    </div>
+                </div>
+
+                <div class="partner-type__row">
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="email">E-mail</label>
+                        <input class="f-control__input" type="email" id="email">
+                    </div>
+                    <div class="f-control partner-type__control">
+                        <label class="f-control__label" for="phone">Контактный телефон</label>
+                        <input class="f-control__input" type="tel" id="phone">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="partner-type__form-block">
+                <div class="partner-type__form-title">
+                    Какой уровень доступа вам требуется?
+                </div>
+                
+                <label class="f-checkbox partner-type__check">
+                    <input class="f-checkbox__input" type="checkbox" name="check1">
+                    <span class="f-checkbox__box"></span>
+                    <span class="f-checkbox__text">Доступ к скачиванию данным о товарах</span>
+                </label>
+
+                <label class="f-checkbox partner-type__check">
+                    <input class="f-checkbox__input" type="checkbox" name="check2">
+                    <span class="f-checkbox__box"></span>
+                    <span class="f-checkbox__text">Доступ к сертификации компании</span>
+                </label>
+
+                <label class="f-checkbox partner-type__check">
+                    <input class="f-checkbox__input" type="checkbox" name="check3">
+                    <span class="f-checkbox__box"></span>
+                    <span class="f-checkbox__text">Доступ к API</span>
+                </label>
+            </div>
+            
+            <div class="partner-type__agreement">
+                <label class="f-checkbox partner-type__agreement-check">
+                    <input class="f-checkbox__input" type="checkbox" name="check3">
+                    <span class="f-checkbox__box"></span>
+                    <span class="f-checkbox__text">
+                        Согласен с <a href="#">условиями пользования платформой</a> и <a href="#">обработкой персональных данных</a>
+                    </span>
+                </label>
+            </div>
+
+            <button class="btn btn--primary partner-type__send">
+                Зарегистрироваться
+            </button>
+
+        </form>
+    </div>
+</section>

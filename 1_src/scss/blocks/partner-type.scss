@@ -1,0 +1,136 @@
+.partner-type {
+    padding-bottom: 80px;
+
+    // .partner-type__inner
+
+    &__inner {
+    }
+
+    // .partner-type__title
+
+    &__title {
+        margin-bottom: 19px;
+
+        color: $text-primary;
+        @include h2;
+    }
+
+    // .partner-type__suptitle
+
+    &__suptitle {
+        margin: 0 0 16px;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .partner-type__select
+
+    &__select {
+        max-width: 396px;
+        margin-bottom: 16px;
+    }
+
+    // .partner-type__form
+
+    &__form {
+        max-width: 788px;
+    }
+
+    // .partner-type__form-block
+
+    &__form-block {
+        margin-bottom: 24px;
+        padding: 18px 24px 8px;
+
+        background-color: $bg;
+    }
+
+    // .partner-type__form-title
+
+    &__form-title {
+        margin-bottom: 21px;
+
+        color: $text-primary;
+        @include h3;
+    }
+
+    // .partner-type__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    // .partner-type__control
+
+    &__control {
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 17px;
+
+        & + & {
+            margin-left: 28px;
+        }
+
+        &.error {
+            margin-bottom: 17px;
+        }
+
+        &--col6 {
+           max-width: calc(50% - 14px);
+        }
+    }
+
+    // .partner-type__form-select
+
+    &__form-select {
+    }
+
+    // .partner-type__text
+
+    &__text {
+        flex-grow: 1;
+        width: 100%;
+        margin: 4px 0 0 28px;
+
+        color: $text-secondary;
+        @include caption;
+    }
+
+    // .partner-type__check
+
+    &__check {
+        margin-bottom: 17px;
+    }
+
+    // .partner-type__agreement-check
+
+    &__agreement-check {
+        margin-top: 44px;
+
+        color: $text-primary;
+        @include body14;
+
+        a {
+            color: $text-brand;
+        }
+    }
+
+    // .partner-type__send
+
+    &__send {
+        margin-top: 42px;
+    }
+
+    // .partner-type__info
+
+    &__info {
+        display: flex;
+        align-items: center;
+
+        .s-icon {
+            margin-right: 8px;
+        }
+    }
+}

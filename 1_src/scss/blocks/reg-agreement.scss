@@ -1,0 +1,81 @@
+.reg-agreement {
+    margin-top: 40px;
+
+    // .reg-agreement__inner
+
+    &__inner {
+        max-width: 788px;
+        padding-bottom: 88px;
+    }
+
+    // .reg-agreement__title
+
+    &__title {
+    }
+
+    // .reg-agreement__content
+
+    &__content {
+        margin-bottom: 40px;
+
+        color: $text-primary;
+        @include body14;
+        line-height: 20px;
+
+        h2 {
+            margin-bottom: 24px;
+
+            @include h3;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        ol {
+            --c1: 1;
+            --c2: 0;
+            counter-reset: c1 var(--c1) c2 var(--c2);
+
+            margin: 0;
+            padding: 0;
+
+            list-style-type: none;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                &::before {
+                    content: counter(c1) "." counter(c2) ". ";
+                    counter-increment: c2;
+                }
+            }
+        }
+    }
+
+    // .reg-agreement__agreement
+
+    &__agreement {
+        margin-top: 44px;
+    }
+
+    // .reg-agreement__agreement-check
+
+    &__agreement-check {
+        margin-bottom: 42px;
+
+        color: $text-primary;
+        @include body14;
+
+        a {
+            color: $text-brand;
+        }
+    }
+
+
+    &__btn {
+
+    }
+}

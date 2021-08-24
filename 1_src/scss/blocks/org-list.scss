@@ -1,0 +1,73 @@
+.org-list {
+    margin-bottom: 40px;
+
+    // .org-list__inner
+
+    &__inner {
+        
+    }
+
+    // .org-list__not-found
+
+    &__not-found {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 4px 10px;
+
+        color: $text-brand;
+
+        background-color: $brand-primary-bg;
+    }
+
+    // .org-list__title
+
+    &__title {
+        margin-top: 42px;
+        margin-bottom: 24px;
+
+        color: $text-primary;
+        @include h2;
+    }
+
+    // .org-list__list
+
+    &__list {
+    }
+
+    // .org-list__item
+
+    &__item {
+        display: flex;
+        margin-bottom: 13px;
+    }
+
+    // .org-list__name
+
+    &__name {
+        width: 100%;
+        max-width: 96px;
+        margin-right: 4px;
+
+        color: $text-secondary;
+    }
+
+    // .org-list__value
+
+    &__value {
+    }
+
+    // .org-list__btn
+
+    &__btn {
+        display: inline-block;
+        padding: 0;
+
+        color: $text-brand;
+        @include body14;
+
+        background-color: transparent;
+        border: none;
+    }
+}
+.container {
+}
