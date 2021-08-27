@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Instruments | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% include 'parts/header.njk' %}
+
+    <main class="main">
+        <div class="instruments">
+            <div class="container">
+                <div class="instruments__inner">
+                    <div class="instruments__page-title page-title">
+                        <h1>Инструменты</h1>
+                    </div>
+
+                    <ul class="instruments__list">
+                        <li class="instruments__card">
+                            <div class="instruments__title">e-Design</div>
+                            <p class="instruments__text">
+                                Пакет бесплатного программного обеспечения для проектирования и конструирования
+                                электроустановок
+                                от 0,4 до 25 кВ
+                            </p>
+                            <img class="instruments__icon" src="img/instruments/icon1.svg" alt="">
+                        </li>
+                        <li class="instruments__card">
+                            <div class="instruments__title">e-Configure</div>
+                            <p class="instruments__text">
+                                Онлайн инструмент для проверки и подбора оборудования
+                            </p>
+                            <img class="instruments__icon" src="img/instruments/icon2.svg" alt="">
+                        </li>
+                        <li class="instruments__card">
+                            <div class="instruments__title">SOC</div>
+                            <p class="instruments__text">
+                                Онлайн инструмент для проверки селективности аппаратов защиты и управления
+                            </p>
+                            <img class="instruments__icon" src="img/instruments/icon3.svg" alt="">
+                        </li>
+                        <li class="instruments__card">
+                            <div class="instruments__title">IS2</div>
+                            <p class="instruments__text">
+                                Удобный и простой конфигуратор подбора компонентов для шкафов автоматизации IS2
+                            </p>
+                            <img class="instruments__icon" src="img/instruments/icon4.svg" alt="">
+                        </li>
+                        <li class="instruments__card">
+                            <div class="instruments__title">free@home</div>
+                            <p class="instruments__text">
+                                Онлайн конфигуратор для подбора домашней автомаизации ABB-free@home и электроустановочных изделий многих серий
+                            </p>
+                            <img class="instruments__icon" src="img/instruments/icon5.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
