@@ -3,7 +3,7 @@
 {% set searchMod = "search-block--btn" %}
 {% endif %}
 
-<label class="search-block {{searchMod}}">
+<div class="search-block {{searchMod}}">
     <svg class="s-icon search-block__icon">
         <use xlink:href="img/svg/sprite1.svg#ic24_search"></use>
     </svg>
@@ -12,4 +12,4 @@
     {% else %}
     <button class="btn search-block__btn">Найти</button>
     {% endif %}
-</label>
+</div>
