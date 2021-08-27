@@ -2,13 +2,8 @@
     <div class="container">
         <div class="search-menu__inner">
             <form class="search-menu__form">
-                <label class="search-block">
-                    <svg class="s-icon search-block__icon">
-                        <use xlink:href="img/svg/sprite1.svg#ic24_search"></use>
-                    </svg>
-                    <input class="search-block__input" type="search" placeholder="{{searchPlaceholder}}">
-                    <button class="btn search-block__btn">Найти</button>
-                </label>
+                {% set searchPlaceholder = "Укажите код заказа, артикул/тип, наименование или серию" %}
+                {% include 'parts/components/search-block.njk' %}
             </form>
         </div>
     </div>

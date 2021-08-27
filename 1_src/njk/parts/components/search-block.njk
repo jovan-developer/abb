@@ -1,0 +1,15 @@
+{% if btnOff %}
+{% else %}
+{% set searchMod = "search-block--btn" %}
+{% endif %}
+
+<label class="search-block {{searchMod}}">
+    <svg class="s-icon search-block__icon">
+        <use xlink:href="img/svg/sprite1.svg#ic24_search"></use>
+    </svg>
+    <input class="search-block__input" type="search" placeholder="{{searchPlaceholder}}">
+    {% if btnOff %}
+    {% else %}
+    <button class="btn search-block__btn">Найти</button>
+    {% endif %}
+</label>

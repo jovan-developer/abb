@@ -12,4 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Активация модальных форм
     bindModal('.js-popup-btn', true)
+
+    // Hero-slider
+    const heroSlider = new Swiper('.hero-slider__slider', {
+
+    })
 })
