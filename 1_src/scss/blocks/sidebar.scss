@@ -1,0 +1,165 @@
+.sidebar {
+    width: 100%;
+
+    // .sidebar__filters
+
+    &__filters {
+    }
+
+    // .sidebar__filter-links
+
+    &__filter-links {
+        padding-bottom: 6px;
+
+        .sidebar__title {
+            padding-top: 0;
+        }
+
+        .sidebar__content {
+            padding-bottom: 0;
+        }
+    }
+
+    // .sidebar__filter
+
+    &__filter {
+        border-bottom: 1px solid $divider;
+
+        &.active {
+            .sidebar__content {
+                display: block;
+            }
+
+            .sidebar__title-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        .sidebar__content {
+            display: none;
+        }
+    }
+
+    // .sidebar__title
+
+    &__title {
+        position: relative;
+
+        padding: 14px 0 13px;
+
+        color: $text-primary;
+        @include body14m;
+
+        cursor: pointer;
+
+        &:hover {
+            .sidebar__title-icon {
+                fill: $text-primary;
+            }
+        }
+    }
+
+    // .sidebar__title-icon
+
+    &__title-icon {
+        position: absolute;
+        top: 12px;
+        right: 0;
+
+        fill: $text-tertiary;
+
+        transition: fill 0.3s;
+    }
+
+    // .sidebar__content
+
+    &__content {
+        padding-bottom: 14px;
+    }
+
+    // .sidebar__links
+
+    &__links {
+        margin-top: -6px;
+    }
+
+    // .sidebar__links-item
+
+    &__links-item {
+        color: $text-secondary;
+        @include body14;
+
+        transition: 0.3s background-color;
+
+        &:hover {
+            background-color: $bg;
+        }
+
+        // .sidebar__links-item--active
+
+        &--active {
+            color: $text-primary;
+
+            background-color: $chip;
+        }
+    }
+
+    // .sidebar__link
+
+    &__link {
+        padding: 6px 10px;
+    }
+
+    // .sidebar__search-label
+
+    &__search-label {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    // .sidebar__search
+
+    &__search {
+        display: block;
+        width: 100%;
+
+        padding: 6px 8px;
+
+        color: $text-primary;
+        @include body14;
+
+        border: 1px solid $divider;
+
+        &::placeholder {
+            color: $text-tertiary;
+        }
+    }
+
+    // .sidebar__list
+
+    &__list {
+    }
+
+    // .sidebar__item
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // .sidebar__more
+
+    &__more {
+        margin-top: 24px;
+    }
+
+    // .sidebar__loader
+
+    &__loader {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

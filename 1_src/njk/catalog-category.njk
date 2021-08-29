@@ -32,7 +32,8 @@
         <section class="catalog-category">
             <div class="container">
                 <div class="catalog-category__inner">
-                    {% include 'parts/sidebar-catalog.njk' %}
+                    {% set sidebarClass = 'catalog-category__sidebar' %}
+                    {% include 'parts/sidebar.njk' %}
                 </div>
             </div>
         </section>

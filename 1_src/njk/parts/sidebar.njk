@@ -1,6 +1,6 @@
-<div class="sidebar">
+<div class="sidebar {{sidebarClass}}">
     <form class="sidebar__filters">
-        <div class="sidebar__filter">
+        <div class="sidebar__filter-links">
             <div class="sidebar__title">
                 Интеллектуальные инсталляционные системы (EIB/KNX)
             </div>
@@ -16,7 +16,7 @@
                     <li class="sidebar__links-item">
                         <a class="sidebar__link" href="#">Безопасность и наблюдение</a>
                     </li>
-                    <li class="sidebar__links-item">
+                    <li class="sidebar__links-item sidebar__links-item--active">
                         <a class="sidebar__link" href="#">ABB i-bus EIB/KNX Блоки электропитания</a>
                     </li>
                     <li class="sidebar__links-item">
@@ -32,6 +32,9 @@
         <div class="sidebar__filter">
             <div class="sidebar__title">
                 ETIM свойства
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
             </div>
 
             <div class="sidebar__content">
@@ -42,6 +45,9 @@
         <div class="sidebar__filter">
             <div class="sidebar__title">
                 Цвет
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
             </div>
 
             <div class="sidebar__content">
@@ -52,6 +58,9 @@
         <div class="sidebar__filter">
             <div class="sidebar__title">
                 Оттенок
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
             </div>
 
             <div class="sidebar__content">
@@ -59,9 +68,12 @@
             </div>
         </div>
 
-        <div class="sidebar__filter">
+        <div class="sidebar__filter active">
             <div class="sidebar__title">
                 Тип изделия
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
             </div>
 
             <label class="sidebar__search-label">
