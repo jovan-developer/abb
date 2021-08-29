@@ -28,6 +28,14 @@
 
     <main class="main">
         {% include 'parts/breadcrumbs.njk' %}
+
+        <section class="catalog-category">
+            <div class="container">
+                <div class="catalog-category__inner">
+                    {% include 'parts/sidebar-catalog.njk' %}
+                </div>
+            </div>
+        </section>
     </main>
 
     {% include 'parts/footer.njk' %}
