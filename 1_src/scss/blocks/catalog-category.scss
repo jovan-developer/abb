@@ -4,11 +4,25 @@
     // .catalog-category__inner
 
     &__inner {
+        display: flex;
     }
 
     // .catalog-category__sidebar
 
     &__sidebar {
         max-width: 278px;
+    }
+
+    // .catalog-category__search
+
+    &__search {
+        margin-bottom: 16px;
+    }
+
+    // .catalog-category__content
+
+    &__content {
+        width: 100%;
+        margin-left: 28px;
     }
 }

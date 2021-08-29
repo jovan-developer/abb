@@ -34,6 +34,16 @@
                 <div class="catalog-category__inner">
                     {% set sidebarClass = 'catalog-category__sidebar' %}
                     {% include 'parts/sidebar.njk' %}
+
+                    <div class="catalog-category__content">
+                        <form class="catalog-category__search">
+                            {% set searchPlaceholder = 'Для поиска по категории укажите код заказа, артикул/тип или описание' %}
+                            {% include 'parts/components/search-block.njk' %}
+                        </form>
+
+                        {% include 'parts/catalog-table.njk' %}
+                        {% include 'parts/pagination.njk' %}
+                    </div>
                 </div>
             </div>
         </section>

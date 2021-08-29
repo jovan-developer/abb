@@ -1,0 +1,169 @@
+{% set tableContent = [
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Розетка силовая (штепсельная) для подключения',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Шина для распредденеия (шкаф 3122)',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Датчик для измерения токов и напряжений, требуемого для мониторинга и защиты в сетях среднего напряжения',
+series: 'Tmax 3 Delux Limited'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Розетка силовая (штепсельная) для подключения',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196',
+series: 'Tmax'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Шина для распредденеия (шкаф 3122)',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Розетка силовая (штепсельная) для подключения',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Датчик для измерения токов и напряжений, требуемого для мониторинга и защиты в сетях среднего напряжения',
+series: 'Tmax 3 Delux Limited '
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Розетка силовая (штепсельная) для подключения',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Шина для распредденеия (шкаф 3122)',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196',
+series: 'Tmax'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Шина для распредденеия (шкаф 3122)',
+series: 'Emax 2'
+},
+{
+code: '6115-0-0196', type: '00053',
+descr: 'Розетка силовая (штепсельная) для подключения',
+series: 'Emax 2'
+}
+]%}
+
+
+
+<div class="catalog-table">
+    <div class="catalog-table__product-found">
+        Найдено <span>99 999</span>
+    </div>
+
+    <div class="catalog-table__table">
+        <div class="catalog-table__row">
+            <div class="catalog-table__th catalog-table__th--image">
+
+            </div>
+            <div class="catalog-table__th catalog-table__th--code">
+                Код заказа
+            </div>
+            <div class="catalog-table__th catalog-table__th--type">
+                Артикул/тип
+            </div>
+            <div class="catalog-table__th catalog-table__th--descr">
+                Описание
+            </div>
+            <div class="catalog-table__th catalog-table__th--series">
+                <div class="select catalog-table__select">
+                    <div class="select__header">
+                        <div class="select__content" tabindex="0">
+
+                        </div>
+                        <svg class="s-icon select__icon">
+                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="select__list" data-simplebar>
+                        <div class="select__item select__item--def" data-select-value="" tabindex="0">
+                            <span class="select__item-default">Выберите серию</span>
+                        </div>
+                        <div class="select__item" data-select-value="emax2" tabindex="0">
+                            <span class="select__item-inner">Emax 2</span>
+                        </div>
+                        <div class="select__item" data-select-value="Tmax" tabindex="0">
+                            <span class="select__item-inner">Tmax</span>
+                        </div>
+                    </div>
+                    <select class="select__data" name="partnerType" tabindex="-1">
+                        <option value="">Выберите или начните вводить</option>
+                        <option value="emax2">Emax 2</option>
+                        <option value="Tmax">Tmax</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <ul class="catalog-table__body">
+            {% for data in tableContent %}
+
+            <li class="catalog-table__row">
+                <div class="catalog-table__col catalog-table__col--image">
+                    <div class="catalog-table__image">
+                        <img src="img/catalog/product1.jpg" alt="Розетка">
+                    </div>
+                </div>
+                <div class="catalog-table__col catalog-table__col--code">
+                    <div class="catalog-table__col-inner">
+                        <span class="catalog-table__text">
+                            {{data.code}}
+                        </span>
+                        <button class="catalog-table__replacement">
+                            <svg class="s-icon">
+                                <use xlink:href="img/svg/sprite1.svg#ic24_replacement"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog-table__col catalog-table__col--type">
+                    {% if data.type %}
+                    <span class="catalog-table__text">
+                        {{data.type}}
+                    </span>
+                    {% else %}
+                    <span class="catalog-table__text catalog-table__text--empty">
+                        —
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="catalog-table__col catalog-table__col--descr">
+                    {% if data.descr %}
+                    <span class="catalog-table__text">
+                        {{data.descr}}
+                    </span>
+                    {% else %}
+                    <span class="catalog-table__text catalog-table__text--empty">
+                        —
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="catalog-table__col catalog-table__col--series">
+                    <span class="catalog-table__text">{{data.series}}</span>
+                </div>
+            </li>
+
+            {% endfor %}
+        </ul>
+    </div>
+</div>
