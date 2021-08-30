@@ -1,17 +1,41 @@
 .aside-info {
+    padding: 12px 16px 16px;
+
+    background-color: $bg;
 
     // .aside-info__title
 
     &__title {
+        margin-bottom: 16px;
+
+        color: $text-primary;
+        @include h3;
     }
 
     // .aside-info__content
 
     &__content {
+        margin-bottom: 24px;
+
+        color: $text-primary;
+        @include caption;
+
+        p {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+        }
     }
 
     // .aside-info__btn
 
     &__btn {
+        display: inline-flex;
+
+        .s-icon {
+            fill: $text-primary;
+        }
     }
 }

@@ -1,13 +1,45 @@
 .product-tabs {
-
     // .product-tabs__header
 
     &__header {
+        display: flex;
+        margin-bottom: 24px;
+
+        border-bottom: 0.5px solid $divider;
     }
 
     // .product-tabs__title
 
     &__title {
+        position: relative;
+
+        padding: 9px 17px 9px 16px;
+
+        color: $text-primary;
+        @include body16;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transform-origin: center;
+
+            width: 100%;
+            height: 2px;
+
+            background-color: $brand-primary;
+
+            transition: 0.3s transform;
+        }
+
+        &.active {
+            &::after {
+                transform: scale(1);
+            }
+        }
     }
 
     // .product-tabs__content
@@ -18,11 +50,17 @@
     // .product-tabs__block
 
     &__block {
+        display: none;
+
+        &.active {
+            display: block;
+        }
     }
 
     // .product-tabs__info
 
     &__info {
+        margin-bottom: 32px;
     }
 
     // .product-tabs__list
@@ -33,20 +71,49 @@
     // .product-tabs__list-item
 
     &__list-item {
+        display: flex;
+        margin-bottom: 12px;
     }
 
     // .product-tabs__name
 
     &__name {
+        max-width: 184px;
+        width: 100%;
+        margin-right: 20px;
+
+        color: $text-primary;
+        @include body14;
     }
 
     // .product-tabs__value
 
     &__value {
+        width: 100%;
+
+        color: $text-primary;
+        @include body14;
+
+        b {
+            @include body14b;
+        }
+
+        i {
+            color: $text-secondary;
+            @include body14m;
+            font-style: normal;
+        }
+
+        b + i,
+        i + b {
+            margin-left: 7px;
+        }
     }
 
     // .product-tabs__link
 
     &__link {
+        color: $text-brand;
+        @include body14;
     }
 }
