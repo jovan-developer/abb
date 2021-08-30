@@ -30,9 +30,9 @@
     <main class="main">
         {% include 'parts/breadcrumbs.njk' %}
 
-        <section class="catalog-view">
-            {% include 'parts/product-view.njk' %}
-        </section>
+        {% include 'parts/product-view.njk' %}
+
+        {% include 'parts/similar-products.njk' %}
     </main>
 
     {% include 'parts/footer.njk' %}
@@ -40,7 +40,7 @@
 
     <script src="plugins/simplebar.js"></script>
     <script src="plugins/inputmask.js"></script>
-    <script src="plugins/swiper-bundle.min.js"></script> 
+    <script src="plugins/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
