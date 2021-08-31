@@ -18,6 +18,8 @@
         color: $text-primary;
         @include body16;
 
+        cursor: pointer;
+
         &::after {
             content: "";
             position: absolute;
@@ -115,5 +117,32 @@
     &__link {
         color: $text-brand;
         @include body14;
+    }
+
+    // .product-tabs__gallery
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // .product-tabs__gallery-item
+
+    &__gallery-item {
+        width: 100%;
+        max-width: calc(33.33% - 19px);
+        margin-bottom: 28px;
+
+        &:not(:nth-child(3n)) {
+            margin-right: 28px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
     }
 }
