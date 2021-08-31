@@ -30,20 +30,6 @@
 
     &__filter {
         border-bottom: 1px solid $divider;
-
-        &.active {
-            .sidebar__content {
-                display: block;
-            }
-
-            .sidebar__title-icon {
-                transform: rotate(180deg) translateY(-50%);
-            }
-        }
-
-        .sidebar__content {
-            display: none;
-        }
     }
 
     // .sidebar__title
@@ -57,6 +43,12 @@
         @include body14m;
 
         cursor: pointer;
+
+        &.active {
+            .sidebar__title-icon {
+                transform: rotate(180deg) translateY(50%);
+            }
+        }
 
         &:hover {
             .sidebar__title-icon {
@@ -75,13 +67,21 @@
 
         fill: $text-tertiary;
 
-        transition: fill 0.3s;
+        transition: fill 0.3s, transform 0.3s;
     }
 
     // .sidebar__content
 
     &__content {
-        padding-bottom: 14px;
+        padding-bottom: 0;
+        max-height: 0;
+        overflow: hidden;
+
+        transition: 0.3s max-height ease-out, 0.3s padding ease-out;
+
+        &.active {
+            transition: max-height 0.25s ease-in, 0.3s padding ease-in;
+        }
     }
 
     // .sidebar__links

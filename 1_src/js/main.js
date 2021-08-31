@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     @include('functions/modal.js')
     @include('functions/passwordEye.js')
 
-    // Функция для стилизации селекта
+    // Function to style select
     select('.select')
 
-    // Маска для полей телефона
+    // Phone field mask
     phoneMask()
 
-    // Активация модальных форм
+    // Activating modal windows
     bindModal('.js-popup-btn', true)
 
     // Hero-slider
@@ -36,24 +36,58 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
+
+    // Tabs for product page
     const tabs = (tabsSel, headerSel, contentSel) => {
         let tabs = document.querySelector(tabsSel)
+        if (tabs) {
+            let header = tabs.querySelectorAll(headerSel)
+            let content = tabs.querySelectorAll(contentSel)
 
-        let header = tabs.querySelectorAll(headerSel)
-        let content = tabs.querySelectorAll(contentSel)
+            let lastIndex = 0
 
-        let lastIndex = 0
+            for (let i = 0; i < header.length; i++) {
+                header[i].addEventListener('click', () => {
+                    header[lastIndex].classList.remove('active')
+                    content[lastIndex].classList.remove('active')
+                    header[i].classList.add('active')
+                    content[i].classList.add('active')
+                    lastIndex = i
+                })
+            }
+        }
 
-        for (let i = 0; i < header.length; i++) {
-            header[i].addEventListener('click', () => {
-                header[lastIndex].classList.remove('active')
-                content[lastIndex].classList.remove('active')
-                header[i].classList.add('active')
-                content[i].classList.add('active')
-                lastIndex = i
-            })
+    }
+    tabs('.product-tabs', '.product-tabs__title', '.product-tabs__block')
+
+    const accordion = (tabsSel, headerSel, contentSel) => {
+        let tabs = document.querySelector(tabsSel)
+
+        if (tabs) {
+            console.log('asda', tabs)
+            let header = tabs.querySelectorAll(headerSel)
+            let content = tabs.querySelectorAll(contentSel)
+
+            let lastIndex = 0
+            let paddings = 14
+
+            for (let i = 0; i < header.length; i++) {
+                header[i].addEventListener('click', () => {
+                    if (!(header[i].classList.contains('active'))) {
+                        header[lastIndex].classList.remove('active')
+                        content[lastIndex].style.maxHeight = '0px'
+                        header[i].classList.add('active')
+                        content[i].style.maxHeight = content[i].scrollHeight + paddings + 'px'
+                        lastIndex = i
+                    } else {
+                        header[i].classList.remove('active')
+                        content[i].style.maxHeight = '0px'
+                        lastIndex = i
+                    }
+                })
+            }
         }
     }
 
-    tabs('.product-tabs', '.product-tabs__title', '.product-tabs__block')
+    accordion('.js-accordion', '.js-accordion__title', '.js-accordion__content')
 })

@@ -1,5 +1,5 @@
 <div class="sidebar {{sidebarClass}}">
-    <form class="sidebar__filters">
+    <form class="sidebar__filters js-accordion">
         <div class="sidebar__filter-links">
             <div class="sidebar__title">
                 Интеллектуальные инсталляционные системы (EIB/KNX)
@@ -30,58 +30,57 @@
         </div>
 
         <div class="sidebar__filter">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 ETIM свойства
                 <svg class="sidebar__title-icon s-icon">
                     <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
                 </svg>
             </div>
 
-            <div class="sidebar__content">
+            <div class="sidebar__content js-accordion__content">
 
             </div>
         </div>
 
         <div class="sidebar__filter">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 Цвет
                 <svg class="sidebar__title-icon s-icon">
                     <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
                 </svg>
             </div>
 
-            <div class="sidebar__content">
+            <div class="sidebar__content js-accordion__content">
 
             </div>
         </div>
 
         <div class="sidebar__filter">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 Оттенок
                 <svg class="sidebar__title-icon s-icon">
                     <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
                 </svg>
             </div>
 
-            <div class="sidebar__content">
+            <div class="sidebar__content js-accordion__content">
 
             </div>
         </div>
 
         <div class="sidebar__filter active">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 Тип изделия
                 <svg class="sidebar__title-icon s-icon">
                     <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
                 </svg>
             </div>
 
-            <label class="sidebar__search-label">
-                <span class="visually-hidden">Поиск по категории</span>
-                <input class="sidebar__search" type="search" placeholder="Поиск по категории">
-            </label>
-
-            <div class="sidebar__content">
+            <div class="sidebar__content js-accordion__content">
+                <label class="sidebar__search-label">
+                    <span class="visually-hidden">Поиск по категории</span>
+                    <input class="sidebar__search" type="search" placeholder="Поиск по категории">
+                </label>
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
                         <label class="f-checkbox">
