@@ -13,15 +13,29 @@
         max-width: 278px;
         margin-right: 28px;
 
+        .sidebar__content.active {
+            padding-bottom: 10px;
+        }
+
         .sidebar__links {
             margin-top: -12px;
-            padding-bottom: 6px;
+            // padding-bottom: 6px;
+        }
+
+        .sidebar__filter-links {
+            padding-bottom: 0;
+        }
+
+        .sidebar__title {
+            padding-bottom: 13px;
         }
     }
 
     // .library__content
 
     &__content {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -74,7 +88,7 @@
     // .library__catalog
 
     &__catalog {
-        height: 100%;
+        flex-grow: 1;
     }
 
     // .library__founded

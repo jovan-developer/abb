@@ -1,7 +1,8 @@
 <div class="main-menu">
+    <div class="main-menu__overlay"></div>
     <div class="container">
         <nav class="main-menu__inner">
-            <ul class="main-menu__list">
+            <ul class="main-menu__list js-menu">
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture1.jpg');">
                         <span class="visually-hidden">Промышленные разъемы</span>
@@ -14,7 +15,7 @@
                             Промышленные разъемы
                         </p>
 
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -22,58 +23,60 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Безопасность и наблюдение</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">
-                                ABB i-bus EIB/KNX Блоки электропитания, ABB i-bus EIB/KNX Блоки электропитания
-                            </a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Контроллеры, логические элементы и таймеры</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Регулирование потребления электроэнергии</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Соединительные элементы</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Безопасность и наблюдение</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">
+                                    ABB i-bus EIB/KNX Блоки электропитания, ABB i-bus EIB/KNX Блоки электропитания
+                                </a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Контроллеры, логические элементы и таймеры</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Регулирование потребления электроэнергии</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Соединительные элементы</a>
+                            </li>
 
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Безопасность и наблюдение</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Контроллеры, логические элементы и таймеры</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Регулирование потребления электроэнергии</a>
-                        </li>
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">Соединительные элементы</a>
-                        </li>
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть</span>
-                            </button>
-                        </li>
-                    </ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Безопасность и наблюдение</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Контроллеры, логические элементы и таймеры</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Регулирование потребления электроэнергии</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">Соединительные элементы</a>
+                            </li>
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture2.jpg');">
@@ -87,7 +90,7 @@
                             Программируемые логические контроллеры
                         </p>
 
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -95,17 +98,35 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
 
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть меню</span>
-                            </button>
-                        </li>
-                    </ul>
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть меню</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture3.jpg');">
@@ -118,7 +139,7 @@
                         <p class="main-menu__title">
                             Выключатели нагрузки / рубильники
                         </p>
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -126,17 +147,27 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
 
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть</span>
-                            </button>
-                        </li>
-                    </ul>
+
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture4.jpg');">
@@ -149,7 +180,7 @@
                         <p class="main-menu__title">
                             Двигатели
                         </p>
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -157,17 +188,26 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
 
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть</span>
-                            </button>
-                        </li>
-                    </ul>
+
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture5.jpg');">
@@ -180,7 +220,7 @@
                         <p class="main-menu__title">
                             Зарядная инфраструктура для электротранспорта
                         </p>
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -188,17 +228,26 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
 
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть</span>
-                            </button>
-                        </li>
-                    </ul>
+
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link" href="#" style="background-image: url('img/catalog/picture6.jpg');">
@@ -211,7 +260,7 @@
                         <p class="main-menu__title">
                             Модульные устройства
                         </p>
-                        <button class="main-menu__drop-open btn">
+                        <button class="main-menu__drop-open btn js-menu__title">
                             <span class="visually-hidden">Открыть меню</span>
                             <svg class="s-icon">
                                 <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
@@ -219,17 +268,26 @@
                         </button>
                     </div>
 
-                    <ul class="main-menu__drop-list">
-                        <li class="main-menu__drop-item">
-                            <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
-                        </li>
+                    <div class="main-menu__drop-list js-menu__content">
+                        <ul>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
+                            <li class="main-menu__drop-item">
+                                <a class="main-menu__drop-link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
+                            </li>
 
-                        <li class="main-menu__close">
-                            <button class="main-menu__close-btn">
-                                <span>Закрыть</span>
-                            </button>
-                        </li>
-                    </ul>
+
+                            <li class="main-menu__close">
+                                <button class="main-menu__close-btn js-menu__close">
+                                    <span>Закрыть</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </nav>

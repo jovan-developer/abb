@@ -37,12 +37,16 @@
     &__title {
         position: relative;
 
-        padding: 13px 25px 13px 0;
+        padding: 13px 0 14px 0;
 
         color: $text-primary;
         @include body14m;
 
         cursor: pointer;
+
+        &.js-accordion__title {
+            padding-right: 25px;
+        }
 
         &.active {
             .sidebar__title-icon {
@@ -73,13 +77,18 @@
     // .sidebar__content
 
     &__content {
-        padding-bottom: 0;
-        max-height: 0;
-        overflow: hidden;
+        padding-bottom: 0px;
 
         transition: 0.3s max-height ease-out, 0.3s padding ease-out;
 
+        &.js-accordion__content {
+            max-height: 0;
+            overflow: hidden;
+        }
+
         &.active {
+            padding-bottom: 14px;
+
             transition: max-height 0.25s ease-in, 0.3s padding ease-in;
         }
     }
@@ -114,6 +123,7 @@
     // .sidebar__link
 
     &__link {
+        display: inline-block;
         padding: 6px 10px;
     }
 
