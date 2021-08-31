@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Library | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% set headerAuth = true%}
+    {% include 'parts/header.njk' %}
+
+    <main class="main">
+
+        <section class="library">
+            <div class="container">
+                <div class="library__inner">
+                    {% set sidebarClass = 'library__sidebar' %}
+                    {% include 'parts/sidebar-library.njk' %}
+
+                    <div class="library__content">
+                        <form class="library__search">
+                            {% set searchPlaceholder = 'Поиск по названию и номеру документаа' %}
+                            {% include 'parts/components/search-block.njk' %}
+
+                            <div class="library__select">
+                                <div class="select select-search partner-type__form-select">
+                                    <div class="select__header">
+                                        <div class="select__content" tabindex="0">
+
+                                        </div>
+                                        <svg class="s-icon select__icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="select__list" data-simplebar>
+                                        <div class="select__item select__item--def" data-select-value="" tabindex="0">
+                                            <span class="select__item-default">Выберите тип документа</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="catalog" tabindex="0">
+                                            <span class="select__item-inner">Каталог</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="brochure" tabindex="0">
+                                            <span class="select__item-inner">Брошюра</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="video" tabindex="0">
+                                            <span class="select__item-inner">Видео</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="certificate" tabindex="0">
+                                            <span class="select__item-inner">Сертификат</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="catalog" tabindex="0">
+                                            <span class="select__item-inner">BIM-модели</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="instruction" tabindex="0">
+                                            <span class="select__item-inner">Инструкция</span>
+                                        </div>
+                                        <div class="select__item" data-select-value="passport" tabindex="0">
+                                            <span class="select__item-inner">Паспорт изделия</span>
+                                        </div>
+                                    </div>
+                                    <select class="select__data" name="partnerType" required id="add-spec"
+                                        tabindex="-1">
+                                        <option value="">Выберите тип документа</option>
+                                        <option value="catalog">Каталог</option>
+                                        <option value="brochure">Брошюра</option>
+                                        <option value="video">Видео</option>
+                                        <option value="certificate">Сертификат</option>
+                                        <option value="catalog">BIM-модели</option>
+                                        <option value="instruction">Инструкция</option>
+                                        <option value="passport">Паспорт изделия</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="library__catalog">
+                            <div class="library__founded">
+                                Найдено <span>99 999</span>
+                            </div>
+                            <ul class="library__list">
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        ABB Welcome
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">
+                                            Каталог
+                                        </li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-right">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Сертификат</li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-left">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                            ЕАЭС (ТС)
+                                        </li>
+                                        <li class="library__item">Бессрочный</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Сертификат</li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-left">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                            ЕАЭС (ТС)
+                                        </li>
+                                        <li class="library__item">Бессрочный</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Презентация</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Сертификат</li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-left">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                            ЕАЭС (ТС)
+                                        </li>
+                                        <li class="library__item">Бессрочный</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Сертификат</li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-left">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                            ЕАЭС (ТС)
+                                        </li>
+                                        <li class="library__item">Бессрочный</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Презентация</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                </li>
+                                <li class="library__row">
+                                    <div class="library__title">
+                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                    </div>
+                                    <ul class="library__characteristics">
+                                        <li class="library__item">Сертификат</li>
+                                        <li class="library__item">
+                                            <svg class="s-icon library__icon-left">
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                            </svg>
+                                            ЕАЭС (ТС)
+                                        </li>
+                                        <li class="library__item">Бессрочный</li>
+                                        <li class="library__item">8,43 MB</li>
+                                    </ul>
+                                    <a class="library__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {% include 'parts/pagination.njk' %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

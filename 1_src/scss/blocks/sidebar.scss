@@ -6,6 +6,12 @@
     &__filters {
     }
 
+    // .sidebar__main-title
+
+    &__main-title {
+        margin-bottom: 32px;
+    }
+
     // .sidebar__filter-links
 
     &__filter-links {
@@ -31,7 +37,7 @@
             }
 
             .sidebar__title-icon {
-                transform: rotate(180deg);
+                transform: rotate(180deg) translateY(-50%);
             }
         }
 
@@ -45,7 +51,7 @@
     &__title {
         position: relative;
 
-        padding: 14px 0 13px;
+        padding: 13px 25px 13px 0;
 
         color: $text-primary;
         @include body14m;
@@ -63,8 +69,9 @@
 
     &__title-icon {
         position: absolute;
-        top: 12px;
+        top: 50%;
         right: 0;
+        transform: translateY(-50%);
 
         fill: $text-tertiary;
 
