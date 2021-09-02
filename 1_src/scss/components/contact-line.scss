@@ -1,0 +1,20 @@
+.contact-line {
+
+    // .contact-line__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    // .contact-line__icon
+
+    &__icon {
+        margin-right: 8px;
+    }
+
+    // .contact-line__text
+
+    &__text {
+    }
+}

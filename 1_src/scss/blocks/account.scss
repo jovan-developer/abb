@@ -1,0 +1,206 @@
+.account {
+    // .account__title
+
+    &__title {
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    // .account__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;    
+    }
+
+    // .account__content
+
+    &__content {
+        margin-right: 20px;
+        max-width: 686px;
+    }
+
+    // .account__block
+
+    &__block {
+        padding: 24px 0 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 24px;
+            
+            border-bottom: 0.5px solid $divider;
+        }
+    }
+
+    // .account__name
+
+    &__name {
+        margin-bottom: 4px;
+
+        color: $text-primary;
+        @include h2;
+    }
+
+    // .account__position
+
+    &__position {
+        margin-bottom: 16px;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .account__row
+
+    &__row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 26px;
+    }
+
+    // .account__contacts-data
+
+    &__contacts-data {
+    }
+
+    // .account__contacts-item
+
+    &__contacts-item {
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+
+    // .account__btn
+
+    &__btn {
+    }
+
+    // .account__info
+
+    &__info {
+        display: flex;
+
+        color: $text-secondary;
+        @include caption;
+
+        .s-icon {
+            margin-right: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    // .account__heading
+
+    &__heading {
+        margin-bottom: 24px;
+
+        color: $text-primary;
+        @include h3;
+    }
+
+    // .account__data
+
+    &__data {
+    }
+
+    // .account__data-item
+
+    &__data-item {
+        display: flex;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    // .account__data-name
+
+    &__data-name {
+        max-width: 184px;
+        width: 100%;
+        margin-right: 20px;
+
+        color: $text-secondary;
+    }
+
+    // .account__data-value
+
+    &__data-value {
+        color: $text-primary;
+
+        a {
+            color: $text-brand;
+        }
+    }
+
+    // .account__list
+
+    &__list {
+    }
+
+    // .account__list-item
+
+    &__list-item {
+    }
+
+    // .account__sidebar
+
+    &__sidebar {
+        max-width: 380px;
+        width: 100%;
+        padding: 16px 8px 24px 24px;
+
+        background-color: $bg;
+    }
+
+    // .account__signature
+
+    &__signature {
+        margin: 0;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .account__sidebar-block
+
+    &__sidebar-block {
+        padding: 16px 0 0;
+
+        &:not(:last-child) {
+            border-bottom: 0.5px solid $divider;
+            padding-bottom: 24px;
+        }
+    }
+
+    // .account__sidebar-name
+
+    &__sidebar-name {
+        margin-bottom: 12px;
+
+        color: $text-primary;
+        @include h3;
+    }
+
+    // .account__sidebar-contacts
+
+    &__sidebar-contacts {
+        .contact-line {
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+    
+}

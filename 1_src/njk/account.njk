@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Catalog/Category/View | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% set headerAuth = true%}
+    {% include 'parts/header.njk' %}
+
+    <main class="main">
+        {% include 'parts/submenu.njk' %}
+
+        <section class="account">
+            <div class="container">
+                <div class="page-title account__title">
+                    <h1>Данные учетной записи</h1>
+                </div>
+
+                <div class="account__inner">
+                    <div class="account__content">
+                        <div class="account__block">
+                            <div class="account__name">Иванов Иван Иванович</div>
+                            <div class="account__position">Главный инженер</div>
+                            <div class="account__row">
+                                <ul class="account__contacts-data">
+                                    <li class="account__contacts-item contact-line">
+                                        <a class="contact-line__link" href="tel:+79876543210">
+                                            <svg class="contact-line__icon s-icon s-icon--xs">
+                                                <use xlink:href="img/svg/sprite1.svg#ic16_phone"></use>
+                                            </svg>
+                                            <span class="contact-line__text">+7 (987) 654–32–10</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__contacts-item contact-line">
+                                        <a class="contact-line__link" href="mailto:ivanov@mail.com">
+                                            <svg class="contact-line__icon s-icon s-icon--xs">
+                                                <use xlink:href="img/svg/sprite1.svg#ic16_email"></use>
+                                            </svg>
+                                            <span class="contact-line__text">ivanov@mail.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <button class="account__btn btn btn--secondary">Сменить пароль</button>
+                            </div>
+
+                            <div class="account__info">
+                                <svg class="s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                </svg>
+                                <p>
+                                    Для изменения учетных данных отправьте запрос на почту ответственному менеджеру. В
+                                    письме укажите какие данные требуется скорректировать. Письмо должно быть отправлено
+                                    с
+                                    почтового ящика, на котором зарегистрирована ваша учетная запись.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="account__block">
+                            <div class="account__heading">
+                                Специализации компании
+                            </div>
+
+                            <ul class="account__data">
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Основная</div>
+                                    <div class="account__data-value">Интернет-магазин</div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Сайт</div>
+                                    <div class="account__data-value"><a href="#">elvevel.ru</a></div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Дополнительные</div>
+                                    <div class="account__data-value">
+                                        <ul class="account__list">
+                                            <li class="account__list-item">
+                                                Оптовые продажи товаров
+                                            </li>
+                                            <li class="account__list-item">
+                                                Щитовик
+                                            </li>
+                                            <li class="account__list-item">
+                                                Интегратор
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="account__block">
+                            <div class="account__heading">
+                                Данные компании
+                            </div>
+
+                            <ul class="account__data">
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Наименование</div>
+                                    <div class="account__data-value">ООО «Элевел Торговая компания Москва»</div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Бренд</div>
+                                    <div class="account__data-value">ELEVEL</div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">ИНН</div>
+                                    <div class="account__data-value">
+                                        1234567890
+                                    </div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">ОГРН/ОГРНИП</div>
+                                    <div class="account__data-value">
+                                        1234567890
+                                    </div>
+                                </li>
+                                <li class="account__data-item">
+                                    <div class="account__data-name">Адрес юр. лица</div>
+                                    <div class="account__data-value">
+                                        г. Москва, Ленинский пр-т, д. 1, офис 321
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <aside class="account__sidebar">
+                        <p class="account__signature">Ваш ответственный менеджер ABB</p>
+
+                        <div class="account__sidebar-block">
+                            <div class="account__sidebar-name">Иван Коломойцев</div>
+                            <ul class="account__sidebar-contacts">
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="tel:+79876543210">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_phone"></use>
+                                        </svg>
+                                        <span class="contact-line__text">+7 (987) 654–32–10</span>
+                                    </a>
+                                </li>
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="mailto:ivan.k@abb.com">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_email"></use>
+                                        </svg>
+                                        <span class="contact-line__text">ivan.k@abb.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account__sidebar-block">
+                            <div class="account__sidebar-name">Коломой Ивановцев</div>
+                            <ul class="account__sidebar-contacts">
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="tel:+79876543210">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_phone"></use>
+                                        </svg>
+                                        <span class="contact-line__text">+7 (987) 654–32–10</span>
+                                    </a>
+                                </li>
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="mailto:ivan.k@abb.com">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_email"></use>
+                                        </svg>
+                                        <span class="contact-line__text">ivan.k@abb.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account__sidebar-block">
+                            <div class="account__sidebar-name">Иванцой Коломоев</div>
+                            <ul class="account__sidebar-contacts">
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="tel:+79876543210">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_phone"></use>
+                                        </svg>
+                                        <span class="contact-line__text">+7 (987) 654–32–10</span>
+                                    </a>
+                                </li>
+                                <li class="contact-line">
+                                    <a class="contact-line__link" href="mailto:ivan.k@abb.com">
+                                        <svg class="contact-line__icon s-icon s-icon--xs">
+                                            <use xlink:href="img/svg/sprite1.svg#ic16_email"></use>
+                                        </svg>
+                                        <span class="contact-line__text">ivan.k@abb.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
