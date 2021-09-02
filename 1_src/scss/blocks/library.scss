@@ -59,30 +59,6 @@
     &__select {
         width: 100%;
         max-width: 230px;
-
-        .select__content {
-            padding-right: 32px;
-            padding-left: 0;
-
-            border: none;
-        }
-
-        .select__item-default {
-            color: $text-primary;
-            @include body16;
-        }
-
-        .select.active.selectable .select__icon {
-            transform: rotateX(180deg) translateY(10px);
-        }
-
-        .select__item {
-            padding: 4px 12px 5px 12px;
-        }
-
-        .select__list {
-            max-height: 230px;
-        }
     }
 
     // .library__catalog

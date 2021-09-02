@@ -1,0 +1,137 @@
+<section class="news">
+    <div class="container">
+        <div class="news__inner">
+            <div class="sidebar news__sidebar">
+                <div class="page-title news__title">
+                    <h1>Новости для вас</h1>
+                </div>
+                <div class="sidebar__filter-links">
+                    <div class="sidebar__content">
+                        <ul class="sidebar__links">
+                            <li class="sidebar__links-item">
+                                <a class="sidebar__link" href="#">Новинка</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a class="sidebar__link" href="#">Новый прайс-лист</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a class="sidebar__link" href="#">Снятие с производства</a>
+                            </li>
+                            <li class="sidebar__links-item sidebar__links-item--active">
+                                <a class="sidebar__link" href="#">Расписание учебного центра</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a class="sidebar__link" href="#">Прочее</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="news__content">
+                <form class="news__search">
+                    {% set searchPlaceholder = 'Поиск по названию или содержанию среди всех категорий' %}
+                    {% include 'parts/components/search-block.njk' %}
+
+                    <div class="news__select">
+                        <div class="select select--type2">
+                            <div class="select__header">
+                                <div class="select__content" tabindex="0">
+
+                                </div>
+                                <svg class="s-icon select__icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="select__list" data-simplebar>
+                                <div class="select__item" data-select-value="all" tabindex="0">
+                                    <span class="select__item-inner">За все время</span>
+                                </div>
+                                <div class="select__item" data-select-value="today" tabindex="0">
+                                    <span class="select__item-inner">Сегодня</span>
+                                </div>
+                                <div class="select__item" data-select-value="week" tabindex="0">
+                                    <span class="select__item-inner">За неделю</span>
+                                </div>
+                                <div class="select__item" data-select-value="month" tabindex="0">
+                                    <span class="select__item-inner">За месяц</span>
+                                </div>
+                            </div>
+                            <select class="select__data" name="partnerType" required id="add-spec" tabindex="-1">
+                                <option value="all">За все время</option>
+                                <option value="today">Сегодня</option>
+                                <option value="week">За неделю</option>
+                                <option value="month">За месяц</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="news__list">
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Датчик ABB, выведенный на орбиту ракетой SpaceX, будет отслеживать выбросы парниковых
+                                газов
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Новое решение ABB для мониторинга выбросов помогает судоходной отрасли достичь целей по
+                                декарбонизации
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Выпущен новый прайс-лист (Январь 2021 г.)
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Компания ABB заменила коды товаров касающиеся низковольтного оборудования
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Как выбрать модульный контактор серии ESB для коммутации освещения?
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                На электрокаре по Вологде: ABB установила зарядную станцию Terra-54 на территории
+                                компании <br> «Бизнес Софт»
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a class="news__article" href="#">
+                            <div class="news__heading">
+                                Учебный центр объявил даты образовательных программ для партенров компании ABB
+                            </div>
+                            <time class="news__date">10.01.2021 г.</time>
+                        </a>
+                    </li>
+                </ul>
+
+                {% include 'parts/pagination.njk' %}
+            </div>
+        </div>
+    </div>
+</section>

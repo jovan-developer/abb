@@ -123,7 +123,8 @@
     // .sidebar__link
 
     &__link {
-        display: inline-block;
+        display: block;
+        width: 100%;
         padding: 6px 10px;
     }
 

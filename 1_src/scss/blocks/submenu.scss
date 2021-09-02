@@ -1,0 +1,51 @@
+.submenu {
+    border-bottom: 0.5px solid $divider;
+
+    // .submenu__navigation
+
+    &__navigation {
+        padding: 13px 0 14px;
+    }
+
+    // .submenu__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .submenu__item
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 12px;
+            padding-right: 13px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                width: 1px;
+                height: 10px;
+
+                background-color: $text-tertiary;
+            }
+        }
+    }
+
+    // .submenu__link
+
+    &__link {
+        color: $text-secondary;
+        @include tab;
+    }
+
+    // .submenu__link
+
+    &__link {
+    }
+}
