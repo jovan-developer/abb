@@ -19,6 +19,7 @@
 
         .sidebar__title {
             padding-top: 0;
+            margin-bottom: -5px;
         }
 
         .sidebar__content {
@@ -84,6 +85,10 @@
         &.js-accordion__content {
             max-height: 0;
             overflow: hidden;
+
+            // &.active {
+            //     margin-top: -12px;
+            // }
         }
 
         &.active {

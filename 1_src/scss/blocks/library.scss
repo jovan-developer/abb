@@ -1,6 +1,10 @@
 .library {
     margin-top: 32px;
 
+    .product-row__row {
+        padding-bottom: 20px;
+    }
+
     // .library__inner
 
     &__inner {
@@ -31,71 +35,6 @@
         }
     }
 
-    // .library__content
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    // .library__search
-
-    &__search {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        margin-bottom: 16px;
-
-        .search-block {
-            max-width: 612px;
-            margin-right: 20px;
-        }
-    }
-
-    // .library__select
-
-    &__select {
-        width: 100%;
-        max-width: 230px;
-    }
-
-    // .library__catalog
-
-    &__catalog {
-        flex-grow: 1;
-    }
-
-    // .library__founded
-
-    &__founded {
-        padding-bottom: 8px;
-
-        color: $text-secondary;
-        @include body14m;
-
-        border-bottom: 0.5px solid $divider;
-
-        span {
-            color: $text-primary;
-        }
-    }
-
-    // .library__list
-
-    &__list {
-    }
-
-    // .library__row
-
-    &__row {
-        position: relative;
-
-        padding: 15px 74px 19px 24px;
-
-        border-bottom: 0.5px solid $divider;
-    }
 
     // .library__title
 
@@ -104,87 +43,5 @@
 
         color: $text-primary;
         @include body16;
-    }
-
-    // .library__characteristics
-
-    &__characteristics {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    // .library__item
-
-    &__item {
-        position: relative;
-
-        display: flex;
-        align-items: center;
-
-        color: $text-secondary;
-        @include caption;
-
-        &:not(:last-child) {
-            padding-right: 15px;
-
-            &::after {
-                content: "•";
-                position: absolute;
-                right: 7px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
-    }
-
-    // .library__link
-
-    &__link {
-        position: absolute;
-        right: 12px;
-        top: 28px;
-
-        .s-icon {
-            fill: $text-tertiary;
-        }
-    }
-
-    // .library__icon-right
-
-    &__icon-right {
-        margin-top: -3px;
-        margin-bottom: -3px;
-    }
-
-    // .library__icon-left
-
-    &__icon-left {
-        margin-top: -3px;
-        margin-bottom: -3px;
-        margin-right: 2px;
-    }
-
-    // .library__not-found
-
-    &__not-found {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-
-        img {
-            width: 124px;
-            height: 124px;
-            display: block;
-            margin-bottom: 32px;
-        }
-
-        p {
-            margin: 0;
-            color: $text-tertiary;
-            @include body16;
-        }
     }
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Catalog/Category/View | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% set headerAuth = true%}
+    {% include 'parts/header.njk' %}
+
+    <main class="main">
+        {% include 'parts/submenu.njk' %}
+
+        <section class="goods">
+            <div class="container">
+                <div class="page-title goods__title">
+                    <h1>Данные о товарах</h1>
+                </div>
+                <div class="goods__inner">
+                    <div class="goods__content">
+                        <div class="goods__suptitle"></div>
+                        <ul class="goods__list">
+                            <li class="goods__item">
+                                <a class="goods__link" href="#">
+                                    <div class="goods__name">
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_file"></use>
+                                        </svg>
+                                        Прайс-лист Motion (MO)
+                                    </div>
+                                    <ul class="goods__spec spec-list">
+                                        <li class="spec-list__item"></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="goods__info">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

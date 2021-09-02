@@ -1,0 +1,29 @@
+.spec-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    // .spec-list__item
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+    
+        color: $text-secondary;
+        @include caption;
+    
+        &:not(:last-child) {
+            padding-right: 17px;
+    
+            &::after {
+                content: "•";
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
