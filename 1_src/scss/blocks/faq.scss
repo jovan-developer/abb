@@ -1,0 +1,28 @@
+.faq {
+    margin-top: 40px;
+
+    // .faq__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .faq__inner
+
+    &__inner {
+        display: flex;
+    }
+
+    // .faq__sidebar
+
+    &__sidebar {
+        max-width: 278px;
+        margin-right: 28px;
+    }
+
+    // .faq__content
+
+    &__content {
+        margin-top: -5px;
+    }
+}

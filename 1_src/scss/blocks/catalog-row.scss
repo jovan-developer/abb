@@ -1,37 +1,5 @@
-.library {
-    margin-top: 32px;
-
-    // .library__inner
-
-    &__inner {
-        display: flex;
-    }
-
-    // .library__sidebar
-
-    &__sidebar {
-        max-width: 278px;
-        margin-right: 28px;
-
-        .sidebar__content.active {
-            padding-bottom: 10px;
-        }
-
-        .sidebar__links {
-            // margin-top: -12px;
-            // padding-bottom: 6px;
-        }
-
-        .sidebar__filter-links {
-            padding-bottom: 0;
-        }
-
-        .sidebar__title {
-            padding-bottom: 13px;
-        }
-    }
-
-    // .library__content
+.catalog-row {
+    // .catalog-row__content
 
     &__content {
         display: flex;
@@ -39,7 +7,7 @@
         width: 100%;
     }
 
-    // .library__search
+    // .catalog-row__search
 
     &__search {
         display: flex;
@@ -54,20 +22,19 @@
         }
     }
 
-    // .library__select
+    // .catalog-row__select
 
     &__select {
         width: 100%;
         max-width: 230px;
     }
 
-    // .library__catalog
+    // .catalog-row__catalog
 
     &__catalog {
         flex-grow: 1;
     }
-
-    // .library__founded
+    // .catalog-row__founded
 
     &__founded {
         padding-bottom: 8px;
@@ -82,22 +49,22 @@
         }
     }
 
-    // .library__list
+    // .catalog-row__list
 
     &__list {
     }
 
-    // .library__row
+    // .catalog-row__row
 
     &__row {
         position: relative;
 
-        padding: 15px 74px 19px 24px;
+        padding: 15px 74px 21px 24px;
 
         border-bottom: 0.5px solid $divider;
     }
 
-    // .library__title
+    // .catalog-row__title
 
     &__title {
         margin-bottom: 4px;
@@ -106,7 +73,7 @@
         @include body16;
     }
 
-    // .library__characteristics
+    // .catalog-row__characteristics
 
     &__characteristics {
         display: flex;
@@ -114,7 +81,7 @@
         align-items: center;
     }
 
-    // .library__item
+    // .catalog-row__item
 
     &__item {
         position: relative;
@@ -126,7 +93,7 @@
         @include caption;
 
         &:not(:last-child) {
-            padding-right: 15px;
+            padding-right: 19px;
 
             &::after {
                 content: "•";
@@ -138,7 +105,7 @@
         }
     }
 
-    // .library__link
+    // .catalog-row__link
 
     &__link {
         position: absolute;
@@ -150,14 +117,14 @@
         }
     }
 
-    // .library__icon-right
+    // .catalog-row__icon-right
 
     &__icon-right {
         margin-top: -3px;
         margin-bottom: -3px;
     }
 
-    // .library__icon-left
+    // .catalog-row__icon-left
 
     &__icon-left {
         margin-top: -3px;
@@ -165,7 +132,7 @@
         margin-right: 2px;
     }
 
-    // .library__not-found
+    // .catalog-row__not-found
 
     &__not-found {
         display: flex;
