@@ -1,0 +1,130 @@
+<section class="docs">
+    <div class="docs__container">
+        <div class="docs__inner">
+            <div class="docs__sidebar">
+                <ul class="docs__sidebar-list">
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Описание API</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Авторизация</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Данные о товарах</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Данные ETIM</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Сертификаты</a>
+                    </li>
+                    <li class="docs__sidebar-item active">
+                        <a class="docs__sidebar-link" href="#">Изображения</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Цены</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Остатки</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Остатки онлайн</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Весо-габаритные характеристики</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Связанные товары</a>
+                    </li>
+                    <li class="docs__sidebar-item">
+                        <a class="docs__sidebar-link" href="#">Замены</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="docs__content">
+                <h3>Подзаголовок</h3>
+                <p>Для фильтрации <a href="#">списка данных</a> по коду ABB используйте, пожалуйста, параметр
+                    <b>manufacturerCode</b> (код производителя). Для получения данных по коду производителя используйте
+                    параметр searchField, указав значение manufacturerCode . Для получения данных в облегченном варианте
+                    укажите значение simple-json для параметра format. Для выгрузки списка всех данных в формате CSV
+                    файла укажите значение csv для параметра format
+                </p>
+
+                <div class="docs__info">
+                    <div class="docs__info-title">
+                        Классы
+                    </div>
+                    <p class="docs__info-text">
+                        Каждый класс может иметь набор допустимых свойств. Например, класс «Устройство защитного
+                        отключения (УЗО)» описывается набором из более 20 свойств, среди которых, например: «Количество
+                        полюсов», «Номинальное напряжение», «Номинальный ток утечки», «Тип тока утечки» и т.д.
+                    </p>
+                </div>
+
+                <div class="table-content">
+                    <div class="table-content__table-header">
+                        <div class="table-content__th">Метод</div>
+                        <div class="table-content__th">Значение</div>
+                        <div class="table-content__th">Пример</div>
+                    </div>
+                    <ul class="table-content__rows">
+                        <li class="table-content__row">
+                            <div class="table-content__col">Название метода 1</div>
+                            <div class="table-content__col">
+                                Пример значения длиннного текста в несколько строк или больше
+                            </div>
+                            <div class="table-content__col">getdata</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>Нумерованный список</h3>
+                <ol>
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                    <li>Третий пункт</li>
+                </ol>
+
+                <h3>Маркированный список</h3>
+                <ul>
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                    <li>Третий пункт</li>
+                </ul>
+            </div>
+
+            <div class="docs__code">
+                <div class="docs__code-title">Title</div>
+                <div class="code-block">
+                    <div class="code-block__lines">
+                        <span class="code-block__line">1</span><br><span class="code-block__line">2</span><br><span
+                            class="code-block__line">3</span><br><span class="code-block__line">4</span><br><span
+                            class="code-block__line">99</span>
+                    </div>
+                    <pre class="code-block__pre code-block__pre--json" data-simplbar>
+<span>{</span>
+"id": <b>1</b>,
+"name": <b>"ETIM"</b>,
+"description": <b>"Описание"</b>
+<span>}</span></pre>
+                </div>
+
+                <div class="docs__code-title">Title</div>
+                <div class="code-block">
+                    <div class="code-block__lines">
+                        <span class="code-block__line">1</span><br><span class="code-block__line">2</span><br><span
+                            class="code-block__line">3</span><br><span class="code-block__line">4</span><br><span
+                            class="code-block__line">99</span>
+                    </div>
+                    <pre class="code-block__pre code-block__pre--json" data-simplbar>
+<span>{</span>
+"id": <b>1</b>,
+"name": <b>"ETIM"</b>,
+"description": <b>"Описание"</b>
+<span>}</span></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
