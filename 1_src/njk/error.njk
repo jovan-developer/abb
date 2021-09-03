@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Catalog/Category/View | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% include 'parts/header.njk' %}
+
+    <main class="main">
+        <div class="error">
+            <div class="container">
+                <div class="error__inner">
+                    <img class="error__img" src="img/error/img_error.png" alt="">
+                    <div class="error__title page-title">
+                        <h1>Ошибка 404</h1>
+                    </div>
+
+                    <p class="error__text">Не удалось найти запрашиваемую страницу</p>
+
+                    <button class="error__btn btn btn--primary">Перейти на главную</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% set footerMod = 'footer--margin-reset' %}
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

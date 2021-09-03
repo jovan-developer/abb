@@ -1,9 +1,16 @@
 .footer {
+    position: relative;
+    z-index: 2;
+
     margin-top: 80px;
     
     color: $white;
 
     background: $bg-footer;
+
+    &--margin-reset {
+        margin-top: 0;
+    }
 
     // .footer__inner
 

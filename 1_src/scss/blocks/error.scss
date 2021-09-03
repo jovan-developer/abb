@@ -1,0 +1,47 @@
+.error {
+    overflow: hidden;
+    flex-grow: 1;
+
+    // .error__inner
+
+    &__inner {
+        position: relative;
+        padding-bottom: 80px;
+    }
+
+    // .error__img
+
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+        display: block;
+
+        width: 44.4vw;
+        height: 44.4vw;
+        max-width: 768px;
+        max-height: 768px;
+    }
+
+    // .error__title
+
+    &__title {
+        margin: 40px 0;
+    }
+
+    // .error__text
+
+    &__text {
+        margin: 0 0 40px 0;
+
+        color: $text-primary;
+        @include body16;
+    }
+
+    // .error__btn
+
+    &__btn {
+    }
+}
