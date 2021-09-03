@@ -152,4 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     mainMenu('.js-menu', '.js-menu__title', '.js-menu__content', '.js-menu__close', '.main-menu__overlay', 38)
+
+    bindModal('.js-video-play', true)
 })

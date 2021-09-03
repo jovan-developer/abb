@@ -1,0 +1,77 @@
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    transform: translateY(-110vh);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s transform;
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        transition-delay: 0s;
+
+        &.active {
+            transition-delay: 0.45s;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 30;
+    }
+
+    // .video-modal__inner
+
+    &__inner {
+        position: relative;
+        padding: 48px;
+    }
+
+    // .video-modal__close
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+
+        transition: 0.25s transform;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    // .video-modal__block
+
+    &__block {
+        width: 1024px;
+        max-width: 90vw;
+        height: 576px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
