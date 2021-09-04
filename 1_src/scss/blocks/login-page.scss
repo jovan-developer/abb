@@ -9,6 +9,10 @@
 
     &__title {
         margin-bottom: 40px;
+        
+        @media (max-width: $xs) {
+            margin-bottom: 20px;
+        }
     }
 
     // .login-page__form
@@ -36,6 +40,10 @@
 
         &--mt {
             margin-top: 40px;
+
+            @media (max-width: $xs) {
+                margin-top: 30px;
+            }
         }
     }
 
@@ -46,5 +54,9 @@
 
         color: $text-secondary;
         @include body14;
+
+        @media (max-width: $xs) {
+            margin-top: 30px;
+        }
     }
 }

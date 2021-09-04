@@ -112,7 +112,7 @@
             background-color: $text-secondary;
             border-radius: 3px;
             cursor: pointer;
-            
+
             @media (max-width: $xs) {
                 height: 2px;
             }
@@ -142,11 +142,15 @@
 
             flex-direction: column;
             justify-content: center;
-            padding: 30px 15px 20px;
+            padding: 50px 15px 20px;
 
             background-color: #404040;
 
             transition: transform 0.4s;
+        }
+
+        @media (max-width: $sm) {
+            padding-top: 30px;
         }
 
         @media (max-height: 500px) {
@@ -216,6 +220,16 @@
 
         @media (max-width: $lg) {
             display: block;
+        }
+
+        .s-icon {
+            width: 48px;
+            height: 48px;
+
+            @media (max-width: $sm) {
+                width: 36px;
+                height: 36px;
+            }
         }
     }
 
