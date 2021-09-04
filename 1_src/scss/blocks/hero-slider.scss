@@ -15,8 +15,13 @@
 
     &__slide {
         background-size: cover;
-        background-position: center;
+        background-position: left center;
         background-repeat: no-repeat;
+
+        &::before {
+            content: "";
+            position: absolute;
+        }
     }
 
     // .hero-slider__slide-inner
@@ -26,6 +31,17 @@
         align-items: flex-end;
         min-height: 512px;
         padding: 0 10px;
+
+        @media (max-width: $md) {
+            min-height: 290px;
+            padding-top: 130px;
+        }
+
+        @media (max-width: $xs) {
+            min-height: 230px;
+        }
+
+        
     }
 
     // .hero-slider__content
@@ -43,6 +59,19 @@
         font-size: 48px;
         line-height: 1.17;
         font-weight: 700;
+
+
+        @media (max-width: $md) {
+            font-size: 40px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 30px;
+        }
+
+        @media (max-width: $xs) {
+            font-size: 26px;
+        }
     }
 
     // .hero-slider__link
@@ -77,15 +106,24 @@
         height: 40px;
         padding: 0;
 
-        background-color: rgba(#0F0F0F, 0.5);
+        background-color: rgba(#0f0f0f, 0.5);
         border: none;
         border-radius: 2px;
         outline: transparent;
 
         transition: 0.3s background-color;
 
+        @media (max-width: $md) {
+            top: 24px;
+            transform: translate(0);
+        }
+
+        @media (max-width: $sm) {
+            top: 80px;
+        }
+
         &:hover {
-            background-color: rgba(#0F0F0F, 0.8);
+            background-color: rgba(#0f0f0f, 0.8);
         }
 
         &:disabled {
@@ -96,13 +134,21 @@
 
         &--prev {
             left: 16px;
+
+            @media (max-width: $md) {
+                left: 10px;
+            }
         }
 
         // .hero-slider__btn--next
 
         &--next {
             right: 16px;
-            
+
+            @media (max-width: $md) {
+                right: 10px;
+            }
+
             .s-icon {
                 transform: rotate(180deg);
             }
@@ -120,5 +166,21 @@
 
         max-width: 697px;
         width: 100%;
+
+        @media (max-width: $md) {
+            top: 20px;
+            left: 62px;
+            right: 62px;
+            // bottom: 20px;
+            transform: translate(0, 0);
+
+            max-width: 100%;
+            width: auto;
+        }
+
+        @media (max-width: $sm) {
+            left: 10px;
+            right: 10px;
+        }
     }
 }
