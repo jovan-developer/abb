@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hero-slider
     const heroSlider = new Swiper('.hero-slider__slider', {
-
+        navigation: {
+            prevEl: '.hero-slider__btn--prev',
+            nextEl: '.hero-slider__btn--next'
+        }
     })
 
     // product-thumb-slider
