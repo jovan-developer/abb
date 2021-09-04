@@ -9,5 +9,9 @@
 
     &__title {
         margin-bottom: 33px;
+
+        @media (max-width: $xs) {
+            margin-bottom: 25px;
+        }
     }
 }

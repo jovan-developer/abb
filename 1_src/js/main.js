@@ -157,16 +157,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const menu = (menuSel, openSel, closeSel) => {
         let menu = document.querySelector(menuSel)
-        let closeBtn = document.querySelector(closeSel)
-        let openBtn = document.querySelector(openSel)
 
-        openBtn.addEventListener('click', () => {
-            menu.classList.add('active')
-        })
+        if (menu) {
+            let closeBtn = document.querySelector(closeSel)
+            let openBtn = document.querySelector(openSel)
 
-        closeBtn.addEventListener('click', () => {
-            menu.classList.remove('active')
-        })
+            openBtn.addEventListener('click', () => {
+                menu.classList.add('active')
+            })
+
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('active')
+            })
+        }
     }
-    menu('.header__list', '.header__menu-burger','.header__menu-close')
+    menu('.header__list', '.header__menu-burger', '.header__menu-close')
 })

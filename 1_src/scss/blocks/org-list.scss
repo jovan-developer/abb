@@ -1,6 +1,10 @@
 .org-list {
     margin-bottom: 40px;
 
+    @media (max-width: $sm) {
+        margin-bottom: 30px;
+    }
+
     // .org-list__inner
 
     &__inner {
@@ -22,11 +26,15 @@
     // .org-list__title
 
     &__title {
-        margin-top: 42px;
+        margin-top: 8px;
         margin-bottom: 24px;
 
         color: $text-primary;
         @include h2;
+
+        @media (max-width: $xs) {
+            margin: 0;
+        }
     }
 
     // .org-list__list

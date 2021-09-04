@@ -1,5 +1,5 @@
 .reg-agreement {
-    margin-top: 40px;
+    margin-top: 7px;
 
     // .reg-agreement__inner
 
@@ -21,14 +21,26 @@
         @include body14;
         line-height: 20px;
 
+        @media (max-width: $xs) {
+            margin-bottom: 30px;
+        }
+
         h2 {
             margin-bottom: 24px;
 
             @include h3;
+
+            @media (max-width: $xs) {
+                margin-bottom: 15px;
+            }
         }
 
         p {
             margin: 0 0 20px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 12px;
+            }
         }
 
         ol {
@@ -44,6 +56,10 @@
             li {
                 &:not(:last-child) {
                     margin-bottom: 20px;
+
+                    @media (max-width: $xs) {
+                        margin-bottom: 12px;
+                    }
                 }
 
                 &::before {
@@ -58,6 +74,10 @@
 
     &__agreement {
         margin-top: 44px;
+
+        @media (max-width: $xs) {
+            margin-top: 24px;
+        }
     }
 
     // .reg-agreement__agreement-check
@@ -67,6 +87,10 @@
 
         color: $text-primary;
         @include body14;
+
+        @media (max-width: $xs) {
+            margin-bottom: 22px;
+        }
 
         a {
             color: $text-brand;
