@@ -154,4 +154,19 @@ document.addEventListener('DOMContentLoaded', () => {
     mainMenu('.js-menu', '.js-menu__title', '.js-menu__content', '.js-menu__close', '.main-menu__overlay', 38)
 
     bindModal('.js-video-play', true)
+
+    const menu = (menuSel, openSel, closeSel) => {
+        let menu = document.querySelector(menuSel)
+        let closeBtn = document.querySelector(closeSel)
+        let openBtn = document.querySelector(openSel)
+
+        openBtn.addEventListener('click', () => {
+            menu.classList.add('active')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('active')
+        })
+    }
+    menu('.header__list', '.header__menu-burger','.header__menu-close')
 })
