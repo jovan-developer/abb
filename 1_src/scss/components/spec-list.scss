@@ -13,9 +13,21 @@
     
         color: $text-secondary;
         @include caption;
+
+        @media (max-width: $xs) {
+            font-size: 11px;
+        }
+
+        @media (max-width: $min) {
+            font-size: 9px;
+        }
     
         &:not(:last-child) {
             padding-right: 17px;
+
+            @media (max-width: $xs) {
+                padding-right: 12px;
+            }
     
             &::after {
                 content: "•";
@@ -23,6 +35,10 @@
                 right: 5px;
                 top: 50%;
                 transform: translateY(-50%);
+
+                @media (max-width: $xs) {
+                    right: 3px;
+                }
             }
         }
     }

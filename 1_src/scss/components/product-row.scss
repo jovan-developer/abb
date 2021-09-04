@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
 
-    // .catalog-row__search
+    // .product-row__search
 
     &__search {
         display: flex;
@@ -12,25 +12,35 @@
 
         margin-bottom: 16px;
 
+        @media (max-width: $md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .search-block {
             max-width: 612px;
             margin-right: 20px;
+
+            @media (max-width: $md) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
     }
 
-    // .catalog-row__select
+    // .product-row__select
 
     &__select {
         width: 100%;
         max-width: 230px;
     }
 
-    // .catalog-row__catalog
+    // .product-row__catalog
 
     &__catalog {
         flex-grow: 1;
     }
-    // .catalog-row__founded
+    // .product-row__founded
 
     &__founded {
         padding-bottom: 8px;
@@ -45,12 +55,12 @@
         }
     }
 
-    // .catalog-row__list
+    // .product-row__list
 
     &__list {
     }
 
-    // .catalog-row__row
+    // .product-row__row
 
     &__row {
         position: relative;
@@ -58,37 +68,63 @@
         padding: 15px 74px 21px 24px;
 
         border-bottom: 0.5px solid $divider;
+
+        @media (max-width: $md) {
+            padding-right: 25px;
+            padding-left: 0;
+        }
+
+        @media (max-width: $sm) {
+            padding-top: 10px;
+            padding-bottom: 12px;
+        }
     }
 
-    // .catalog-row__title
+    // .product-row__title
 
     &__title {
         margin-bottom: 4px;
 
         color: $text-primary;
         @include body16;
+
+        @media (max-width: $sm) {
+            font-size: 14px;
+        }
+
+        @media (max-width: $xs) {
+            font-size: 13px;
+        }
+
+        @media (max-width: $min) {
+            font-size: 12px;
+        }
     }
 
-    // .catalog-row__link
+    // .product-row__link
 
     &__link {
         position: absolute;
         right: 12px;
         top: 28px;
 
+        @media (max-width: $md) {
+            right: 0;
+        }
+
         .s-icon {
             fill: $text-tertiary;
         }
     }
 
-    // .catalog-row__icon-right
+    // .product-row__icon-right
 
     &__icon-right {
         margin-top: -4px;
         margin-bottom: -4px;
     }
 
-    // .catalog-row__icon-left
+    // .product-row__icon-left
 
     &__icon-left {
         margin-top: -4px;
@@ -96,7 +132,7 @@
         margin-right: 2px;
     }
 
-    // .catalog-row__not-found
+    // .product-row__not-found
 
     &__not-found {
         display: flex;

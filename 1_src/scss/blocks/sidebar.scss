@@ -20,6 +20,11 @@
         .sidebar__title {
             padding-top: 0;
             margin-bottom: -5px;
+
+            @media (max-width: $sm) {
+                padding-top: 13px;
+                margin-bottom: 0;
+            }
         }
 
         .sidebar__content {

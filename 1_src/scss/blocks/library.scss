@@ -3,12 +3,20 @@
 
     .product-row__row {
         padding-bottom: 20px;
+
+        @media (max-width: $sm) {
+            padding-bottom: 12px;
+        }
     }
 
     // .library__inner
 
     &__inner {
         display: flex;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
     }
 
     // .library__sidebar
@@ -16,6 +24,15 @@
     &__sidebar {
         max-width: 278px;
         margin-right: 28px;
+
+        @media (max-width: $md) {
+            margin-right: 14px;
+        }
+
+        @media (max-width: $sm) {
+            max-width: 100%;
+            margin: 0 0 15px 0;
+        }
 
         .sidebar__content.active {
             padding-bottom: 10px;

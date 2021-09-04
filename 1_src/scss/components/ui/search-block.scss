@@ -9,6 +9,10 @@
     &--btn {
         .search-block__input {
             padding-right: 112px;
+
+            @media (max-width: $xs) {
+                padding-right: 76px;
+            }
         }
     }
 
@@ -21,6 +25,10 @@
         transform: translateY(-50%);
 
         stroke: $text-tertiary;
+
+        @media (max-width: $xs) {
+            left: 6px;
+        }
     }
 
     // .search-block__input
@@ -37,6 +45,10 @@
         border-bottom-left-radius: 2px;
 
         transition: 0.2s border-color;
+
+        @media (max-width: $xs) {
+            padding: 9px 24px 9px 32px;
+        }
 
         &:focus {
             border: 1px solid $text-primary;
@@ -69,5 +81,10 @@
         border-bottom-right-radius: 2px;
 
         transition: 0.2s border-color;
+
+        @media (max-width: $xs) {
+            font-size: 12px;
+            padding: 9px 12px;
+        }
     }
 }

@@ -1,55 +1,57 @@
 <div class="pagination">
     <div class="pagination__inner">
-        <button class="pagination__btn pagination__btn--left" disabled>
-            <span class="visually-hidden">Предыдущая страница</span>
-            <svg class="s-icon s-icon--md">
-                <use xlink:href="img/svg/sprite1.svg#ic32_arrow"></use>
-            </svg>
-        </button>
+        <div class="pagination__wrapper">
+            <button class="pagination__btn pagination__btn--left" disabled>
+                <span class="visually-hidden">Предыдущая страница</span>
+                <svg class="s-icon s-icon--md">
+                    <use xlink:href="img/svg/sprite1.svg#ic32_arrow"></use>
+                </svg>
+            </button>
 
-        <ul class="pagination__list">
-            <li class="pagination__item pagination__item--active">
-                <a class="pagination__link" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">4</a>
-            </li>
+            <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active">
+                    <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">4</a>
+                </li>
 
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">5</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">6</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">7</a>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">8</a>
-            </li>
-            {% if paginationSimple %}
-            {% else %}
-            <li class="pagination__item">
-                <span class="pagination__dots">...</span>
-            </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">20</a>
-            </li>
-            {% endif %}
-        </ul>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">5</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">6</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">7</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">8</a>
+                </li>
+                {% if paginationSimple %}
+                {% else %}
+                <li class="pagination__item">
+                    <span class="pagination__dots">...</span>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">20</a>
+                </li>
+                {% endif %}
+            </ul>
 
-        <button class="pagination__btn pagination__btn--right">
-            <span class="visually-hidden">Следующая страница</span>
-            <svg class="s-icon s-icon--md">
-                <use xlink:href="img/svg/sprite1.svg#ic32_arrow"></use>
-            </svg>
-        </button>
+            <button class="pagination__btn pagination__btn--right">
+                <span class="visually-hidden">Следующая страница</span>
+                <svg class="s-icon s-icon--md">
+                    <use xlink:href="img/svg/sprite1.svg#ic32_arrow"></use>
+                </svg>
+            </button>
+        </div>
 
         <div class="pagination__total">
             25–50 из 250
