@@ -17,6 +17,14 @@
         width: 100%;
         display: flex;
         padding-left: 16px;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $md) {
+            padding: 0 10px;
+        }
     }
 
     // .docs__sidebar
@@ -27,17 +35,43 @@
         margin-right: 28px;
         padding-top: 24px;
         padding-bottom: 80px;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+            padding-bottom: 20px;
+            padding-right: 16px;
+            margin-right: 0;    
+        }
+
+        @media (max-width: $md) {
+            padding-right: 0;
+        }
+
+        @media (max-width: $sm) {
+            padding-bottom: 15px;
+        }
     }
 
     // .docs__sidebar-list
 
     &__sidebar-list {
         margin-top: 2px;
+
+        @media (max-width: $lg) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     // .docs__sidebar-item
 
     &__sidebar-item {
+        @media (max-width: $lg) {
+            width: auto;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
         &.active {
             .docs__sidebar-link {
                 color: $text-primary;
@@ -85,11 +119,23 @@
 
         background-color: $bg;
 
+        @media (max-width: $md) {
+            margin: 15px 0;
+        }
+
+        @media (max-width: $sm) {
+            padding: 12px 16px;
+        }
+
         &::before {
             content: url(../img/news/pic_info.svg);
             position: absolute;
             top: 0;
             left: 0;
+
+            @media (max-width: $sm) {
+                opacity: 0.3;
+            }
         }
     }
 
@@ -98,6 +144,10 @@
     &__info-title {
         margin: 0 0 8px 0;
         @include body16m;
+
+        @media (max-width: $sm) {
+            margin-bottom: 2px;
+        }
     }
 
     // .docs__info-text
@@ -139,15 +189,31 @@
         display: flex;
         height: 100%;
 
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
+
         &:first-child {
             .docs__text-content {
                 padding-top: 24px;
+
+                @media (max-width: $md) {
+                    padding-top: 0;
+                }
             }
         }
 
         &:last-child {
             .docs__text-content {
                 padding-bottom: 80px;
+
+                @media (max-width: $md) {
+                    padding-bottom: 0px;
+                }
+            }
+
+            @media (max-width: $md) {
+                padding-bottom: 40px;
             }
         }
     }
@@ -161,6 +227,18 @@
         padding: 16px;
 
         background-color: #404040;
+
+        @media (max-width: $lg) {
+            margin-left: 14px;
+        }
+
+        @media (max-width: $md) {
+            margin: 10px 0;
+        }
+
+        @media (max-width: $xs) {
+            padding: 12px 8px;
+        }
     }
 
     // .docs__text-content
@@ -169,8 +247,16 @@
         max-width: 584px;
         width: 100%;
 
+        @media (max-width: $md) {
+            max-width: 100%;
+        }
+
         h3 {
             margin-bottom: 24px;
+
+            @media (max-width: $md) {
+                margin-bottom: 12px;
+            }
 
             color: $text-primary;
             @include h3;
@@ -190,6 +276,11 @@
 
         .table-content {
             margin: 37px 0 40px;
+
+            @media (max-width: $md) {
+                max-width: 600px;
+                margin: 20px 0;
+            }
         }
 
         .table-content__th,
@@ -200,6 +291,10 @@
 
             &:nth-child(2) {
                 max-width: 252px;
+
+                @media (max-width: $xs) {
+                    max-width: 100%;
+                }
             }
 
             &:nth-child(3) {
@@ -214,8 +309,16 @@
             color: $text-primary;
             @include body14;
 
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
+
             &:not(:last-child) {
                 margin: 0 0 40px 0;
+
+                @media (max-width: $md) {
+                    margin-bottom: 20px;
+                }
             }
         }
 

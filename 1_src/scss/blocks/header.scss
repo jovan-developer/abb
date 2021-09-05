@@ -106,6 +106,7 @@
         }
 
         span {
+            display: block;
             height: 3px;
             width: 100%;
 
@@ -120,7 +121,7 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
 
-                @media (max-width: $xs) {
+                @media (max-width: $sm) {
                     margin-bottom: 7px;
                 }
             }
@@ -145,6 +146,8 @@
             padding: 50px 15px 20px;
 
             background-color: #404040;
+
+            border-bottom: 1px solid #fff;
 
             transition: transform 0.4s;
         }
