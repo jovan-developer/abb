@@ -4,6 +4,10 @@
     &__title {
         margin-top: 32px;
         margin-bottom: 40px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 25px;
+        }
     }
 
     // .account__inner
@@ -12,6 +16,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;    
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
     }
 
     // .account__content
@@ -19,12 +27,21 @@
     &__content {
         margin-right: 20px;
         max-width: 686px;
+
+        @media (max-width: $sm) {
+            max-width: 100%;
+            margin: 0 0 20px 0;
+        }
     }
 
     // .account__block
 
     &__block {
         padding: 24px 0 0;
+
+        @media (max-width: $sm) {
+            padding: 15px 0 0;
+        }
 
         &:first-child {
             padding-top: 0;
@@ -34,6 +51,10 @@
             padding-bottom: 24px;
             
             border-bottom: 0.5px solid $divider;
+
+            @media (max-width: $sm) {
+                padding-bottom: 15px;
+            }
         }
     }
 
@@ -62,11 +83,20 @@
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 26px;
+
+        @media (max-width: $xs) {
+            margin-bottom: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     // .account__contacts-data
 
     &__contacts-data {
+       @media (max-width: $xs) {
+           margin-bottom: 10px;
+       }
     }
 
     // .account__contacts-item
@@ -106,6 +136,10 @@
 
         color: $text-primary;
         @include h3;
+
+        @media (max-width: $xs) {
+            margin-bottom: 15px;
+        }
     }
 
     // .account__data
@@ -118,6 +152,10 @@
     &__data-item {
         display: flex;
         width: 100%;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
 
         &:not(:last-child) {
             margin-bottom: 12px;
@@ -132,6 +170,10 @@
         margin-right: 20px;
 
         color: $text-secondary;
+
+        @media (max-width: $xs) {
+            margin: 0 0 3px 0;
+        }
     }
 
     // .account__data-value
@@ -162,6 +204,16 @@
         padding: 16px 8px 24px 24px;
 
         background-color: $bg;
+
+        @media (max-width: $md) {
+            max-width: 280px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: $sm) {
+            max-width: 100%;
+            padding: 15px;
+        }
     }
 
     // .account__signature
@@ -178,9 +230,17 @@
     &__sidebar-block {
         padding: 16px 0 0;
 
+        @media (max-width: $sm) {
+            padding: 12px 0 0;
+        }
+
         &:not(:last-child) {
             border-bottom: 0.5px solid $divider;
             padding-bottom: 24px;
+
+            @media (max-width: $sm) {
+                padding-bottom: 12px;
+            }
         }
     }
 
