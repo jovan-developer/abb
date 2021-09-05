@@ -19,6 +19,14 @@
         }
     }
 
+    &__content {
+        width: 100%;
+    }
+
+    &__catalog {
+        height: 100%;
+    }
+
     // .library__sidebar
 
     &__sidebar {
@@ -52,7 +60,6 @@
         }
     }
 
-
     // .library__title
 
     &__title {
@@ -60,5 +67,28 @@
 
         color: $text-primary;
         @include body16;
+    }
+
+    // .library__title
+
+    &__title {
+    }
+
+    &__not-found {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (max-width: $sm) {
+            margin-top: 20px;
+        }
+
+        img {
+            @media (max-width: $xs) {
+                max-width: 220px;
+            }
+        }
     }
 }
