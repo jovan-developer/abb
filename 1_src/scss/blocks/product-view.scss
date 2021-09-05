@@ -1,6 +1,10 @@
 .product-view {
     margin-bottom: 50px;
 
+    @media (max-width: $sm) {
+        margin-bottom: 15px;
+    }
+
     // .product-view__header
 
     &__header {
@@ -8,6 +12,11 @@
         justify-content: space-between;
         align-items: flex-start;
         padding-top: 16px;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
     }
 
     // .product-view__btn-save
@@ -17,12 +26,26 @@
         width: 100%;
         margin-top: 16px;
         margin-left: 20px;
+
+        @media (max-width: $sm) {
+            margin: 0;
+        }
     }
 
     // .product-view__title
 
     &__title {
         margin-bottom: 26px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            @media (max-width: $xs) {
+                font-size: 26px;
+            }
+        }
     }
 
     // .product-view__inner
@@ -47,6 +70,11 @@
             max-width: 100%;
             display: flex;
             align-items: flex-start;
+            margin: 0 0 20px;
+        }
+
+        @media (max-width: $sm) {
+            justify-content: space-between;
         }
     }
 
@@ -59,7 +87,7 @@
         margin-bottom: 40px;
 
         @media (max-width: $md) {
-            margin-right: 30px;
+            margin: 0 15px 0 0;
         }
     }
 
@@ -67,6 +95,10 @@
 
     &__aside {
         max-width: 300px;
+
+        @media (max-width: $xs) {
+            display: none;
+        }
     }
 
     // .product-view__slider
@@ -187,6 +219,8 @@
     // .product-view__status-wrapper
 
     &__status-wrapper {
+        display: flex;
+        flex-wrap: wrap;
         margin-bottom: 16px;
     }
 
@@ -202,6 +236,10 @@
 
         background-color: $brand-primary-bg;
         border-radius: 16px;
+        
+        @media (max-width: $sm) {
+            margin-bottom: 5px;
+        }
 
         &:not(:last-child) {
             margin-right: 5px;
@@ -220,6 +258,10 @@
 
     &__data {
         margin-bottom: 24px;
+
+        @media (max-width: $xs) {
+            margin-bottom: 15px;
+        }
     }
 
     // .product-view__list
@@ -232,6 +274,10 @@
 
     &__item {
         display: flex;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
 
         &:not(:last-child) {
             margin-bottom: 12px;
@@ -246,6 +292,14 @@
         margin-right: 20px;
 
         color: $text-secondary;
+
+        @media (max-width: $sm) {
+            margin-right: 10px;
+        }
+
+        @media (max-width: $xs) {
+            margin: 0 0 2px 0;
+        }
     }
 
     // .product-view__value

@@ -17,7 +17,7 @@ function bindModal(triggerSelector, isOverlayClickable) {
 				modal.classList.remove('active')
 				overlay.classList.remove('active')
 				html.style.overflow = ''
-				body.style.marginRight = `0px`
+				html.style.marginRight = `0px`
 				overlay.classList.remove('active')
 			})
 		}
@@ -30,7 +30,7 @@ function bindModal(triggerSelector, isOverlayClickable) {
 			modal.classList.add('active')
 			overlay.classList.add('active')
 			html.style.overflow = 'hidden'
-			body.style.marginRight = `${scroll}px`
+			html.style.marginRight = `${scroll}px`
 			overlay.classList.add('active')
 		})
 
@@ -38,7 +38,7 @@ function bindModal(triggerSelector, isOverlayClickable) {
 			modal.classList.remove('active')
 			overlay.classList.remove('active')
 			html.style.overflow = ''
-			body.style.marginRight = `0px`
+			html.style.marginRight = `0px`
 			overlay.classList.remove('active')
 		})
 	})
