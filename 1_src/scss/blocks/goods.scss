@@ -10,6 +10,10 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
     }
 
     // .goods__content
@@ -17,6 +21,11 @@
     &__content {
         max-width: 686px;
         width: 100%;
+
+        @media (max-width: $md) {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     // .goods__suptitle
@@ -27,6 +36,11 @@
 
         color: $text-primary;
         @include h3;
+
+        @media (max-width: $sm) {
+            margin-top: 30px;
+            margin-bottom: 18px;
+        }
     }
 
     // .goods__list
@@ -50,6 +64,10 @@
         display: flex;
         justify-content: space-between;
         padding: 11px 16px 12px 0;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
     }
 
     // .goods__name
@@ -57,9 +75,15 @@
     &__name {
         display: flex;
         align-items: center;
+        padding-right: 15px;
 
         color: $text-primary;
         @include body14;
+
+        @media (max-width: $xs) {
+            margin-bottom: 10px;
+            padding-right: 0;
+        }
     }
 
     // .goods__icon
@@ -71,6 +95,12 @@
     // .goods__spec
 
     &__spec {
+        flex-shrink: 0;
+
+        @media (max-width: $xs) {
+            padding-left: 32px;
+        }
+
         .spec-list__item {
             @include body14;
         }
@@ -81,6 +111,14 @@
     &__info {
         max-width: 380px;
         width: 100%;
+
+        @media (max-width: $lg) {
+            margin-left: 20px;
+        }
+
+        @media (max-width: $md) {
+            margin: 0;
+        }
     }
 
     // .goods__info-title
