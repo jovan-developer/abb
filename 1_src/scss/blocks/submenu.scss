@@ -1,6 +1,10 @@
 .submenu {
     border-bottom: 0.5px solid $divider;
 
+    .simplebar-track.simplebar-horizontal {
+        height: 5px;
+    }
+
     // .submenu__navigation
 
     &__navigation {
@@ -17,10 +21,11 @@
 
     &__item {
         position: relative;
+        padding-right: 13px;
+        flex-shrink: 0;
 
         &:not(:last-child) {
             margin-right: 12px;
-            padding-right: 13px;
 
             &::after {
                 content: "";

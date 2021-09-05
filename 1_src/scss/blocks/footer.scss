@@ -159,6 +159,10 @@
         }
 
         @media (max-width: $xs) {
+            // font-size: 12px;
+        }
+
+        @media (max-width: $min) {
             font-size: 12px;
         }
 
