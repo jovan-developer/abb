@@ -189,6 +189,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: $md) {
+            margin-top: 15px;
+        }
     }
 
     // .sidebar__tags

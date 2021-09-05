@@ -17,6 +17,20 @@
     &__table {
     }
 
+    // .catalog-table__header
+
+    &__header {
+        position: relative;
+
+        display: flex;
+
+        border-bottom: 1px solid $divider;
+
+        @media (max-width: $sm) {
+            // display: none;
+        }
+    }
+
     // .catalog-table__row
 
     &__row {
@@ -25,6 +39,11 @@
         display: flex;
 
         border-bottom: 1px solid $divider;
+
+        @media (max-width: $sm) {
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
 
     // .catalog-table__th
@@ -36,6 +55,10 @@
 
         color: $text-secondary;
         @include caption;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
 
         // .catalog-table__th--image
 
@@ -66,6 +89,11 @@
 
         &--series {
             max-width: 132px;
+
+            @media (max-width: $sm) {
+                display: block;
+                margin: 0 auto 0 0;
+            }
         }
     }
 
@@ -103,12 +131,33 @@
         margin-left: 16px;
         padding: 11px 0 12.5px;
 
+        @media (max-width: $sm) {
+            padding: 7px 0 7px;
+        }
+
+        @media (max-width: $xs) {
+            width: auto;
+        }
+
         // .catalog-table__col--image
 
         &--image {
-            max-width: 48px;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
             margin-left: 0;
             padding: 0;
+
+            @media (max-width: $sm) {
+                order: -5;
+                align-self: flex-start;
+                margin-top: 7px;
+            }
+
+            @media (max-width: $xs) {
+                width: 40px;
+                height: 40px;
+            }
         }
 
         // .catalog-table__col--code
@@ -116,23 +165,60 @@
         &--code {
             margin-left: 12px;
             max-width: 106px;
+
+            @media (max-width: $sm) {
+                margin: 0 20px 0 0;
+            }
+            
+            @media (max-width: $xs) {
+                max-width: 100%;
+            }
         }
 
         // .catalog-table__col--type
 
         &--type {
             max-width: 77px;
+
+            @media (max-width: $sm) {
+                margin: 0;
+            }
+
+            @media (max-width: $xs) {
+                max-width: 100%;
+            }
         }
 
         // .catalog-table__col--descr
 
         &--descr {
+            @media (max-width: $sm) {
+                order: -4;
+                flex-grow: 1;
+                width: calc(100% - 68px);
+                margin-left: 20px;
+            }
+
+            @media (max-width: $xs) {
+                margin-left: 10px;
+            }
         }
 
         // .catalog-table__col--series
 
         &--series {
             max-width: 132px;
+
+            @media (max-width: $sm) {
+                width: auto;
+                margin: 0 auto 0 0;
+                order: -3;
+                max-width: 200px;
+            }
+
+            @media (max-width: $xs) {
+                max-width: 100%;
+            }
         }
     }
 
@@ -156,6 +242,12 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @media (max-width: $sm) {
+            position: static;
+            width: 100%;
+            height: 100%;
+        }
 
         img {
             display: block;
