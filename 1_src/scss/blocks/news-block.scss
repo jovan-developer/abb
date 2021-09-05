@@ -17,6 +17,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 36px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 18px;
+        }
     }
 
     // .news-block__item
@@ -25,15 +29,29 @@
         display: flex;
         width: calc((100% - 8px) / 3);
         margin-bottom: 4px;
+
+        @media (max-width: $sm) {
+            width: calc((100% - 4px) / 2);
+        }
+
+        @media (max-width: $xs) {
+            width: 100%;
+            max-width: 400px;
+        }
     }
 
     // .news-block__card
 
     &__card {
         display: block;
+        width: 100%;
         padding: 12px 16px 16px;
 
         background-color: $bg;
+
+        @media (max-width: $md) {
+            padding: 12px 9px 16px;
+        }
     }
 
     // .news-block__date
@@ -44,6 +62,10 @@
 
         color: $text-secondary;
         @include caption;
+
+        @media (max-width: $sm) {
+            margin-bottom: 4px;
+        }
     }
 
     // .news-block__card-title

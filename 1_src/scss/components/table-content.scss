@@ -1,6 +1,10 @@
 .table-content {
     margin: 32px 0;
 
+    @media (max-width: $sm) {
+        margin: 16px 0;
+    }
+
     // .table-content__table-header
 
     &__table-header {
@@ -8,6 +12,10 @@
         padding: 9px 0 11px;
 
         border-bottom: 1px solid $divider;
+
+        @media (max-width: $xs) {
+            display: none;
+        }
     }
 
     // .table-content__th
@@ -18,6 +26,10 @@
 
         color: $text-secondary;
         @include caption;
+
+        @media (max-width: $sm) {
+            margin-left: 10px;
+        }
 
         &:nth-child(1) {
             max-width: 180px;
@@ -45,6 +57,17 @@
         padding: 13px 0 14px;
 
         border-bottom: 0.5px solid $divider;
+
+        @media (max-width: $xs) {
+            flex-wrap: wrap;
+            padding: 7px 0 10px;
+        }
+
+        &:first-child {
+            @media (max-width: $xs) {
+                border-top: 0.5px solid $divider;
+            }
+        }
     }
 
     // .table-content__col
@@ -55,6 +78,14 @@
 
         color: $text-primary;
         @include body14;
+
+        @media (max-width: $sm) {
+            margin-left: 10px;
+        }
+
+        @media (max-width: $xs) {
+            margin: 0 0 8px 0;
+        }
 
         &:nth-child(1) {
             max-width: 180px;
@@ -67,6 +98,10 @@
 
         &:nth-child(3) {
             max-width: 190px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 0;
+            }
         }
     }
 }

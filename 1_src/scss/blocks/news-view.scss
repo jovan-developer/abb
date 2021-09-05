@@ -1,5 +1,9 @@
 .news-view {
     margin-bottom: 40px;
+
+    @media (max-width: $sm) {
+        margin-bottom: 30px;
+    }
     
     // .news-view__header
 
@@ -14,6 +18,14 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @media (max-width: $sm) {
+            min-height: 312px;
+        }
+
+        @media (max-width: $xs) {
+            min-height: 250px;
+        }
     }
 
     // .news-view__inner
@@ -24,6 +36,19 @@
         padding: 32px 98px 80px;
 
         background-color: $white;
+
+        @media (max-width: $md) {
+            padding: 30px 30px 60px;
+        }
+
+        @media (max-width: $sm) {
+            margin-top: 0;
+            padding: 20px 0 50px;
+        }
+
+        @media (max-width: $xs) {
+            padding-bottom: 30px;
+        }
     }
 
     // .news-view__link
@@ -34,12 +59,30 @@
 
         color: $text-brand;
         @include body14;
+
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
     }
 
     // .news-view__title
 
     &__title {
         margin-bottom: 14px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 7px;
+        }
+
+        h1 {
+            @media (max-width: $sm) {
+                font-size: 30px;
+            }
+
+            @media (max-width: $xs) {
+                font-size: 26px;
+            }
+        }
     }
 
     // .news-view__subtitle
@@ -49,6 +92,10 @@
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 40px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 15px;
+        }
     }
 
     // .news-view__characteristic
@@ -81,13 +128,27 @@
         color: $text-primary;
         @include body16;
 
+        @media (max-width: $sm) {
+            font-size: 14px;
+        }
+
         p {
             margin: 25px 0 0;
+
+            @media (max-width: $sm) {
+                margin: 13px 0 0;
+            }
         }
 
         img {
             display: block;
             margin: 40px 0;
+            width: 100%;
+            max-height: 500px;
+
+            @media (max-width: $sm) {
+                margin: 20px 0;
+            }
         }
     }
 
@@ -101,11 +162,24 @@
 
         background-color: $bg;
 
+        @media (max-width: $sm) {
+            padding: 15px 16px 15px 58px;
+            margin: 16px 0;
+        }
+
+        @media (max-width: $xs) {
+            padding: 15px 12px;
+        }
+
         &::before {
             content: url(../img/news/pic_info.svg);
             position: absolute;
             top: 0;
             left: 0;
+
+            @media (max-width: $xs) {
+                opacity: 0.3;
+            }
         }
 
         p {
