@@ -11,5 +11,9 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+
+        @media (max-width: $xs) {
+            justify-content: space-between;
+        }
     }
 }
