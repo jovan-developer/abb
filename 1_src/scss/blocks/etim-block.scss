@@ -342,10 +342,6 @@
 
                 &:nth-child(3) {
                     max-width: 24px;
-
-                    .s-icon {
-                        fill: $text-tertiary;
-                    }
                 }
             }
         }
@@ -390,6 +386,22 @@
 
         b {
             font-weight: 700;
+        }
+    }
+
+    // .etim-block__external
+
+    &__external {
+        &:hover {
+            .s-icon {
+                fill: $text-primary;
+            }
+        }
+
+        .s-icon {
+            fill: $text-tertiary;
+
+            transition: 0.35s fill;
         }
     }
 

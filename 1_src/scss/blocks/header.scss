@@ -18,7 +18,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        padding: 15px 0 16px 16px;
+        padding: 15px 0 14px 16px;
 
         @media (max-width: $lg) {
             padding-left: 0;
@@ -272,8 +272,8 @@
         flex-shrink: 0;
         max-width: 300px;
         padding-right: 4px;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        // padding-top: 4px;
+        // padding-bottom: 4px;
 
         @media (max-width: $lg) {
             margin-left: auto;
@@ -283,13 +283,21 @@
     // .header__profile
 
     &__profile {
-        margin-right: 16px;
+        display: inline-block;
+        margin-right: 8px;
+        padding: 4px 8px 6px;
 
         @include caption;
         text-align: right;
 
+        transition: 0.3s background-color;
+
         @media (max-width: $xs) {
             display: none;
+        }
+
+        &:hover {
+            background-color: $chip;
         }
     }
 
