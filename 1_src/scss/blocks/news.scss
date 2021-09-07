@@ -88,6 +88,7 @@
     // .news__article
 
     &__article {
+        width: 100%;
         padding: 15px 24px 20px;
 
         @media (max-width: $md) {
