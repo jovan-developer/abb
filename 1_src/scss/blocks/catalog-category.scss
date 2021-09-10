@@ -2,7 +2,7 @@
     margin: 23px 0;
 
     @media (max-width: $sm) {
-        margin: 10px 0;
+        margin: 0;
     }
 
     // .catalog-category__inner
@@ -30,6 +30,10 @@
 
     &__search {
         margin-bottom: 16px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
     }
 
     // .catalog-category__content

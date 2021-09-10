@@ -1,6 +1,41 @@
 .sidebar {
     width: 100%;
 
+
+    &.js-sidebar-filter {
+        @media (max-width: $md) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 100%;
+            left: 0;
+            z-index: 101;
+
+            margin: 0;
+            padding: 0 16px;
+            overflow-y: auto;
+            max-height: 100vh;
+
+            background-color: #fff;
+            
+            transition: bottom 0.3s;
+        }
+
+        &.active {
+            @media (max-width: $md) {
+                bottom: 0;
+            }
+        }
+
+        .sidebar__item {
+            &:not(:last-child) {
+                @media (max-width: $md) {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+
     // .sidebar__filters
 
     &__filters {
@@ -256,6 +291,38 @@
 
         &:hover {
             background-color: $brand-primary-bg;
+        }
+    }
+
+    // sidebar__filter-close
+
+    &__filter-close {
+        display: none;
+        position: absolute;
+        left: 12px;
+        top: 12px;
+
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+
+        @media (max-width: $md) {
+            display: block;
+        }
+    }
+
+    // .sidebar__filter-title
+
+    &__filter-title {
+        display: none;
+        padding: 15px 16px 17px 41px;
+
+        color: $text-primary;
+        @include body16m;
+
+        @media (max-width: $md) {
+            display: block;
         }
     }
 }

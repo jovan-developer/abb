@@ -25,7 +25,8 @@
 
 <body>
     {% set headerAuth = true %}
-    {% include 'parts/header.njk' %}
+    {% set headerPageTitle = "ABB i-bus EIB/KNX Блоки электропитания" %}
+    {% include 'parts/header-filters.njk' %}
 
     <main class="main">
         {% include 'parts/breadcrumbs.njk' %}

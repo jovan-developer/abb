@@ -21,6 +21,7 @@
     // .pagination__btn
 
     &__btn {
+        flex-shrink: 0;
         padding: 0;
 
         background-color: transparent;
@@ -28,11 +29,6 @@
 
         .s-icon {
             fill: $text-primary;
-
-            @media (max-width: $min) {
-                width: 24px;
-                height: 24px;
-            }
         }
 
         // .pagination__btn--left
@@ -75,11 +71,6 @@
 
         border-radius: 1px;
 
-        @media (max-width: $xs) {
-            margin-right: 2px;
-            font-size: 12px;
-        }
-
         &:hover {
             .pagination__link {
                 background-color: $brand-primary-bg;
@@ -105,19 +96,10 @@
         justify-content: center;
         width: 32px;
         height: 32px;
+        border-radius: 1px;
         // padding: 6px 5px;
 
         transition: color 0.3s, background-color 0.3s;
-
-        @media (max-width: $xs) {
-            width: 24px;
-            height: 24px;
-        }
-
-        @media (max-width: $min) {
-            width: 22px;
-            height: 22px;
-        }
     }
 
     // .pagination__dots
@@ -128,16 +110,6 @@
         justify-content: center;
         width: 32px;
         height: 32px;
-
-        @media (max-width: $xs) {
-            width: 24px;
-            height: 24px;
-        }
-
-        @media (max-width: $min) {
-            width: 22px;
-            height: 22px;
-        }
     }
 
     // .pagination__total
@@ -152,7 +124,7 @@
         @include caption;
 
         @media (max-width: $md) {
-            position: static;
+            display: none;
         }
     }
 

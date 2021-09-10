@@ -1,7 +1,13 @@
-<header class="header">
+<header class="header header--filters">
     <div class="container-wide">
         {% if headerAuth %}
         <div class="header__inner">
+            <a class="header__close" href="#">
+                <svg class="s-icon s-icon--md">
+                    <use xlink:href="img/svg/sprite1.svg#ic32_arrow_left"></use>
+                </svg>
+            </a>
+
             <button class="header__menu-burger">
                 Открыть меню
                 <span></span>
@@ -9,7 +15,7 @@
                 <span></span>
             </button>
 
-            <h1 class="header__page-title">
+            <h1 class="header__page-title header__page-title--body">
                 {{headerPageTitle}}
             </h1>
 
@@ -65,6 +71,12 @@
                 </button>
             </div>
 
+
+            <button class="header__filter">
+                <svg class="s-icon s-icon--md">
+                    <use xlink:href="img/svg/sprite1.svg#ic32_filter"></use>
+                </svg>
+            </button>
             <div class="header__search">
                 <label class="header__search-label">
                     <svg class="header__search-close s-icon s-icon--md">

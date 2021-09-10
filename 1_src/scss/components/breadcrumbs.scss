@@ -1,6 +1,10 @@
 .breadcrumbs {
     margin: 14px 0;
 
+    @media (max-width: $sm) {
+        display: none;
+    }
+
     .simplebar-track.simplebar-horizontal {
         height: 5px;
     }

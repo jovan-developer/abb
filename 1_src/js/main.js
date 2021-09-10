@@ -215,15 +215,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     clearInput('.header__search-input', '.header__search-clear')
 
+    const headerFilter = (filterSel, openSel, closeSel) => {
+        const open = document.querySelector(openSel)
 
-    const mainPaddingTop = (mainSel, headerSel) => {
-        const main = document.querySelector(mainSel)
-        const header = document.querySelector(headerSel)
+        if (open) {
+            const filter = document.querySelector(filterSel)
+            const close = document.querySelector(closeSel)
 
-        main.style.paddingTop = header.clientHeight + 'px'
+            open.addEventListener('click', () => {
+                filter.classList.add('active')
+            })
 
-        console.log(header.offsetHeight);
-
+            close.addEventListener('click', () => {
+                filter.classList.remove('active')
+            })
+        }
     }
-    mainPaddingTop('.main', '.header')
+
+    headerFilter('.js-sidebar-filter', '.header__filter', '.sidebar__filter-close')
 })
