@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     @include('functions/phoneMask.js')
     @include('functions/modal.js')
     @include('functions/passwordEye.js')
+    @include('functions/dynamic-adaptive.js')
 
     // Function to style select
     select('.select')
@@ -158,21 +159,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bindModal('.js-video-play', true)
 
-    const menu = (menuSel, openSel, closeSel) => {
+    const menu = (menuSel, openSel) => {
         let menu = document.querySelector(menuSel)
 
         if (menu) {
-            let closeBtn = document.querySelector(closeSel)
             let openBtn = document.querySelector(openSel)
 
             openBtn.addEventListener('click', () => {
-                menu.classList.add('active')
-            })
-
-            closeBtn.addEventListener('click', () => {
-                menu.classList.remove('active')
+                menu.classList.toggle('active')
+                openBtn.classList.toggle('active')
             })
         }
     }
-    menu('.header__list', '.header__menu-burger', '.header__menu-close')
+    menu('.header__menu', '.header__menu-burger')
+
+    const searchMenu = (searchMenuSel, openSel, closeSel) => {
+        let searchMenu = document.querySelector(searchMenuSel)
+
+        if (menu) {
+            let openBtn = searchMenu.querySelector(openSel)
+            let closeBtn = searchMenu.querySelector(closeSel)
+
+            openBtn.addEventListener('click', () => {
+                searchMenu.classList.add('active')
+            })
+
+            closeBtn.addEventListener('click', () => {
+                searchMenu.classList.remove('active')
+            })
+        }
+    }
+
+    searchMenu('.header__search', '.header__search-open', '.header__search-close')
+
+    const clearInput = (inputSel, clearBtn) => {
+        const input = document.querySelector(inputSel)
+    
+        if (input) {
+            const clear = document.querySelector(clearBtn)
+
+            clear.addEventListener('click', () => {
+                input.value = ''
+                clear.classList.remove('active')
+            })
+
+            input.addEventListener('input', () => {
+                if (input.value.length > 0) {
+                    clear.classList.add('active')
+                } else {
+                    clear.classList.remove('active')
+                }
+            })
+        }
+    }
+
+    clearInput('.header__search-input', '.header__search-clear')
+
+
+    const mainPaddingTop = (mainSel, headerSel) => {
+        const main = document.querySelector(mainSel)
+        const header = document.querySelector(headerSel)
+
+        main.style.paddingTop = header.clientHeight + 'px'
+
+        console.log(header.offsetHeight);
+
+    }
+    mainPaddingTop('.main', '.header')
 })

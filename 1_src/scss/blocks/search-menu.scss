@@ -1,6 +1,10 @@
 .search-menu {
     margin: 24px 0;
 
+    @media (max-width: $lg) {
+        display: none;
+    }
+
     // .search-menu__inner
 
     &__inner {

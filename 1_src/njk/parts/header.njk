@@ -1,53 +1,54 @@
-<header class="header">
+<header class="header {{hMobileSearch}}">
     <div class="container-wide">
         {% if headerAuth %}
         <div class="header__inner">
-            <a class="header__logo logo" href="#">
+            <button class="header__menu-burger">
+                Открыть меню
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="header__page-title">
+                {{headerPageTitle}}
+            </h1>
+
+            <a class="header__logo logo" href="#" data-da="header__list-title,last,1218">
                 <img class="logo__img" src="img/abb_logo.svg" alt="Логотип ABB">
             </a>
 
-            <nav class="header__menu">
-                <span class="visually-hidden">Открыть меню</span>
-                <button class="header__menu-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a class="header__link" href="#">Каталог товаров</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Где купить</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Обучение</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Инструменты</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Документы</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Новости для вас</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Частые вопросы</a>
-                    </li>
-                    <li class="header__item-close">
-                        <button class="header__menu-close">
-                            <span class="visually-hidden">Закрыть меню</span>
-                            <svg class="s-icon">
-                                <use xlink:href="img/svg/sprite1.svg#ic_close"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
+            <nav class="header__menu" data-simplebar>
+                <div class="header__list-wrapper">
+                    <div class="header__list-title">Меню</div>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Каталог товаров</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Где купить</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Обучение</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Инструменты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Документы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Новости для вас</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Частые вопросы</a>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
 
 
-            <div class="header__logout">
+            <div class="header__logout" data-da="header__list-wrapper,1,1218">
                 <a class="header__profile" href="#">
                     <div class="header__name">
                         Иванов Иван Иванович
@@ -62,6 +63,21 @@
                     </svg>
                     <span class="visually-hidden">Выйти из профиля</span>
                 </button>
+            </div>
+
+            <div class="header__search">
+                <label class="header__search-label">
+                    <svg class="header__search-close s-icon s-icon--md">
+                        <use xlink:href="img/svg/sprite1.svg#ic32_arrow_left"></use>
+                    </svg>
+                    <input class="header__search-input" type="search" placeholder="Код заказа, артикул/тип, наименовани…">
+                    <svg class="header__search-clear s-icon s-icon--md">
+                        <use xlink:href="img/svg/sprite1.svg#ic32_cancel"></use>
+                    </svg>
+                </label>
+                <svg class="header__search-open s-icon s-icon--md">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_search-m"></use>
+                </svg>
             </div>
         </div>
         {% else %}

@@ -8,21 +8,20 @@
     margin-right: 4px;
 
     @media (max-width: $md) {
-        max-width: calc(25% - 4px);
-    }
-
-    @media (max-width: $md) {
         max-width: calc(33.33% - 4px);
     }
 
-    @media (max-width: $xs) {
-        max-width: calc(50% - 4px);
+    @media (max-width: $sm) {
         margin-right: 0;
-        margin-bottom: 8px;
+    }
+
+    @media (max-width: $xs) {
+        max-width: calc(50% - 8px);
+        margin-bottom: 16px;
     }
 
     @media (max-width: $min) {
-        max-width: 280px;
+        max-width: calc(50% - 4px);
     }
 
     &:hover {
@@ -92,6 +91,10 @@
         padding: 8px 8px 20px 8px;
         
         background-color: $bg;
+
+        @media (max-width: $xs) {
+            padding: 4px 6px; 
+        }
     }
 
     // .nav-block__title
