@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="product-view__tabs product-tabs">
-                    <ul class="product-tabs__header">
+                    <ul class="product-tabs__header" data-simplebar>
                         <li class="product-tabs__title active">
                             Цены и остатки
                         </li>
@@ -238,7 +238,7 @@
                                         </span>
                                     </div>
 
-                                    <div class="etim-block__table etim-block__table--main">
+                                    <div class="etim-block__table etim-block__table--main etim-block__table--first">
                                         <div class="etim-block__header">
                                             <div class="etim-block__th">ETIM-код класса</div>
                                             <div class="etim-block__th">Описание ETIM-класса</div>
@@ -307,23 +307,29 @@
                                     <a class="etim-block__link" href="#">Показать все свойства</a>
                                 </div>
 
-                                <div class="etim-block__box">
-                                    <div class="etim-block__table etim-block__table--product">
-                                        <div class="etim-block__title">
-                                            Весогабаритные характеристики товара
+                                <div class="etim-block__box etim-block__box--product">
+                                    <div class="etim-block__title">
+                                        Весогабаритные характеристики товара
+                                    </div>
+                                    <div class="etim-block__grid">
+                                        <div class="etim-block__grid-item etim-block__grid-item--name">
+                                            Штрих-код
                                         </div>
-                                        <div class="etim-block__header">
-                                            <div class="etim-block__th">Штрих-код</div>
-                                            <div class="etim-block__th">Вес</div>
-                                            <div class="etim-block__th">Длина × Высота × Ширина</div>
+                                        <div class="etim-block__grid-item etim-block__grid-item--val">
+                                            4820024700016
                                         </div>
-                                        <ul class="etim-block__rows">
-                                            <li class="etim-block__row">
-                                                <div class="etim-block__col">4820024700016</div>
-                                                <div class="etim-block__col">4 кг</div>
-                                                <div class="etim-block__col">12 × 16 × 19 см</div>
-                                            </li>
-                                        </ul>
+                                        <div class="etim-block__grid-item etim-block__grid-item--name">
+                                            Вес
+                                        </div>
+                                        <div class="etim-block__grid-item etim-block__grid-item--val">
+                                            4 кг
+                                        </div>
+                                        <div class="etim-block__grid-item etim-block__grid-item--name">
+                                            Длина × Высота × Ширина
+                                        </div>
+                                        <div class="etim-block__grid-item etim-block__grid-item--val">
+                                            12 × 16 × 19 см
+                                        </div>
                                     </div>
                                 </div>
 
@@ -332,7 +338,7 @@
                                         <div class="etim-block__title">
                                             Весогабаритные характеристики упаковки
                                         </div>
-                                        <div class="etim-block__table-wrapper" data-simplebar>
+                                        <div class="etim-block__table-wrapper">
                                             <div class="etim-block__header">
                                                 <div class="etim-block__th">Упаковка</div>
                                                 <div class="etim-block__th">Штрих-код</div>
@@ -364,6 +370,136 @@
                                                 </li>
                                             </ul>
                                         </div>
+
+                                        <div class="etim-block__mobile-table js-accordion">
+                                            <div class="etim-block__mobile-title js-accordion__title">
+                                                Упаковка 1
+                                                <svg class="s-icon">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="etim-block__mobile-content js-accordion__content">
+                                                <ul class="etim-block__mobile-list">
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Штрих-код
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4820024700016
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Кратность
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            10
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Вес
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4 кг
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Длина × Высота × Ширина
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            12 × 16 × 19 см
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="etim-block__mobile-title js-accordion__title">
+                                                Упаковка 2
+                                                <svg class="s-icon">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="etim-block__mobile-content js-accordion__content">
+                                                <ul class="etim-block__mobile-list">
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Штрих-код
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4820024700016
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Кратность
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            10
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Вес
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4 кг
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Длина × Высота × Ширина
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            12 × 16 × 19 см
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="etim-block__mobile-title js-accordion__title">
+                                                Упаковка 3
+                                                <svg class="s-icon">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="etim-block__mobile-content js-accordion__content">
+                                                <ul class="etim-block__mobile-list">
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Штрих-код
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4820024700016
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Кратность
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            10
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Вес
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            4 кг
+                                                        </div>
+                                                    </li>
+                                                    <li class="etim-block__mobile-item">
+                                                        <div class="etim-block__mobile-name">
+                                                            Длина × Высота × Ширина
+                                                        </div>
+                                                        <div class="etim-block__mobile-val">
+                                                            12 × 16 × 19 см
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
 
                                     </div>
                                 </div>
@@ -472,7 +608,8 @@
                                                 Листовки
                                             </div>
                                             <div class="etim-block__col">
-                                                <a class="etim-block__external tooltip tooltip--right" href="#" target="_blank">
+                                                <a class="etim-block__external tooltip tooltip--right" href="#"
+                                                    target="_blank">
                                                     <svg class="s-icon">
                                                         <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
                                                     </svg>
@@ -491,7 +628,8 @@
                                                 Каталоги
                                             </div>
                                             <div class="etim-block__col">
-                                                <a class="etim-block__external tooltip tooltip--right" href="#" target="_blank">
+                                                <a class="etim-block__external tooltip tooltip--right" href="#"
+                                                    target="_blank">
                                                     <svg class="s-icon">
                                                         <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
                                                     </svg>
@@ -511,7 +649,8 @@
                                                 Каталоги
                                             </div>
                                             <div class="etim-block__col">
-                                                <a class="etim-block__external tooltip tooltip--right" href="#" target="_blank">
+                                                <a class="etim-block__external tooltip tooltip--right" href="#"
+                                                    target="_blank">
                                                     <svg class="s-icon">
                                                         <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
                                                     </svg>
@@ -530,7 +669,8 @@
                                                 Брошюры
                                             </div>
                                             <div class="etim-block__col">
-                                                <a class="etim-block__external tooltip tooltip--right" href="#" target="_blank">
+                                                <a class="etim-block__external tooltip tooltip--right" href="#"
+                                                    target="_blank">
                                                     <svg class="s-icon">
                                                         <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
                                                     </svg>

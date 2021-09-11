@@ -77,22 +77,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             header[firstActive].classList.add('active')
             content[firstActive].classList.add('active')
-            content[firstActive].style.maxHeight = content[firstActive].scrollHeight + padding + 'px'
+            // content[firstActive].style.maxHeight = content[firstActive].scrollHeight + padding + 'px'
 
             for (let i = 0; i < header.length; i++) {
                 header[i].addEventListener('click', () => {
                     if (!(header[i].classList.contains('active'))) {
                         header[lastIndex].classList.remove('active')
                         content[lastIndex].classList.remove('active')
-                        content[lastIndex].style.maxHeight = '0px'
+                        // content[lastIndex].style.maxHeight = '0px'
                         content[i].classList.add('active')
                         header[i].classList.add('active')
-                        content[i].style.maxHeight = content[i].scrollHeight + padding + 'px'
+                        // content[i].style.maxHeight = content[i].scrollHeight + padding + 'px'
                         lastIndex = i
                     } else {
                         content[i].classList.remove('active')
                         header[i].classList.remove('active')
-                        content[i].style.maxHeight = '0px'
+                        // content[i].style.maxHeight = '0px'
                         lastIndex = i
                     }
                 })
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    accordion('.js-accordion', '.js-accordion__title', '.js-accordion__content', 14)
+    accordion('.js-accordion', '.js-accordion__title', '.js-accordion__content')
 
 
     const mainMenu = (tabsSel, headerSel, contentSel, closeSel, overlaySel, paddings = 0, firstActive = 0) => {

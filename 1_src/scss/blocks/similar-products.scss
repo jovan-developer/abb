@@ -23,6 +23,7 @@
         margin-right: -28px;
 
         @media (max-width: $sm) {
+            justify-content: space-between;
             margin-right: -14px;
         }
     }
@@ -36,8 +37,8 @@
         margin-right: 28px;
         
         @media (max-width: $sm) {
-            margin-right: 14px;
-            max-width: calc(50% - 28px);
+            margin-right: 0;
+            max-width: 48%;
         }
     }
 
@@ -99,6 +100,7 @@
         display: -webkit-box;
         
         margin: 0;
+        max-width: 300px;
 
         color: $text-secondary;
         @include caption;

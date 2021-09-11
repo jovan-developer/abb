@@ -12,6 +12,10 @@
 
         margin-bottom: 16px;
 
+        @media (max-width: $lg) {
+            display: none;
+        }
+
         @media (max-width: $md) {
             flex-direction: column;
             align-items: flex-start;
@@ -65,7 +69,21 @@
     &__row {
         position: relative;
 
+        padding: 15px 24px;
+
         border-bottom: 0.5px solid $divider;
+
+        @media (max-width: $md) {
+            padding: 15px 48px 15px 24px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 10px 48px 19px 24px;
+        }
+
+        @media (max-width: $xs) {
+            padding: 8px 32px 8px 0px;
+        }
     }
 
     // .product-row__item-link

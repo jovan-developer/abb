@@ -1,6 +1,14 @@
 .library {
     margin-top: 32px;
 
+    @media (max-width: $sm) {
+        margin-top: 16px;
+    }
+
+    @media (max-width: $xs) {
+        margin-top: 12px;
+    }
+
     .product-row__row {
         padding-bottom: 20px;
 
@@ -28,7 +36,21 @@
     }
 
     &__select {
-        max-width: 280px;
+        max-width: 230px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    &__search {
+        display: flex;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+
+        .search-block {
+            max-width: 612px;
+        }
     }
 
     // .library__sidebar
@@ -39,6 +61,7 @@
 
         @media (max-width: $md) {
             margin-right: 14px;
+            max-width: 100%;
         }
 
         @media (max-width: $sm) {
