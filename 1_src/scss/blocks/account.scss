@@ -5,8 +5,8 @@
         margin-top: 32px;
         margin-bottom: 40px;
 
-        @media (max-width: $sm) {
-            margin-bottom: 25px;
+        @media (max-width: $lg) {
+            display: none;
         }
     }
 
@@ -15,7 +15,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;    
+        align-items: flex-start;
 
         @media (max-width: $sm) {
             flex-direction: column;
@@ -30,7 +30,7 @@
 
         @media (max-width: $sm) {
             max-width: 100%;
-            margin: 0 0 20px 0;
+            margin: 0;
         }
     }
 
@@ -40,20 +40,24 @@
         padding: 24px 0 0;
 
         @media (max-width: $sm) {
-            padding: 15px 0 0;
+            padding: 16px 0 0;
         }
 
         &:first-child {
             padding-top: 0;
+
+            @media (max-width: $lg) {
+                border: none !important;
+            }
         }
 
         &:not(:last-child) {
             padding-bottom: 24px;
-            
+
             border-bottom: 0.5px solid $divider;
 
             @media (max-width: $sm) {
-                padding-bottom: 15px;
+                padding-bottom: 17px;
             }
         }
     }
@@ -65,6 +69,10 @@
 
         color: $text-primary;
         @include h2;
+
+        @media (max-width: $lg) {
+            margin-top: 16px;
+        }
     }
 
     // .account__position
@@ -94,9 +102,9 @@
     // .account__contacts-data
 
     &__contacts-data {
-       @media (max-width: $xs) {
-           margin-bottom: 10px;
-       }
+        @media (max-width: $lg) {
+            margin-bottom: 12px;
+        }
     }
 
     // .account__contacts-item
@@ -121,7 +129,7 @@
         @include caption;
 
         .s-icon {
-            margin-right: 8px;
+            margin-right: 9px;
         }
 
         p {
@@ -137,9 +145,11 @@
         color: $text-primary;
         @include h3;
 
-        @media (max-width: $xs) {
-            margin-bottom: 15px;
+        @media (max-width: $sm) {
+            margin-bottom: 16px;
+            @include body16m;
         }
+
     }
 
     // .account__data
@@ -152,10 +162,6 @@
     &__data-item {
         display: flex;
         width: 100%;
-
-        @media (max-width: $xs) {
-            flex-direction: column;
-        }
 
         &:not(:last-child) {
             margin-bottom: 12px;
@@ -170,9 +176,12 @@
         margin-right: 20px;
 
         color: $text-secondary;
+        
+        @media (max-width: $sm) {
+            max-width: 104px;
+            margin-right: 16px;
 
-        @media (max-width: $xs) {
-            margin: 0 0 3px 0;
+            @include caption;
         }
     }
 
@@ -180,6 +189,10 @@
 
     &__data-value {
         color: $text-primary;
+
+        @media (max-width: $sm) {
+            @include caption;
+        }
 
         a {
             color: $text-brand;
@@ -211,8 +224,10 @@
         }
 
         @media (max-width: $sm) {
-            max-width: 100%;
-            padding: 15px;
+            width: 100vw;
+            max-width: 100vw;
+            padding: 12px 16px 4px;
+            margin: 0 -16px 8px;
         }
     }
 
@@ -223,6 +238,10 @@
 
         color: $text-secondary;
         @include body14;
+
+        @media (max-width: $sm) {
+            @include caption;
+        }
     }
 
     // .account__sidebar-block
@@ -231,7 +250,7 @@
         padding: 16px 0 0;
 
         @media (max-width: $sm) {
-            padding: 12px 0 0;
+            padding: 8px 0 12px;
         }
 
         &:not(:last-child) {
@@ -239,7 +258,7 @@
             padding-bottom: 24px;
 
             @media (max-width: $sm) {
-                padding-bottom: 12px;
+                padding: 8px 0 12px;
             }
         }
     }
@@ -251,6 +270,11 @@
 
         color: $text-primary;
         @include h3;
+
+        @media (max-width: $sm) {
+            margin-bottom: 8px;
+            @include body16m;
+        }
     }
 
     // .account__sidebar-contacts
@@ -262,5 +286,4 @@
             }
         }
     }
-    
 }

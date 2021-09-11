@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    {% set headerPageTitle = "Профиль" %}
     {% set headerAuth = true%}
     {% include 'parts/header.njk' %}
 
@@ -149,7 +150,7 @@
                         </div>
                     </div>
 
-                    <aside class="account__sidebar">
+                    <aside class="account__sidebar" data-da="account__content,1,767">
                         <p class="account__signature">Ваш ответственный менеджер ABB</p>
 
                         <div class="account__sidebar-block">
@@ -173,7 +174,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="account__sidebar-block">
+                        <!-- <div class="account__sidebar-block">
                             <div class="account__sidebar-name">Коломой Ивановцев</div>
                             <ul class="account__sidebar-contacts">
                                 <li class="contact-line">
@@ -214,7 +215,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </aside>
                 </div>
             </div>

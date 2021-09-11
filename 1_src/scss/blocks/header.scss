@@ -58,7 +58,6 @@
     &__page-title {
         display: none;
         margin-right: auto;
-        padding-left: 44px;
 
         @include h3;
         font-weight: 500;
@@ -455,6 +454,8 @@
         left: 12px;
         top: 50%;
         transform: translateY(-50%);
+
+        cursor: pointer;
     }
 
     // .header__search-input
@@ -492,6 +493,8 @@
         transform: translateY(-50%) scale(0);
         transform-origin: center;
 
+        cursor: pointer;
+
         // transition: 0.15s transform;
 
         &.active {
@@ -505,6 +508,8 @@
         position: relative;
         z-index: 5;
         fill: $text-primary;
+
+        cursor: pointer;
 
         // transition: opacity 0.9s;
         // transition-delay: 0.2s;
