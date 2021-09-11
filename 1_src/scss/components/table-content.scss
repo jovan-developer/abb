@@ -13,7 +13,7 @@
 
         border-bottom: 1px solid $divider;
 
-        @media (max-width: $xs) {
+        @media (max-width: $sm) {
             display: none;
         }
     }
@@ -48,6 +48,9 @@
     // .table-content__rows
 
     &__rows {
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 
     // .table-content__row
@@ -102,6 +105,88 @@
             @media (max-width: $xs) {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    // .table-content__mobile-table
+
+    &__mobile-table {
+        display: none;
+
+        @media (max-width: $sm) {
+            display: block;
+        }
+    }
+
+    // .table-content__mobile-item
+
+    &__mobile-item {
+        border-top: 0.5px solid $divider;
+
+        &:last-child {
+            border-bottom: 0.5px solid $divider;
+        }
+    }
+
+    // .table-content__mobile-title
+
+    &__mobile-title {
+        position: relative;
+
+        padding: 14px 50px 13px 0;
+        @include body14;
+
+        &.active {
+            max-height: 100%;
+
+            .s-icon {
+                transform: translateY(-50%) rotate(180deg);
+                fill: $text-primary;
+            }
+        }
+
+        .s-icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            fill: $text-tertiary;
+        }
+    }
+
+    // .table-content__mobile-content
+
+    &__mobile-content {
+        @include body14;
+        overflow: hidden;
+        max-height: 0;
+
+        &.active {
+            max-height: 100%;
+            padding-bottom: 16px;
+        }
+    }
+
+    // .table-content____mobile-descr
+
+    &__mobile-descr {
+        margin-bottom: 16px;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .table-content____mobile-example
+
+    &__mobile-example {
+        span {
+            display: block;
+            width: 100%;
+            margin-bottom: 6px;
+
+            color: $text-secondary;
+            @include caption;
         }
     }
 }

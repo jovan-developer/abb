@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchMenu = (searchMenuSel, openSel, closeSel) => {
         let searchMenu = document.querySelector(searchMenuSel)
 
-        if (menu) {
+        if (searchMenu) {
             let openBtn = searchMenu.querySelector(openSel)
             let closeBtn = searchMenu.querySelector(closeSel)
 
