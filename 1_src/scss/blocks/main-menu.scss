@@ -155,7 +155,7 @@
         fill: $white;
         opacity: 0;
 
-        transition: 0.3s opacity;
+        // transition: 0.3s opacity;
     }
 
     // .main-menu__content
@@ -194,19 +194,31 @@
 
         background-color: transparent;
 
-        transition: transform 0.2s;
+        // transition: transform 0.2s;
 
         @media (max-width: $sm) {
             bottom: 0;
             top: 0;
         }
 
+        &:hover {
+            .s-icon {
+                fill: $text-primary;
+            }
+        }
+
         &.active {
             transform: rotate(180deg);
+
+            .s-icon {
+                fill: $text-primary;
+            }
         }
 
         .s-icon {
             fill: $text-tertiary;
+
+            transition: fill 0.2s;
 
             @media (max-width: $sm) {
                 display: none;
@@ -245,7 +257,7 @@
 
         background-color: $bg;
 
-        transition: 0.3s max-height ease-out, 0.3s padding ease-out;
+        // transition: 0.3s max-height ease-out, 0.3s padding ease-out;
 
         @media (max-width: $md) {
             right: auto;
@@ -271,7 +283,7 @@
             column-count: 2;
             border-top: 4px solid $white;
 
-            transition: max-height 0.25s ease-in, 0.3s padding ease-in;
+            // transition: max-height 0.25s ease-in, 0.3s padding ease-in;
 
             @media (max-width: $sm) {
                 border-top: none;
@@ -288,7 +300,7 @@
         }
 
         &.active {
-            transition: max-height 0.25s ease-in, 0.3s padding ease-in;
+            // transition: max-height 0.25s ease-in, 0.3s padding ease-in;
 
             z-index: 7;
 
@@ -363,8 +375,14 @@
         background-color: transparent;
         border: none;
 
+        transition: 0.2s color;
+        
         @media (max-width: $sm) {
             font-size: 0;
+        }
+
+        &:hover {
+            color: $text-primary;
         }
 
         &::before {

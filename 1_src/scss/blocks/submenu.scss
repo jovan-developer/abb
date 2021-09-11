@@ -9,12 +9,25 @@
 
     &__navigation {
         padding: 13px 0 14px;
+
+        @media (max-width: $lg) {
+            padding: 0;
+        }
     }
 
     // .submenu__list
 
     &__list {
         display: flex;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+
+            margin-bottom: 11px;
+            padding-bottom: 11px;
+
+            border-bottom: 0.5px solid $divider;
+        }
     }
 
     // .submenu__item
@@ -22,7 +35,12 @@
     &__item {
         position: relative;
         padding-right: 13px;
-        flex-shrink: 0;
+
+        color: $text-secondary;
+
+        @media (max-width: $lg) {
+            padding: 0;
+        }
 
         &:not(:last-child) {
             margin-right: 12px;
@@ -38,19 +56,38 @@
                 height: 10px;
 
                 background-color: $text-tertiary;
+
+                @media (max-width: $lg) {
+                    display: none;
+                }
             }
+        }
+
+        &--active {
+            color: $text-primary;
         }
     }
 
     // .submenu__link
 
     &__link {
-        color: $text-secondary;
         @include tab;
+
+        @media (max-width: $lg) {
+            padding: 12px 16px;
+
+            color: $text-primary;
+            font-weight: 400;
+            @include body16;
+            text-transform: none;
+        }
     }
 
     // .submenu__link
 
     &__link {
+        @media (max-width: $lg) {
+            width: 100%;
+        }
     }
 }

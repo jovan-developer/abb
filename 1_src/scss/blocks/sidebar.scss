@@ -19,7 +19,7 @@
 
             background-color: #fff;
             
-            transition: bottom 0.3s;
+            // transition: bottom 0.3s;
         }
 
         &.active {
@@ -117,7 +117,7 @@
 
         fill: $text-tertiary;
 
-        transition: fill 0.3s, transform 0.3s;
+        // transition: fill 0.3s, transform 0.3s;
     }
 
     // .sidebar__content
@@ -125,21 +125,19 @@
     &__content {
         padding-bottom: 0px;
 
-        transition: 0.3s max-height ease-out, 0.3s padding ease-out;
+        // transition: 0.3s max-height ease-out, 0.3s padding ease-out;
 
         &.js-accordion__content {
             max-height: 0;
             overflow: hidden;
-
-            // &.active {
-            //     margin-top: -12px;
-            // }
         }
 
         &.active {
             padding-bottom: 14px;
 
-            transition: max-height 0.25s ease-in, 0.3s padding ease-in;
+            max-height: 100%;
+
+            // transition: max-height 0.25s ease-in, 0.3s padding ease-in;
         }
     }
 

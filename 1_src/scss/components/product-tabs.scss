@@ -59,7 +59,7 @@
         }
 
         @media (max-width: $sm) {
-            border-bottom: 0.5px solid $divider;
+            // border-bottom: 0.5px solid $divider;
         }
 
         &::after {
@@ -84,10 +84,6 @@
         }
 
         &.active {
-            @media (max-width: $sm) {
-                color: $text-brand;
-            }
-
             &::after {
                 transform: scale(1);
             }

@@ -66,9 +66,12 @@
                 .etim-block__col {
                     &:nth-child(2) {
                         @media (max-width: $xs) {
+                            margin-top: 6px;
+                            max-width: 100%;
+                            width: 100%;
+                            
                             color: $text-primary;
                             @include body14;
-                            margin-top: 6px;
                         }
                     }
                 }
