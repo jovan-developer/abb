@@ -17,6 +17,11 @@
         max-width: 278px;
         margin-right: 28px;
 
+        @media (max-width: $md) {
+            max-width: 100%;
+            margin: 0;
+        }
+
         @media (max-width: $sm) {
             max-width: 100%;
             margin: 0 0 10px 0;
@@ -27,6 +32,10 @@
 
     &__title {
         margin-bottom: 39px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
 
         @media (max-width: $sm) {
             margin-bottom: 15px;
@@ -46,10 +55,8 @@
         align-items: center;
         margin-bottom: 22px;
 
-        @media (max-width: $md) {
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 11px;
+        @media (max-width: $lg) {
+            display: none;
         }
 
         .search-block {

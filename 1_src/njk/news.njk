@@ -26,7 +26,8 @@
 
 <body>
     {% set headerAuth = true%}
-    {% include 'parts/header.njk' %}
+    {% set headerPageTitle = "Новости" %}
+    {% include 'parts/header-filters-news.njk' %}
 
     <main class="main">
         {% include 'parts/submenu.njk' %}

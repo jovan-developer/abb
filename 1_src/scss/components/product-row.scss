@@ -74,11 +74,11 @@
         border-bottom: 0.5px solid $divider;
 
         @media (max-width: $md) {
-            padding: 15px 48px 15px 24px;
+            padding: 15px 48px 15px 0;
         }
 
         @media (max-width: $sm) {
-            padding: 10px 48px 19px 24px;
+            padding: 10px 48px 19px 0;
         }
 
         @media (max-width: $xs) {
