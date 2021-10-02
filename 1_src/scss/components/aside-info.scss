@@ -6,7 +6,7 @@
     // .aside-info__title
 
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 13px;
 
         color: $text-primary;
         @include h3;
@@ -24,7 +24,7 @@
             margin: 0;
 
             &:not(:last-child) {
-                margin-bottom: 18px;
+                margin-bottom: 14px;
             }
         }
     }
@@ -36,6 +36,7 @@
 
         .s-icon {
             fill: $text-primary;
+            margin-right: 4px;
         }
     }
 }

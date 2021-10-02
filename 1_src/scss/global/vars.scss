@@ -29,11 +29,11 @@ $brand-primary: #FF000F;
 $brand-primary-bg: #FFEBEC;
 
 @mixin c-pointer {
-    cursor: url(../img/cursor-pointer.svg) 4 0, pointer;
+    cursor: pointer;
 }
 
 @mixin c-default {
-    cursor: url(../img/cursor.svg) 2 0, auto;
+    cursor: default;
 }
 
 @mixin shadow-popup {

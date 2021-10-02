@@ -13,7 +13,7 @@
         align-items: flex-start;
         padding-top: 16px;
 
-        @media (max-width: $sm) {
+        @media (max-width: $md) {
             flex-direction: column;
             margin-bottom: 25px;
         }
@@ -26,24 +26,35 @@
         width: 100%;
         margin-top: 16px;
         margin-left: 20px;
+        
+        &.btn--icon {
+            padding-right: 12px;
+        }
 
-        @media (max-width: $sm) {
+        @media (max-width: $md) {
             margin: 0;
+        }
+
+        .s-icon {
+            margin-right: 4px;
         }
     }
 
     // .product-view__title
 
     &__title {
+        margin-right: 40px;
         margin-bottom: 26px;
 
-        @media (max-width: $sm) {
+        @media (max-width: $md) {
+            margin-right: 0;
             margin-bottom: 10px;
         }
 
         h1 {
             @media (max-width: $xs) {
-                font-size: 26px;
+                @include h3;
+                font-weight: 500;
             }
         }
     }

@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // product-thumb-slider
     const productThumbSlider = new Swiper('.product-view__thumb', {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 8,
-        threshold: 15
+        threshold: 15,
     })
 
     // product-slider
@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
+    document.querySelector('.product-view__slider-btn--right').addEventListener('click', () => {
+        productThumbSlider.updateProgress()
+    })
 
     // Tabs for product page
     const tabs = (tabsSel, headerSel, contentSel) => {
@@ -118,10 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             openMenu(firstActive)
 
-            overlay.addEventListener('click', () => {
-                closeMenu(lastIndex)
-            })
-
             for (let i = 0; i < header.length; i++) {
                 header[i].addEventListener('click', () => {
                     if (!(header[i].classList.contains('active'))) {
@@ -160,10 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
     bindModal('.js-video-play', true)
 
     const menu = (menuSel, openSel) => {
-        let menu = document.querySelector(menuSel)
+        let openBtn = document.querySelector(openSel)
 
-        if (menu) {
-            let openBtn = document.querySelector(openSel)
+        if (openBtn) {
+            let menu = document.querySelector(menuSel)
+            // let openBtn = document.querySelector(openSel)
 
             openBtn.addEventListener('click', () => {
                 menu.classList.toggle('active')

@@ -30,6 +30,14 @@
         @media (max-width: $md) {
             max-width: 100%;
             margin: 0 0 10px 0;
+
+            display: none;
+        }
+
+        &.active {
+            @media (max-width: $md) {
+                display: block;
+            }
         }
     }
 

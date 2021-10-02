@@ -51,11 +51,11 @@
         }
 
         &:focus {
-            border: 1px solid $text-primary;
+            // border: 1px solid $text-primary;
 
-            & + .search-block__btn {
-                border: 1px solid $text-primary;
-            }
+            // & + .search-block__btn {
+            //     border: 1px solid $text-primary;
+            // }
         }
 
         &::placeholder {

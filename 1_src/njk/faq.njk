@@ -25,8 +25,8 @@
 </head>
 
 <body>
-    {% set headerAuth = true%}
-    {% include 'parts/header.njk' %}
+    {% set headerAuth = true %}
+    {% include 'parts/header-filters.njk' %}
 
     <main class="main">
 
@@ -37,7 +37,16 @@
                 </div>
 
                 <div class="faq__inner">
-                    <div class="sidebar faq__sidebar">
+                    <div class="sidebar faq__sidebar js-sidebar-filter">
+                        <button class="sidebar__filter-close">
+                            <svg class="s-icon s-icon--md">
+                                <use xlink:href="img/svg/sprite1.svg#ic32_arrow_left"></use>
+                            </svg>
+                        </button>
+                        <div class="sidebar__filter-title">
+                            Фильтр
+                        </div>
+
                         <div class="sidebar__content">
 
                             <ul class="sidebar__tags">
@@ -102,7 +111,10 @@
                                     </label>
                                 </li>
                             </ul>
+
+                            <button class="sidebar__use btn btn--primary">Применить</button>
                         </div>
+
                     </div>
 
 

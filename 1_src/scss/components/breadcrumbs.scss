@@ -53,6 +53,17 @@
     &__link {
         @include caption;
 
+        transition: color 0.25s;
+
+        
+        @at-root {
+            a#{&} {
+                &:hover {
+                    color: $text-brand;
+                }
+            }
+        }
+
         @at-root {
             span#{&} {
                 color: $text-primary;

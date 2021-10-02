@@ -25,12 +25,11 @@
 </head>
 
 <body>
-    {% set headerAuth = true%}
+    {% set headerAuth = "true" %}
     {% set headerPageTitle = "Новости" %}
     {% include 'parts/header-filters-news.njk' %}
 
     <main class="main">
-        {% include 'parts/submenu.njk' %}
         {% include 'parts/news.njk' %}
     </main>
 

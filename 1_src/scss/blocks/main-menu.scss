@@ -45,8 +45,6 @@
     // .main-menu__item
 
     &__item {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         max-width: calc((100% / 6) - 4px);
         margin-bottom: 4px;
@@ -77,16 +75,12 @@
                     transform: scale(1);
                 }
             }
-
-            .main-menu__icon-link {
-                opacity: 1;
-            }
         }
 
         &:nth-child(3n + 2) {
             .main-menu__drop-list {
                 @media (max-width: $md) {
-                    left: calc(((100vw - 20px) / -3) - 2px);
+                    // left: calc(((100vw - 20px) / -3) - 2px);
                 }
 
                 @media (max-width: $sm) {
@@ -98,7 +92,7 @@
         &:nth-child(3n + 3) {
             .main-menu__drop-list {
                 @media (max-width: $md) {
-                    left: calc((((100vw - 20px) / -3) * 2) - 4px);
+                    // left: calc((((100vw - 20px) / -3) * 2) - 4px);
                 }
 
                 @media (max-width: $sm) {
@@ -106,6 +100,18 @@
                 }
             }
         }
+    }
+
+    // .main-menu__item-inner
+
+    &__item-inner {
+        position: relative;
+        z-index: 3;
+        
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        @include c-pointer;
     }
 
     // .main-menu__link
@@ -142,20 +148,6 @@
 
             transition: 0.5s transform;
         }
-    }
-
-    // .main-menu__icon-link
-
-    &__icon-link {
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        background-color: $blackout;
-        fill: $white;
-        opacity: 0;
-
-        // transition: 0.3s opacity;
     }
 
     // .main-menu__content
@@ -246,7 +238,7 @@
     // .main-menu__drop-list
 
     &__drop-list {
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
         top: 100%;
@@ -261,7 +253,7 @@
 
         @media (max-width: $md) {
             right: auto;
-            width: calc(100vw - 20px);
+            // width: calc(100vw - 20px);
         }
 
         @media (max-width: $sm) {
@@ -376,7 +368,7 @@
         border: none;
 
         transition: 0.2s color;
-        
+
         @media (max-width: $sm) {
             font-size: 0;
         }

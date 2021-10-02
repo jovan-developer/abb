@@ -7,7 +7,7 @@
     z-index: 50;
     transform: translateY(-110vh);
 
-    transition: 0.3s transform;
+    // transition: 0.3s transform;
 
     display: flex;
     align-items: center;
@@ -17,14 +17,7 @@
 
     &.active {
         transform: translateY(0);
-    }
-
-    .simplebar-content-wrapper {
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // height: 100%;
-    }
+    }   
 
     &__overlay {
         position: fixed;
@@ -33,10 +26,10 @@
         right: 0;
         bottom: 0;
 
-        transition-delay: 0s;
+        // transition-delay: 0s;
 
         &.active {
-            transition-delay: 0.45s;
+            // transition-delay: 0.45s;
         }
     }
 

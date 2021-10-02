@@ -1,0 +1,55 @@
+.documentation-menu {
+
+    // .documentation-menu__inner
+
+    &__inner {
+    }
+
+    // .documentation-menu__title
+
+    &__title {
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+
+    // .documentation-menu__list
+
+    &__list {
+        margin: 0 -32px;
+
+        @media (max-width: $xs) {
+            margin: 0 -16px;
+        }
+
+        @media (max-width: $min) {
+            margin: 0 -10px;
+        }
+    }
+
+    // .documentation-menu__item
+
+    &__item {
+
+    }
+
+    // .documentation-menu__link
+
+    &__link {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+
+        @include body16;
+
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $bg;
+        }
+
+        &.active {
+            // background-color: $chip;
+        }
+    }
+}

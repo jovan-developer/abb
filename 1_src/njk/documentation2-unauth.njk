@@ -25,15 +25,15 @@
 </head>
 
 <body>
-    {% include 'parts/header-doc-unauth.njk' %}
+
+    {% set headerPageTitle = 'Документация API' %}
+    {% set headerAuth = 'true' %}
+    {% include 'parts/header-mobile-menu.njk' %}
 
     <main class="main">
-        {% include 'parts/docs.njk' %}
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/doc-mobile-menu.njk' %}
     </main>
-
-    {% set footerMod = 'footer--margin-reset' %}
-    {% include 'parts/footer.njk' %}
-
 
     <script src="plugins/simplebar.js"></script>
     <script src="plugins/inputmask.js"></script>

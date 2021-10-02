@@ -35,21 +35,6 @@
         }
     }
 
-    // .catalog-table__row
-
-    &__row {
-        position: relative;
-
-        display: flex;
-
-        border-bottom: 1px solid $divider;
-
-        @media (max-width: $sm) {
-            flex-wrap: wrap;
-            padding-bottom: 11px;
-        }
-    }
-
     // .catalog-table__th
 
     &__th {
@@ -126,6 +111,33 @@
     // .catalog-table__body
 
     &__body {
+    }
+
+    // .catalog-table__item
+
+    &__item {
+    }
+
+    // .catalog-table__link
+
+    &__link {
+        position: relative;
+
+        display: flex;
+
+        border-bottom: 1px solid $divider;
+
+
+        transition: background-color 0.3s;
+
+        @media (max-width: $sm) {
+            flex-wrap: wrap;
+            padding-bottom: 11px;
+        }
+
+        &:hover {
+            background-color: $bg;
+        }
     }
 
     // .catalog-table__col

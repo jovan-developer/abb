@@ -38,7 +38,7 @@
                     {% include 'parts/sidebar-library.njk' %}
 
                     <div class="product-row">
-                        <form class="product-row__search">
+                        <form class="product-row__search" data-da="sidebar,last,1200">
                             {% set searchPlaceholder = 'Поиск по названию и номеру документаа' %}
                             {% include 'parts/components/search-block.njk' %}
 
@@ -99,6 +99,7 @@
                             </div>
                             <ul class="product-row__list">
                                 <li class="product-row__row">
+                                   <a href="#" class="product-row__item-link">
                                     <div class="product-row__title">
                                         ABB Welcome
                                     </div>
@@ -112,6 +113,31 @@
                                             </svg>
                                         </li>
                                     </ul>
+                                   </a>
+                                   <a class="product-row__link" href="#">
+                                    <span class="visually-hidden">Скачать документ</span>
+                                    <svg class="s-icon">
+                                        <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                    </svg>
+                                </a>
+                                </li>
+                                <li class="product-row__row">
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Сертификат</li>
+                                            <li class="spec-list__item">
+                                                <svg class="s-icon product-row__icon-left">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                </svg>
+                                                ЕАЭС (ТС)
+                                            </li>
+                                            <li class="spec-list__item">Бессрочный</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
                                     <a class="product-row__link" href="#">
                                         <span class="visually-hidden">Скачать документ</span>
                                         <svg class="s-icon">
@@ -120,20 +146,22 @@
                                     </a>
                                 </li>
                                 <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Сертификат</li>
-                                        <li class="spec-list__item">
-                                            <svg class="s-icon product-row__icon-left">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
-                                            </svg>
-                                            ЕАЭС (ТС)
-                                        </li>
-                                        <li class="spec-list__item">Бессрочный</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Сертификат</li>
+                                            <li class="spec-list__item">
+                                                <svg class="s-icon product-row__icon-left">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                </svg>
+                                                ЕАЭС (ТС)
+                                            </li>
+                                            <li class="spec-list__item">Бессрочный</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
                                     <a class="product-row__link" href="#">
                                         <span class="visually-hidden">Скачать документ</span>
                                         <svg class="s-icon">
@@ -142,20 +170,33 @@
                                     </a>
                                 </li>
                                 <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Сертификат</li>
-                                        <li class="spec-list__item">
-                                            <svg class="s-icon product-row__icon-left">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
-                                            </svg>
-                                            ЕАЭС (ТС)
-                                        </li>
-                                        <li class="spec-list__item">Бессрочный</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Презентация</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="product-row__row">
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Сертификат</li>
+                                            <li class="spec-list__item">
+                                                <svg class="s-icon product-row__icon-left">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                </svg>
+                                                ЕАЭС (ТС)
+                                            </li>
+                                            <li class="spec-list__item">Бессрочный</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
                                     <a class="product-row__link" href="#">
                                         <span class="visually-hidden">Скачать документ</span>
                                         <svg class="s-icon">
@@ -164,29 +205,22 @@
                                     </a>
                                 </li>
                                 <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Презентация</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
-                                </li>
-                                <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Сертификат</li>
-                                        <li class="spec-list__item">
-                                            <svg class="s-icon product-row__icon-left">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
-                                            </svg>
-                                            ЕАЭС (ТС)
-                                        </li>
-                                        <li class="spec-list__item">Бессрочный</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Сертификат</li>
+                                            <li class="spec-list__item">
+                                                <svg class="s-icon product-row__icon-left">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                </svg>
+                                                Д ЕАЭС (ТС)
+                                            </li>
+                                            <li class="spec-list__item">Бессрочный</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
                                     <a class="product-row__link" href="#">
                                         <span class="visually-hidden">Скачать документ</span>
                                         <svg class="s-icon">
@@ -195,51 +229,33 @@
                                     </a>
                                 </li>
                                 <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Сертификат</li>
-                                        <li class="spec-list__item">
-                                            <svg class="s-icon product-row__icon-left">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
-                                            </svg>
-                                            Д ЕАЭС (ТС)
-                                        </li>
-                                        <li class="spec-list__item">Бессрочный</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
-                                    <a class="product-row__link" href="#">
-                                        <span class="visually-hidden">Скачать документ</span>
-                                        <svg class="s-icon">
-                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
-                                        </svg>
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Презентация</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
                                     </a>
                                 </li>
                                 <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Презентация</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
-                                </li>
-                                <li class="product-row__row">
-                                    <div class="product-row__title">
-                                        EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">Сертификат</li>
-                                        <li class="spec-list__item">
-                                            <svg class="s-icon product-row__icon-left">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
-                                            </svg>
-                                            Д ЕАЭС (ТС)
-                                        </li>
-                                        <li class="spec-list__item">Бессрочный</li>
-                                        <li class="spec-list__item">8,43 MB</li>
-                                    </ul>
+                                    <a class="product-row__item-link" href="#">
+                                        <div class="product-row__title">
+                                            EAC Certificate / EAC _OTDC_OTL_OTP_OTR_OTU_OTE_OTM_OS_OSM_ IEC60947-3
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">Сертификат</li>
+                                            <li class="spec-list__item">
+                                                <svg class="s-icon product-row__icon-left">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                </svg>
+                                                Д ЕАЭС (ТС)
+                                            </li>
+                                            <li class="spec-list__item">Бессрочный</li>
+                                            <li class="spec-list__item">8,43 MB</li>
+                                        </ul>
+                                    </a>
                                     <a class="product-row__link" href="#">
                                         <span class="visually-hidden">Скачать документ</span>
                                         <svg class="s-icon">

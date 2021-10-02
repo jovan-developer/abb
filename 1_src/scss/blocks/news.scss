@@ -74,7 +74,12 @@
 
     &__select {
         max-width: 132px;
-        width: 100%;
+        width: auto;
+
+        .select__list {
+            width: 132px;
+            left: auto;
+        }
     }
 
     // .news__list
@@ -98,8 +103,14 @@
         width: 100%;
         padding: 15px 24px 20px;
 
+        transition: background-color 0.3s;
+
         @media (max-width: $md) {
             padding: 12px 0px 16px;
+        }
+
+        &:hover {
+            background-color: $bg;
         }
     }
 

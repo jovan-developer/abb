@@ -1,9 +1,9 @@
 .sidebar {
     width: 100%;
 
-
     &.js-sidebar-filter {
         @media (max-width: $md) {
+            display: none;
             position: fixed;
             top: 0;
             right: 0;
@@ -18,13 +18,14 @@
             padding-bottom: 15px;
 
             background-color: #fff;
-            
+
             // transition: bottom 0.3s;
         }
 
         &.active {
             @media (max-width: $md) {
                 bottom: 0;
+                display: block;
             }
         }
 
@@ -56,6 +57,12 @@
 
     &__filter-links {
         padding-bottom: 6px;
+
+        &--mobile-none {
+            @media (max-width: $md) {
+                display: none;
+            }
+        }
 
         .sidebar__title {
             padding-top: 0;
@@ -218,22 +225,22 @@
 
     &__more {
         margin-top: 24px;
-        
+
         @media (max-width: $md) {
             display: none;
         }
     }
 
-     // .sidebar__use
+    // .sidebar__use
 
-     &__use {
+    &__use {
         display: none;
         margin: 40px auto 0 auto;
 
         @media (max-width: $md) {
             display: block;
         }
-     }
+    }
 
     // .sidebar__loader
 
@@ -282,12 +289,18 @@
                 background-color: $brand-primary-bg;
                 color: $text-brand;
             }
+
+            // &:focus {
+            //     & + .sidebar__tag-box {
+            //        border-color: transparent;
+            //     }
+            // }
         }
 
         &:focus {
-            & + .sidebar__tag-box {
-                border-color: $text-primary;
-            }
+            // & + .sidebar__tag-box {
+            //     border-color: $text-primary;
+            // }
         }
     }
 
@@ -341,6 +354,18 @@
 
         @media (max-width: $md) {
             display: block;
+        }
+    }
+
+    // .sidebar__dropdown-select
+
+    &__dropdown-select {
+        border-bottom: 0.5px solid $divider;
+
+        
+        .select__item-default,
+        .select__item-inner {
+            font-weight: 500 !important; 
         }
     }
 }

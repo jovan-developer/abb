@@ -6,6 +6,8 @@
     border: none;
     background-color: $white;
 
+    transition: background-color 0.3s;
+
     // .btn--icon
 
     &--icon {
@@ -22,6 +24,14 @@
 
         background-color: $brand-primary;
         border-radius: 24px;
+
+        &:hover {
+            background-color: $text-brand;
+        }
+
+        &:active {
+            background-color: #E0000D;
+        }
     }
 
     // .btn--secondary
@@ -34,6 +44,14 @@
         background-color: transparent;
         border: 1px solid $divider;
         border-radius: 20px;
+
+        &:hover {
+            background-color: $bg;
+        }
+
+        &:active {
+            background-color: $chip;
+        }
 
         &.btn--icon {
             padding: 7px 14px 7px 8px;

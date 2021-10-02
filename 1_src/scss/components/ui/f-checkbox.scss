@@ -1,6 +1,6 @@
 .f-checkbox {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-shrink: 0;
     margin-left: 4px;
 
@@ -19,6 +19,13 @@
                 background-color: $brand-primary;
                 border-color: $brand-primary;
             }
+
+            &:focus {
+                & + .f-checkbox__box {
+                    background-color: $brand-primary;
+                    border-color: $brand-primary;
+                }
+            }
         }
 
         &:focus {
@@ -26,7 +33,6 @@
                 border-color: $text-primary;
             }
         }
-
     }
 
     // .f-checkbox__box
@@ -37,6 +43,7 @@
         width: 16px;
         height: 16px;
         margin-right: 12px;
+        margin-top: 3px;
 
         background-image: url(../img/svg/sprite1.svg#check);
         background-position: center;

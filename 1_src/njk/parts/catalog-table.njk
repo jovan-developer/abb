@@ -118,49 +118,51 @@ series: 'Emax 2'
         <ul class="catalog-table__body">
             {% for data in tableContent %}
 
-            <li class="catalog-table__row">
-                <div class="catalog-table__col catalog-table__col--image">
-                    <div class="catalog-table__image">
-                        <img src="img/catalog/product1.jpg" alt="Розетка">
+            <li class="catalog-table__item">
+                <a class="catalog-table__link" href="#">
+                    <div class="catalog-table__col catalog-table__col--image">
+                        <div class="catalog-table__image">
+                            <img src="img/catalog/product1.jpg" alt="Розетка">
+                        </div>
                     </div>
-                </div>
-                <div class="catalog-table__col catalog-table__col--code">
-                    <div class="catalog-table__col-inner">
+                    <div class="catalog-table__col catalog-table__col--code">
+                        <div class="catalog-table__col-inner">
+                            <span class="catalog-table__text">
+                                {{data.code}}
+                            </span>
+                            <button class="catalog-table__replacement">
+                                <svg class="s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_replacement"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog-table__col catalog-table__col--type">
+                        {% if data.type %}
                         <span class="catalog-table__text">
-                            {{data.code}}
+                            {{data.type}}
                         </span>
-                        <button class="catalog-table__replacement">
-                            <svg class="s-icon">
-                                <use xlink:href="img/svg/sprite1.svg#ic24_replacement"></use>
-                            </svg>
-                        </button>
+                        {% else %}
+                        <span class="catalog-table__text catalog-table__text--empty">
+                            —
+                        </span>
+                        {% endif %}
                     </div>
-                </div>
-                <div class="catalog-table__col catalog-table__col--type">
-                    {% if data.type %}
-                    <span class="catalog-table__text">
-                        {{data.type}}
-                    </span>
-                    {% else %}
-                    <span class="catalog-table__text catalog-table__text--empty">
-                        —
-                    </span>
-                    {% endif %}
-                </div>
-                <div class="catalog-table__col catalog-table__col--descr">
-                    {% if data.descr %}
-                    <span class="catalog-table__text">
-                        {{data.descr}}
-                    </span>
-                    {% else %}
-                    <span class="catalog-table__text catalog-table__text--empty">
-                        —
-                    </span>
-                    {% endif %}
-                </div>
-                <div class="catalog-table__col catalog-table__col--series">
-                    <span class="catalog-table__text">{{data.series}}</span>
-                </div>
+                    <div class="catalog-table__col catalog-table__col--descr">
+                        {% if data.descr %}
+                        <span class="catalog-table__text">
+                            {{data.descr}}
+                        </span>
+                        {% else %}
+                        <span class="catalog-table__text catalog-table__text--empty">
+                            —
+                        </span>
+                        {% endif %}
+                    </div>
+                    <div class="catalog-table__col catalog-table__col--series">
+                        <span class="catalog-table__text">{{data.series}}</span>
+                    </div>
+                </a>
             </li>
 
             {% endfor %}

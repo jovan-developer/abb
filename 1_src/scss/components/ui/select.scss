@@ -68,6 +68,7 @@
         background-color: $white;
         border: 1px solid $divider;
         @include c-pointer;
+        
 
         .select__subtitle,
         .select__text {
@@ -101,7 +102,7 @@
         bottom: 0;
         left: 0;
 
-        width: calc(100% - 50px);
+        width: 100%;
         padding: 10px 50px 10px 12px;
 
         border: 1px solid $divider;
@@ -114,9 +115,9 @@
             outline: transparent;
 
             & + .select__header {
-                .select__content {
-                    border-color: $text-primary;
-                }
+                // .select__content {
+                //     border-color: $text-primary;
+                // }
 
                 .select__icon {
                     fill: $text-primary;
