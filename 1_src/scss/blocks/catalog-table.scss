@@ -78,6 +78,7 @@
 
         &--series {
             max-width: 132px;
+            padding: 0;
 
             @media (max-width: $sm) {
                 display: none;
@@ -90,7 +91,7 @@
 
     &__select {
         .select__content {
-            padding: 0 32px 0 0;
+            padding: 9px 32px 11px 0;
             border: none;
         }
 
@@ -126,9 +127,6 @@
         display: flex;
 
         border-bottom: 1px solid $divider;
-
-
-        transition: background-color 0.3s;
 
         @media (max-width: $sm) {
             flex-wrap: wrap;

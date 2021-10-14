@@ -19,6 +19,7 @@ let select = function (selector, activeIndex = 0) {
             document.addEventListener('click', function (e) {
                 if (e.target.closest('.select') == null) {
                     selectsRemoveActive()
+                    console.log('sdf');
                 } else {
                     // selectsRemoveActive()
                     // let parentEl = e.target.closest('.select').querySelector('.select__list')
@@ -34,6 +35,8 @@ let select = function (selector, activeIndex = 0) {
             selectDefault.addEventListener('change', (e) => {
                 console.log('this el', selectDefault.options[selectDefault.selectedIndex].value)
             })
+
+            selectSearch.addEventListener('click', selectToggle)
         }
 
         if (choiceText) {
@@ -44,7 +47,13 @@ let select = function (selector, activeIndex = 0) {
             selectDefault.selectedIndex = activeIndex
         }
 
-        title.addEventListener('click', selectToggle)
+        title.addEventListener('click', (e) => {
+            if (e.target.closest('.select.active')) {
+                selectsRemoveActive()
+            } else {
+                selectToggle()
+            }
+        })
 
         title.addEventListener('keydown', function (event) {
             if (event.code === 'Space') {

@@ -13,5 +13,11 @@
         @media (max-width: $xs) {
             margin-bottom: 25px;
         }
+        
+        h1 {
+            @media (max-width: $sm) {
+                font-size: 26px;
+            }
+        }
     }
 }

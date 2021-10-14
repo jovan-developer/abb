@@ -73,11 +73,10 @@
     // .news__select
 
     &__select {
-        max-width: 132px;
         width: auto;
 
         .select__list {
-            width: 132px;
+            min-width: 132px;
             left: auto;
         }
     }

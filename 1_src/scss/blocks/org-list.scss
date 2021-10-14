@@ -8,7 +8,6 @@
     // .org-list__inner
 
     &__inner {
-        
     }
 
     // .org-list__not-found
@@ -33,7 +32,11 @@
         @include h2;
 
         @media (max-width: $xs) {
-            margin: 0;
+            margin: 0 0 12px 0;
+        }
+
+        @media (max-width: $min) {
+            font-size: 21px;
         }
     }
 
@@ -75,7 +78,7 @@
 
         background-color: transparent;
         border: none;
+
+        @include red-text-effects;
     }
-}
-.container {
 }

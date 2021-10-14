@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="description" content="Каталог товаров на сайте DSF">
 
     <title>Catalog/Category | ABB</title>
@@ -38,7 +38,7 @@
                     {% include 'parts/sidebar.njk' %}
 
                     <div class="catalog-category__content">
-                        <form class="catalog-category__search">
+                        <form class="catalog-category__search" novalidate>
                             {% set searchPlaceholder = 'Для поиска по категории укажите код заказа, артикул/тип или описание' %}
                             {% include 'parts/components/search-block.njk' %}
                         </form>

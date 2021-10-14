@@ -13,6 +13,12 @@
         @media (max-width: $xs) {
             margin-bottom: 20px;
         }
+
+        h1 {
+            @media (max-width: $sm) {
+                font-size: 26px;
+            }
+        }
     }
 
     // .login-page__form
@@ -28,6 +34,8 @@
 
         color: $text-brand;
         @include body14;
+        
+        @include red-text-effects;
     }
 
     // .login-page__row

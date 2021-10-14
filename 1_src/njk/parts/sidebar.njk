@@ -7,13 +7,16 @@
     <div class="sidebar__filter-title">
         Фильтр
     </div>
-    <form class="sidebar__filters js-accordion">
+    <form class="sidebar__filters js-accordion" novalidate>
         <div class="sidebar__filter-links sidebar__filter-links--mobile-none">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 Интеллектуальные инсталляционные системы (EIB/KNX)
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
             </div>
 
-            <div class="sidebar__content">
+            <div class="sidebar__content js-accordion__content">
                 <ul class="sidebar__links">
                     <li class="sidebar__links-item">
                         <a class="sidebar__link" href="#">ABB i-bus EIB/KNX Аксессуары</a>
@@ -38,8 +41,15 @@
         </div>
 
         <div class="sidebar__filter">
-            <div class="sidebar__title">
+            <div class="sidebar__title js-accordion__title">
                 ETIM свойства
+                <svg class="sidebar__title-icon s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
+            </div>
+
+            <div class="sidebar__content js-accordion__content">
+
             </div>
         </div>
 
@@ -155,7 +165,7 @@
         <button class="sidebar__use btn btn--primary">Применить</button>
 
         <div class="sidebar__loader">
-            <img src="img/catalog/loader.png" alt="">
+            <img src="img/abb_loader.png" alt="">
         </div>
     </form>
 </div>

@@ -35,7 +35,7 @@
         width: 100%;
         margin-top: 12px;
         margin-right: 28px;
-        
+
         @media (max-width: $sm) {
             margin-right: 0;
             max-width: 48%;
@@ -49,6 +49,18 @@
 
         @media (max-width: $sm) {
             flex-direction: column;
+        }
+
+        &:hover {
+            .similar-products__card-title {
+                color: $brand-primary;
+            }
+        }
+
+        &:active {
+            .similar-products__card-title {
+                color: $brand-primary-dark;
+            }
         }
     }
 
@@ -98,7 +110,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        
+
         margin: 0;
         max-width: 300px;
 

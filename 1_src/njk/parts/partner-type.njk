@@ -32,7 +32,7 @@
             </select>
         </div>
 
-        <form class="partner-type__form js-form-send">
+        <form class="partner-type__form js-form-send" novalidate>
             <div class="partner-type__form-block">
                 <div class="partner-type__form-title">
                     Данные компании
@@ -53,9 +53,10 @@
                 </div>
 
                 <div class="partner-type__row">
-                    <div class="f-control partner-type__control">
+                    <div class="f-control error partner-type__control">
                         <label class="f-control__label" for="inn">ИНН</label>
                         <input class="f-control__input" type="text" placeholder="7702703303" id="inn">
+                        <small class="f-control__error">Слишком большое значение, кол-во символов не может быть больше n</small>
                     </div>
                     <div class="f-control partner-type__control">
                         <label class="f-control__label" for="ogrn">ОГРН/ОГРНИП</label>
@@ -140,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="partner-type__row">
+                <div class="partner-type__row partner-type__row--center">
                     <div class="f-control partner-type__control">
                         <label class="f-control__label" for="web-site">Веб-сайт компании</label>
                         <input class="f-control__input" type="text" id="web-site">
@@ -182,13 +183,15 @@
                 </div>
 
                 <div class="partner-type__row">
-                    <div class="f-control partner-type__control">
+                    <div class="f-control error partner-type__control">
                         <label class="f-control__label" for="email">E-mail</label>
                         <input class="f-control__input" type="email" id="email">
+                        <small class="f-control__error">Поле обязательно для заполнения</small>
                     </div>
-                    <div class="f-control partner-type__control">
+                    <div class="f-control error partner-type__control">
                         <label class="f-control__label" for="phone">Контактный телефон</label>
                         <input class="f-control__input" type="tel" id="phone">
+                        <small class="f-control__error">Поле обязательно для заполнения</small>
                     </div>
                 </div>
             </div>

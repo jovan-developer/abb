@@ -36,10 +36,10 @@
 
     &__select {
         width: auto;
-        max-width: 230px;
+        // max-width: 230px;
 
         .select__list {
-            width: 230px;
+            min-width: 230px;
             left: auto;
         }
     }
@@ -55,7 +55,7 @@
         padding-bottom: 8px;
 
         color: $text-secondary;
-        @include body14m;
+        @include body14;
 
         // border-bottom: 0.5px solid $divider;
 
@@ -103,7 +103,9 @@
         height: 100%;
         padding: 15px 74px 21px 24px;
 
-        transition: 0.3s background-color;
+        cursor: pointer;
+
+        // transition: 0.3s background-color;
 
         @media (max-width: $md) {
             padding-right: 25px;
@@ -115,8 +117,24 @@
             padding-bottom: 12px;
             padding-left: 10px;
         }
+
         &:hover {
             background-color: $chip;
+        }
+
+        &:active {
+            background: $bg;
+        }
+
+        &.js-accordion__title {
+            position: relative;
+        }
+
+        &.active {
+            .product-row__triangle {
+                fill: $text-primary;
+                transform: translateY(-50%) rotate(180deg);
+            }
         }
     }
 
@@ -139,7 +157,18 @@
         @media (max-width: $min) {
             font-size: 11px;
         }
+
     }
+    
+      // .product-row__triangle
+
+      &__triangle {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        fill: $text-tertiary;
+      }
 
     // .product-row__link
 
@@ -154,12 +183,6 @@
             transform: translateY(-50%);
         }
 
-        &:hover {
-            .s-icon {
-                fill: $text-brand;
-            }
-        }
-
         .s-icon {
             fill: $text-tertiary;
             transition: fill 0.2s;
@@ -171,6 +194,14 @@
     &__icon-right {
         margin-top: -4px;
         margin-bottom: -4px;
+        
+        fill: $text-tertiary;
+        stroke: $text-tertiary;
+        
+        &:hover {
+            fill: $text-secondary;
+            stroke: $text-secondary;
+        }
     }
 
     // .product-row__icon-left
@@ -179,6 +210,13 @@
         margin-top: -4px;
         margin-bottom: -4px;
         margin-right: 2px;
+        fill: $text-tertiary;
+        stroke: $text-tertiary;
+
+        &:hover {
+            fill: $text-secondary;
+            stroke: $text-secondary;
+        }
     }
 
     // .product-row__not-found
@@ -201,6 +239,21 @@
             margin: 0;
             color: $text-tertiary;
             @include body16;
+        }
+    }
+
+    // .product-row__answer
+
+    &__answer {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+        
+        p {
+            margin: 0;
+            padding: 0 74px 24px 24px;
         }
     }
 }

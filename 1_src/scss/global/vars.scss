@@ -26,6 +26,7 @@ $text-tertiary: #A9A9A9;
 $text-brand: #EF000E;
 
 $brand-primary: #FF000F;
+$brand-primary-dark: #E0000D;
 $brand-primary-bg: #FFEBEC;
 
 @mixin c-pointer {
@@ -38,6 +39,30 @@ $brand-primary-bg: #FFEBEC;
 
 @mixin shadow-popup {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-modal {
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.25);
+}
+
+@mixin btn-secondary-ef {
+    &:hover {
+        background-color: $bg;
+    }
+
+    &:active {
+        background-color: $chip;
+    }
+}
+
+@mixin red-text-effects {
+    &:hover {
+        color: $brand-primary;
+    }
+
+    &:active {
+        color: $brand-primary-dark;
+    }
 }
 
 @mixin h1 {

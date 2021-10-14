@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="description" content="Каталог товаров на сайте DSF">
 
     <title>Library | ABB</title>
@@ -37,7 +37,7 @@
                     {% include 'parts/sidebar-library.njk' %}
 
                     <div class="product-row">
-                        <form class="product-row__search" data-da="sidebar,last,1200">
+                        <form class="product-row__search" data-da="sidebar,last,1200" novalidate>
                             {% set searchPlaceholder = 'Поиск по названию и номеру документаа' %}
                             {% include 'parts/components/search-block.njk' %}
 

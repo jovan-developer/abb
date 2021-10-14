@@ -33,6 +33,24 @@
             @media (max-width: $xs) {
                 margin-bottom: 15px;
             }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        h3 {
+            margin-bottom: 24px;
+
+            @include h3;
+
+            @media (max-width: $xs) {
+                margin-bottom: 15px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
         }
 
         p {

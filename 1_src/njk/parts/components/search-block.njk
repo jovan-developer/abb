@@ -4,12 +4,45 @@
 {% endif %}
 
 <div class="search-block {{searchMod}}">
-    <svg class="s-icon search-block__icon">
-        <use xlink:href="img/svg/sprite1.svg#ic24_search"></use>
+    <button class="search-block__search">
+        <svg class="s-icon">
+            <use xlink:href="img/svg/sprite1.svg#ic24_search"></use>
+        </svg>
+        <img class="search-block__loader" src="img/abb_loader.png" alt="">
+    </button>
+    <input class="search-block__input f-control__input" type="search" placeholder="{{searchPlaceholder}}">
+    <svg class="search-block__clear s-icon s-icon--md">
+        <use xlink:href="img/svg/sprite1.svg#ic32_cancel"></use>
     </svg>
-    <input class="search-block__input" type="search" placeholder="{{searchPlaceholder}}">
     {% if btnOff %}
     {% else %}
     <button class="btn search-block__btn">Найти</button>
     {% endif %}
+
+    <ul class="search-dropdown">
+        <li class="search-dropdown__item">
+            <a class="search-dropdown__link" href="#">
+                <div class="search-dropdown__name"><span>MIST</span>RAL41F</div>
+                <div class="search-dropdown__descr">Шкаф для монтажа в нишу</div>
+            </a>
+        </li>
+        <li class="search-dropdown__item">
+            <a class="search-dropdown__link" href="#">
+                <div class="search-dropdown__name"><span>MIST</span>RAL41F</div>
+                <div class="search-dropdown__descr">Шкаф для монтажа в нишу</div>
+            </a>
+        </li>
+        <li class="search-dropdown__item">
+            <a class="search-dropdown__link" href="#">
+                <div class="search-dropdown__name"><span>MIST</span>RAL41F</div>
+                <div class="search-dropdown__descr">Шкаф для монтажа в нишу</div>
+            </a>
+        </li>
+        <li class="search-dropdown__item">
+            <a class="search-dropdown__link" href="#">
+                <div class="search-dropdown__name"><span>MIST</span>RAL41F</div>
+                <div class="search-dropdown__descr">Шкаф для монтажа в нишу</div>
+            </a>
+        </li>
+    </ul>
 </div>

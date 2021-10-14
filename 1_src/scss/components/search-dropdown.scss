@@ -1,0 +1,54 @@
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    width: 100%;
+    padding: 0;
+
+    background-color: $white;
+    @include shadow-popup;
+
+    // .search-dropdown__item
+
+    &__item {
+    }
+
+    // .search-dropdown__link
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 16px 9px;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
+
+        &:hover {
+            background-color: $bg;
+        }
+    }
+
+    // .search-dropdown__name
+
+    &__name {
+        margin-right: 15px;
+
+        @media (max-width: $xs) {
+            margin: 0 0 2px 0;
+        }
+
+        span {
+            color: $text-brand;
+        }
+    }
+
+    // .search-dropdown__descr
+
+    &__descr {
+        color: $text-tertiary;
+    }
+}

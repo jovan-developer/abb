@@ -33,14 +33,9 @@
         padding: 0 10px;
 
         @media (max-width: $md) {
-            min-height: 290px;
-            padding-top: 130px;
+            min-height: 150px;
+            padding-top: 185px;
         }
-
-        @media (max-width: $xs) {
-            min-height: 230px;
-        }
-
         
     }
 
@@ -63,6 +58,7 @@
 
         @media (max-width: $md) {
             font-size: 40px;
+            margin-bottom: 15px;
         }
 
         @media (max-width: $sm) {
@@ -77,16 +73,26 @@
     // .hero-slider__link
 
     &__link {
-        display: flex;
+        display: inline-flex;
         align-items: center;
 
         color: $white;
         @include h3;
 
+        border-bottom: 1px solid transparent;
         opacity: 0.5;
 
+        &:hover {
+            color: $bg;
+            opacity: 1;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
         .s-icon {
-            transform: rotate(180deg);
+            transform: rotate(180deg) translateY(-2px);
             fill: $white;
         }
     }
@@ -119,11 +125,15 @@
         }
 
         @media (max-width: $sm) {
-            top: 80px;
+            top: 130px;
         }
 
         &:hover {
-            background-color: rgba(#0f0f0f, 0.8);
+            background-color: rgba(#0f0f0f, 0.65);
+        }
+
+        &:active {
+            background-color: rgba(#0f0f0f, 1);
         }
 
         &:disabled {

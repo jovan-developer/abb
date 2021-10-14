@@ -412,6 +412,8 @@
         color: $text-brand;
         @include body14;
 
+        @include red-text-effects;
+
         @media (max-width: $sm) {
             margin-top: 16px;
         }
@@ -515,6 +517,10 @@
         @include body14;
 
         border-top: 0.5px solid $divider;
+
+        &:active {
+            background-color: $bg;
+        }
 
         &.active {
             max-height: 100%;

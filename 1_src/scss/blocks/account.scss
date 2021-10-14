@@ -113,6 +113,12 @@
         &:not(:last-child) {
             margin-bottom: 6px;
         }
+
+        .contact-line__link {
+            @media (min-width: $m-md) {
+                pointer-events: none;
+            }
+        }
     }
 
     // .account__btn
@@ -149,7 +155,6 @@
             margin-bottom: 16px;
             @include body16m;
         }
-
     }
 
     // .account__data
@@ -176,7 +181,7 @@
         margin-right: 20px;
 
         color: $text-secondary;
-        
+
         @media (max-width: $sm) {
             max-width: 104px;
             margin-right: 16px;
@@ -281,6 +286,10 @@
 
     &__sidebar-contacts {
         .contact-line {
+            @media (min-width: $m-md) {
+                pointer-events: none;
+            }
+
             &:not(:last-child) {
                 margin-bottom: 6px;
             }

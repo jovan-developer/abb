@@ -26,7 +26,7 @@
 
     &__label {
         margin-bottom: 4px;
-        
+
         color: $text-secondary;
         @include body14;
     }
@@ -66,7 +66,7 @@
 
         background-color: transparent;
         border: none;
-        
+
         &.visible {
             .f-control__e--on {
                 display: block;
@@ -74,6 +74,12 @@
 
             .f-control__e--off {
                 display: none;
+            }
+        }
+
+        .s-icon {
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }

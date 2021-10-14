@@ -8,41 +8,64 @@
 
     &--btn {
         .search-block__input {
-            padding-right: 112px;
+            padding-right: 132px;
 
             @media (max-width: $xs) {
                 padding-right: 76px;
             }
         }
+
+        .search-block__clear {
+            right: 100px;
+        }
     }
 
-    // .search-block__icon
+    // .search-block__search
 
-    &__icon {
+    &__search {
         position: absolute;
         top: 50%;
         left: 12px;
         transform: translateY(-50%);
 
-        stroke: $text-tertiary;
+        padding: 0;
+        border: none;
+        background-color: transparent;
 
         @media (max-width: $xs) {
             left: 6px;
         }
+
+        &:hover {
+            .s-icon {
+                stroke: $text-secondary;
+            }
+        }
+
+        .s-icon {
+            stroke: $text-tertiary;
+        }
+    }
+
+    // .search-block__loader
+
+    &__loader {
+        width: 24px;
+        height: 24px;
+        display: none;
     }
 
     // .search-block__input
 
     &__input {
         width: 100%;
-        padding: 11px 24px 11px 48px;
+        padding: 11px 48px 11px 48px;
 
         color: $text-primary;
         @include body16;
 
         border: 1px solid $divider;
-        border-top-left-radius: 2px;
-        border-bottom-left-radius: 2px;
+        border-radius: 2px;
 
         transition: 0.2s border-color;
 
@@ -50,12 +73,8 @@
             padding: 9px 24px 9px 32px;
         }
 
-        &:focus {
-            // border: 1px solid $text-primary;
-
-            // & + .search-block__btn {
-            //     border: 1px solid $text-primary;
-            // }
+        &:hover {
+            border-color: $text-tertiary;
         }
 
         &::placeholder {
@@ -63,28 +82,47 @@
         }
     }
 
+    // .search-block__clear
+
+    &__clear {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: center;
+
+        display: none;
+
+        cursor: pointer;
+
+        &.active {
+            display: block;
+        }
+    }
+
     // .search-block__btn
 
     &__btn {
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
 
         padding: 14px 20px;
 
         color: $text-primary;
         @include search-button;
 
-        border: 1px solid $divider;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
+        border-left: 1px solid $divider;
 
         transition: 0.2s border-color;
+
+        @include btn-secondary-ef;
 
         @media (max-width: $xs) {
             font-size: 12px;
             padding: 9px 12px;
         }
     }
+
 }

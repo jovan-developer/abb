@@ -46,7 +46,7 @@
     // .sidebar__main-title
 
     &__main-title {
-        margin-bottom: 32px;
+        margin-bottom: 18px;
 
         @media (max-width: $lg) {
             display: none;
@@ -64,16 +64,6 @@
             }
         }
 
-        .sidebar__title {
-            padding-top: 0;
-            margin-bottom: -5px;
-
-            @media (max-width: $md) {
-                padding-top: 13px;
-                margin-bottom: 0;
-            }
-        }
-
         .sidebar__content {
             padding-bottom: 0;
         }
@@ -83,6 +73,16 @@
 
     &__filter {
         border-bottom: 1px solid $divider;
+
+        // .sidebar__filter--mobile
+
+        &--mobile {
+            display: none;
+
+            @media (max-width: $lg) {
+                display: block;
+            }
+        }
     }
 
     // .sidebar__title
@@ -97,6 +97,20 @@
 
         cursor: pointer;
 
+        &:hover {
+            @media (min-width: $m-md) {
+                background: $bg;
+            }
+
+            .sidebar__title-icon {
+                fill: $text-primary;
+            }
+        }
+
+        &:active {
+            background: $chip;
+        }
+
         &.js-accordion__title {
             padding-right: 25px;
         }
@@ -104,12 +118,6 @@
         &.active {
             .sidebar__title-icon {
                 transform: rotate(180deg) translateY(50%);
-            }
-        }
-
-        &:hover {
-            .sidebar__title-icon {
-                fill: $text-primary;
             }
         }
     }
@@ -164,6 +172,10 @@
 
         &:hover {
             background-color: $bg;
+        }
+
+        &:active {
+            background-color: $chip;
         }
 
         // .sidebar__links-item--active
@@ -252,6 +264,11 @@
 
         @media (max-width: $md) {
             margin-top: 15px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
         }
     }
 
@@ -361,8 +378,13 @@
 
     &__dropdown-select {
         border-bottom: 0.5px solid $divider;
+        display: none;
 
-        
+        @media (max-width: $md) {
+            display: block;
+        }
+
+
         .select__item-default,
         .select__item-inner {
             font-weight: 500 !important; 

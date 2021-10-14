@@ -56,7 +56,9 @@ img {
 	outline-offset: 0;
 	outline: transparent;
 
-	transition: border-color 0.2s;
+	&:hover {
+		border-color: #a9a9a9;
+	}
 }
 
 input[type="search"]::-ms-clear {
@@ -79,10 +81,24 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
 input[type="search"],
 textarea {
-	&:focus {
-		outline: 1px solid #000;
+	outline: transparent;
+
+	&:hover {
+		border-color: #a9a9a9;
+	}
+
+	&:focus {	
+		border-color: $text-primary;
+
+		&::placeholder {
+			color: lighten($text-tertiary, 20%);
+		}
 	}
 }
 
@@ -119,7 +135,7 @@ h3 {
 }
 
 .container {
-	max-width: 1360px;
+	max-width: 1260px;
 	padding: 0 32px;
 	margin: 0 auto;
 
@@ -169,8 +185,6 @@ h3 {
 
 	background-color: #000;
 	opacity: 0;
-
-	transition: opacity 0.5s;
 
 	&.active {
 		opacity: 0.7;

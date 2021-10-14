@@ -27,14 +27,20 @@
         background-color: transparent;
         border: none;
 
-        .s-icon {
-            fill: $text-primary;
+        &:hover {
+            .s-icon {
+                fill: $text-secondary;
+            }
         }
 
         &:disabled {
             .s-icon {
                 fill: $divider;
             }
+        }
+
+        .s-icon {
+            fill: $text-primary;
         }
 
         // .pagination__btn--left
@@ -79,17 +85,17 @@
 
         &:hover {
             .pagination__link {
-                background-color: $brand-primary-bg;
+                background-color: $chip;
             }
         }
 
         // .pagination__item--active
 
         &--active {
-            color: $text-brand;
+            color: $text-secondary;
 
             .pagination__link {
-                background-color: $brand-primary-bg;
+                background-color: $chip;
             }
         }
     }

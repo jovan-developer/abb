@@ -23,6 +23,7 @@ function bindModal(triggerSelector, isOverlayClickable) {
 		}
 
 		item.addEventListener('click', (e) => {
+			e.preventDefault()
 			if (e.target) {
 				e.preventDefault()
 			}

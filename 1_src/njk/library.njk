@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="description" content="Каталог товаров на сайте DSF">
 
     <title>Library | ABB</title>
@@ -38,8 +38,8 @@
                     {% include 'parts/sidebar-library.njk' %}
 
                     <div class="product-row">
-                        <form class="product-row__search" data-da="sidebar,last,1200">
-                            {% set searchPlaceholder = 'Поиск по названию и номеру документаа' %}
+                        <form class="product-row__search" data-da="sidebar,last,1200" novalidate>
+                            {% set searchPlaceholder = 'Поиск по названию и номеру документа' %}
                             {% include 'parts/components/search-block.njk' %}
 
                             <div class="product-row__select">
@@ -107,10 +107,11 @@
                                         <li class="spec-list__item">
                                             Каталог
                                         </li>
-                                        <li class="spec-list__item">
+                                        <li class="spec-list__item tooltip">
                                             <svg class="s-icon product-row__icon-right">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                             </svg>
+                                            <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                         </li>
                                     </ul>
                                    </a>
@@ -128,11 +129,12 @@
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Сертификат</li>
-                                            <li class="spec-list__item">
+                                            <li class="spec-list__item tooltip">
                                                 <svg class="s-icon product-row__icon-left">
-                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
+                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -152,11 +154,12 @@
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Сертификат</li>
-                                            <li class="spec-list__item">
+                                            <li class="spec-list__item tooltip">
                                                 <svg class="s-icon product-row__icon-left">
-                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
+                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -187,11 +190,12 @@
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Сертификат</li>
-                                            <li class="spec-list__item">
+                                            <li class="spec-list__item tooltip">
                                                 <svg class="s-icon product-row__icon-left">
-                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
+                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -211,11 +215,12 @@
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Сертификат</li>
-                                            <li class="spec-list__item">
+                                            <li class="spec-list__item tooltip">
                                                 <svg class="s-icon product-row__icon-left">
-                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 Д ЕАЭС (ТС)
+                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -246,11 +251,12 @@
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Сертификат</li>
-                                            <li class="spec-list__item">
+                                            <li class="spec-list__item tooltip">
                                                 <svg class="s-icon product-row__icon-left">
-                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 Д ЕАЭС (ТС)
+                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>

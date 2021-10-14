@@ -26,6 +26,8 @@
 @import "components/code-block.scss";
 @import "components/video-modal.scss";
 @import "components/documentation-menu.scss";
+@import "components/modal.scss";
+@import "components/search-dropdown.scss";
 
 @import "blocks/header.scss";
 
@@ -57,5 +59,6 @@
 @import "blocks/account.scss";
 @import "blocks/error.scss";
 @import "blocks/docs.scss";
+@import "blocks/cookie-alert.scss";
 
 @import "blocks/footer.scss";

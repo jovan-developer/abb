@@ -1,5 +1,5 @@
 <div class="sidebar js-sidebar-filter {{sidebarClass}}">
-    <form class="sidebar__filters js-accordion">
+    <form class="sidebar__filters js-accordion" novalidate>
         <div class="sidebar__filter-links">
             <div class="sidebar__main-title page-title">
                 <h1>Документы</h1>
@@ -12,54 +12,39 @@
             <div class="sidebar__filter-title">
                 Фильтр
             </div>
-            
-            <div class="sidebar__dropdown-select">
-                <div class="select select--type2">
-                    <div class="select__header">
-                        <div class="select__content" tabindex="0">
-
-                        </div>
-                        <svg class="s-icon select__icon">
-                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
-                        </svg>
-                    </div>
-                    <div class="select__list" data-simplebar>
-                        <div class="select__item select__item--def" data-select-value="" tabindex="0">
-                            <span class="select__item-default">Выберите тип документа</span>
-                        </div>
-                        <div class="select__item" data-select-value="catalog" tabindex="0">
-                            <span class="select__item-inner">Каталог</span>
-                        </div>
-                        <div class="select__item" data-select-value="brochure" tabindex="0">
-                            <span class="select__item-inner">Брошюра</span>
-                        </div>
-                        <div class="select__item" data-select-value="video" tabindex="0">
-                            <span class="select__item-inner">Видео</span>
-                        </div>
-                        <div class="select__item" data-select-value="certificate" tabindex="0">
-                            <span class="select__item-inner">Сертификат</span>
-                        </div>
-                        <div class="select__item" data-select-value="catalog" tabindex="0">
-                            <span class="select__item-inner">BIM-модели</span>
-                        </div>
-                        <div class="select__item" data-select-value="instruction" tabindex="0">
-                            <span class="select__item-inner">Инструкция</span>
-                        </div>
-                        <div class="select__item" data-select-value="passport" tabindex="0">
-                            <span class="select__item-inner">Паспорт изделия</span>
-                        </div>
-                    </div>
-                    <select class="select__data" name="partnerType" required id="add-spec"
-                        tabindex="-1">
-                        <option value="">Выберите тип документа</option>
-                        <option value="catalog">Каталог</option>
-                        <option value="brochure">Брошюра</option>
-                        <option value="video">Видео</option>
-                        <option value="certificate">Сертификат</option>
-                        <option value="catalog">BIM-модели</option>
-                        <option value="instruction">Инструкция</option>
-                        <option value="passport">Паспорт изделия</option>
-                    </select>
+        
+            <div class="sidebar__filter sidebar__filter--mobile">
+                <div class="sidebar__title js-accordion__title">
+                    Выберите тип документа
+                    <svg class="sidebar__title-icon s-icon">
+                        <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                    </svg>
+                </div>
+    
+                <div class="sidebar__content js-accordion__content">
+                    <ul class="sidebar__links">
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">Каталог</a>
+                        </li>
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">Брошюра</a>
+                        </li>
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">Видео</a>
+                        </li>
+                        <li class="sidebar__links-item sidebar__links-item--active">
+                            <a class="sidebar__link" href="#">Сертификат</a>
+                        </li>
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">BIM-модели</a>
+                        </li>
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">Инструкция</a>
+                        </li>
+                        <li class="sidebar__links-item">
+                            <a class="sidebar__link" href="#">Паспорт изделия</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 

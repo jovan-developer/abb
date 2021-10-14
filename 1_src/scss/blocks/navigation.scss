@@ -68,6 +68,13 @@
         }
     }
 
+     // .navigation__item-inner
+
+     &__item-inner {
+        display: block;
+        width: 100%;
+     }
+
     // .navigation__link
 
     &__link {
@@ -94,8 +101,6 @@
             height: 2px;
 
             background-color: $brand-primary;
-
-            transition: 0.5s transform;
         }
     }
 
@@ -109,8 +114,6 @@
         background-color: $blackout;
         fill: $white;
         opacity: 0;
-
-        transition: 0.3s opacity;
     }
 
     // .navigation__content

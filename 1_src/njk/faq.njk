@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="description" content="Каталог товаров на сайте DSF">
 
     <title>Catalog/Category/View | ABB</title>
@@ -32,10 +32,6 @@
 
         <section class="faq">
             <div class="container">
-                <div class="page-title faq__title">
-                    <h1>Частые вопросы</h1>
-                </div>
-
                 <div class="faq__inner">
                     <div class="sidebar faq__sidebar js-sidebar-filter">
                         <button class="sidebar__filter-close">
@@ -48,8 +44,11 @@
                         </div>
 
                         <div class="sidebar__content">
+                            <div class="page-title faq__title">
+                                <h1>Частые вопросы</h1>
+                            </div>
 
-                            <ul class="sidebar__tags">
+                            <!-- <ul class="sidebar__tags">
                                 <li class="sidebar__tag">
                                     <label class="sidebar__tag-label">
                                         <input class="sidebar__tag-checkbox" type="checkbox" checked>
@@ -110,8 +109,29 @@
                                         <span class="sidebar__tag-box">ЗЩАЛ</span>
                                     </label>
                                 </li>
-                            </ul>
+                            </ul> -->
 
+                            <div class="sidebar__filter-links">
+                                <div class="sidebar__content">
+                                    <ul class="sidebar__links">
+                                        <li class="sidebar__links-item">
+                                            <a class="sidebar__link sidebar__links-item--active" href="#">ПРА</a>
+                                        </li>
+                                        <li class="sidebar__links-item">
+                                            <a class="sidebar__link" href="#">Счетчики</a>
+                                        </li>
+                                        <li class="sidebar__links-item">
+                                            <a class="sidebar__link" href="#">Подбор товара</a>
+                                        </li>
+                                        <li class="sidebar__links-item">
+                                            <a class="sidebar__link" href="#">Выбор комплектации</a>
+                                        </li>
+                                        <li class="sidebar__links-item">
+                                            <a class="sidebar__link" href="#">ЛВС</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <button class="sidebar__use btn btn--primary">Применить</button>
                         </div>
 
@@ -119,10 +139,14 @@
 
 
                     <div class="faq__content product-row__content">
-                        <div class="product-row__catalog">
+                        <form class="product-row__search" data-da="sidebar,last,1200" novalidate>
+                            {% set searchPlaceholder = 'Поиск' %}
+                            {% include 'parts/components/search-block.njk' %}
+                        </form>
+                        <div class="product-row__catalog js-accordion">
                             <ul class="product-row__list">
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Как выбрать модульный контактор серии ESB для коммутации освещения?
                                         </h3>
@@ -131,10 +155,19 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                               
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Что такое категории применения и как их учитывать при выборе коммутационного
                                             оборудования (контакторов)?
@@ -144,10 +177,18 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Подобрать 1-фазный многотарифный счетчик, замена FBU 11205
                                         </h3>
@@ -158,10 +199,18 @@
                                             <li class="spec-list__item">Счетчики</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Как выбирать контакторы серии AF для коммутации постоянного тока?
                                         </h3>
@@ -170,10 +219,18 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Как выбрать модульный контактор серии ESB для коммутации освещения?
                                         </h3>
@@ -182,10 +239,18 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Что такое категории применения и как их учитывать при выборе коммутационного
                                             оборудования (контакторов)?
@@ -195,10 +260,18 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Подобрать 1-фазный многотарифный счетчик, замена FBU 11205
                                         </h3>
@@ -209,10 +282,18 @@
                                             <li class="spec-list__item">Счетчики</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="product-row__row">
-                                    <a class="product-row__item-link" href="#">
+                                    <div class="product-row__item-link js-accordion__title">
                                         <h3 class="product-row__title">
                                             Как выбрать модульный контактор серии ESB для коммутации освещения?
                                         </h3>
@@ -221,7 +302,15 @@
                                             <li class="spec-list__item">ПРА</li>
                                             <li class="spec-list__item">Выбор комплектации</li>
                                         </ul>
-                                    </a>
+                                        <svg class="product-row__triangle s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-row__answer js-accordion__content">
+                                        <p>
+                                            Сторонники тоталитаризма в науке будут разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                                        </p>
+                                    </div>
                                 </li>
                             </ul>
 

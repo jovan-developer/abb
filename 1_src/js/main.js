@@ -40,9 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
-    document.querySelector('.product-view__slider-btn--right').addEventListener('click', () => {
-        productThumbSlider.updateProgress()
-    })
+    const sliderThumbRight = document.querySelector('.product-view__slider-btn--right') || undefined
+
+    if (typeof sliderThumbRight !== 'undefined') {
+        sliderThumbRight.addEventListener('click', () => {
+            productThumbSlider.updateProgress()
+        })
+    }
 
     // Tabs for product page
     const tabs = (tabsSel, headerSel, contentSel) => {
@@ -110,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let tabs = document.querySelector(tabsSel)
 
         if (tabs) {
-            console.log('asda', tabs)
             let header = tabs.querySelectorAll(headerSel)
             let content = tabs.querySelectorAll(contentSel)
             let close = tabs.querySelectorAll(closeSel)
@@ -157,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mainMenu('.js-menu', '.js-menu__title', '.js-menu__content', '.js-menu__close', '.main-menu__overlay', 38)
 
     bindModal('.js-video-play', true)
+    bindModal('.js-image-open', true)
 
     const menu = (menuSel, openSel) => {
         let openBtn = document.querySelector(openSel)
@@ -194,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const clearInput = (inputSel, clearBtn) => {
         const input = document.querySelector(inputSel)
-    
+
         if (input) {
             const clear = document.querySelector(clearBtn)
 
@@ -214,6 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     clearInput('.header__search-input', '.header__search-clear')
+    clearInput('.search-block__input', '.search-block__clear')
 
     const headerFilter = (filterSel, openSel, closeSel) => {
         const open = document.querySelector(openSel)

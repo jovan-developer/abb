@@ -34,6 +34,14 @@
     &__btn {
         display: inline-flex;
 
+        &:hover {
+            background-color: darken($bg, 5%);
+        }
+
+        &:active {
+            background-color: darken($bg, 10%);
+        }
+
         .s-icon {
             fill: $text-primary;
             margin-right: 4px;

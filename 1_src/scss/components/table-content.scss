@@ -145,6 +145,10 @@
             }
         }
 
+        &:active {
+            background-color: $chip;
+        }
+
         .s-icon {
             position: absolute;
             right: 0;

@@ -1,0 +1,155 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 99;
+
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    // .modal__overlay
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+
+        background-color: rgba(#000, 0.5);
+    }
+
+    // .modal__wrapper
+
+    &__wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+    }
+
+    // .modal__inner
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+
+        width: 90%;
+
+        max-width: 844px;
+        margin: 0 auto;
+        padding: 21px 28px 28px;
+
+        background-color: #fff;
+        @include shadow-modal;
+        border-radius: 4px;
+    }
+
+    // .modal__close
+
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            .s-icon {
+                stroke: $text-secondary;
+            }
+        }
+
+        .s-icon {
+            stroke: $text-tertiary;
+        }
+    }
+
+    // .modal__title
+
+    &__title {
+        margin: 0;
+        @include h2;
+    }
+
+    // .modal__content
+
+    &__content {
+        h3 {
+            margin: 40px 0 23px;
+            @include h3;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        ol {
+            --c1: 1;
+            --c2: 0;
+            counter-reset: c1 var(--c1) c2 var(--c2);
+
+            margin: 0;
+            padding: 0;
+
+            list-style-type: none;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+
+                @media (max-width: $xs) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            &::before {
+                content: counter(c1) "." counter(c2) ". ";
+                counter-increment: c2;
+            }
+        }
+    }
+
+    // .modal__form
+
+    &__form {
+        margin-top: 39px;
+
+        .f-control {
+            &:first-child {
+                margin-bottom: 28px;
+                padding-bottom: 28px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+
+                    width: 100%;
+                    height: 1px;
+                    background-color: $divider;
+                }
+            }
+        }
+    }
+
+    // .modal__btn
+
+    &__btn {
+        margin-top: 40px;
+    }
+}

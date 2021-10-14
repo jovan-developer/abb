@@ -87,6 +87,11 @@
         @media (max-width: $sm) {
             justify-content: space-between;
         }
+
+        @media (max-width: $xs) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     // .product-view__slider-wrapper
@@ -107,7 +112,7 @@
     &__aside {
         max-width: 300px;
 
-        @media (max-width: $xs) {
+        @media (max-width: $sm) {
             display: none;
         }
     }
@@ -206,6 +211,30 @@
         border: 2px solid transparent;
 
         transition: 0.3s border-color;
+        cursor: pointer;
+
+        &:hover {
+            &::after {
+                opacity: 0.1;
+            }
+        }
+
+        &:active {
+            &::after {
+                opacity: 0.2;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: 0;
+        }
 
         &.swiper-slide-thumb-active {
             border-color: $brand-primary;

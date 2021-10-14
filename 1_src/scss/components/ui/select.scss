@@ -14,7 +14,11 @@
 
         .select__icon {
             fill: $text-primary;
-            transform: rotateX(180deg) translateY(12px);
+            transform: rotateX(180deg) translateY(11px);
+        }
+
+        .select__content {
+            border-color: $text-primary;
         }
     }
 
@@ -23,7 +27,7 @@
     &--type2 {
         .select__content {
             padding-right: 32px;
-            padding-left: 0;
+            // padding-left: 0;
 
             border: none;
 
@@ -68,7 +72,11 @@
         background-color: $white;
         border: 1px solid $divider;
         @include c-pointer;
-        
+        outline: transparent;
+
+        &:hover {
+            background-color: $bg;
+        }
 
         .select__subtitle,
         .select__text {
@@ -95,6 +103,8 @@
         transition: 0.3s;
     }
 
+    // .select__search
+
     &__search {
         position: absolute;
         top: 0;
@@ -106,29 +116,8 @@
         padding: 10px 50px 10px 12px;
 
         border: 1px solid $divider;
-        border-right: none;
 
         transition: none;
-
-        &:focus {
-            border-color: $text-primary;
-            outline: transparent;
-
-            & + .select__header {
-                // .select__content {
-                //     border-color: $text-primary;
-                // }
-
-                .select__icon {
-                    fill: $text-primary;
-                    transform: rotateX(180deg) translateY(12px);
-                }
-            }
-
-            & + .select__header + .select__list {
-                display: block;
-            }
-        }
 
         &::placeholder {
             color: $text-tertiary;
@@ -146,7 +135,6 @@
         z-index: 2;
 
         display: none;
-        padding: 4px 0;
         max-height: 210px;
 
         background-color: $white;
@@ -174,7 +162,7 @@
         }
 
         &:not(:last-child) {
-            border-bottom: 1px solid $divider;
+            // border-bottom: 1px solid $divider;
         }
 
         // .select__item--def

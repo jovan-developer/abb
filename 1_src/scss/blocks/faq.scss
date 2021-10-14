@@ -44,14 +44,6 @@
     // .faq__content
 
     &__content {
-        margin-top: -5px;
-
-        .spec-list__item {
-            color: $text-brand;
-
-            &::after {
-                color: $text-tertiary;
-            }
-        }
+      
     }
 }

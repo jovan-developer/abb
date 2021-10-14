@@ -62,10 +62,6 @@
                 }
             }
         }
-
-        &--active {
-            color: $text-primary;
-        }
     }
 
     // .submenu__link
@@ -74,6 +70,7 @@
         @include tab;
 
         @media (max-width: $lg) {
+            width: 100%;
             padding: 12px 16px;
 
             color: $text-primary;
@@ -81,13 +78,23 @@
             @include body16;
             text-transform: none;
         }
-    }
 
-    // .submenu__link
+        &:hover {
+            color: $text-brand;
+        }
 
-    &__link {
-        @media (max-width: $lg) {
-            width: 100%;
+        &:active {
+            color: $text-primary;
+        }
+
+        // .submenu__link--active
+
+        &--active {
+            color: $text-primary;
+
+            &:hover {
+                color: $text-primary;
+            }
         }
     }
 }
