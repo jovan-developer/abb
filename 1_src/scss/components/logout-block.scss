@@ -1,0 +1,102 @@
+// .logout-block
+
+.logout-block {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 300px;
+    padding-right: 4px;
+
+    @media (max-width: $lg) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        padding: 12px 12px 12px 16px;
+    }
+
+    // .logout-block__profile
+
+    &__profile {
+        display: inline-block;
+        margin-right: 8px;
+        padding: 4px 8px 6px;
+
+        @include caption;
+        text-align: right;
+
+        transition: 0.3s background-color;
+
+        @media (max-width: $lg) {
+            position: relative;
+            padding: 0 0 0 48px;
+
+            text-align: left;
+        }
+
+        &:hover {
+            background-color: $divider;
+
+            @media (max-width: $lg) {
+                background-color: transparent;
+            }
+        }
+    }
+
+    // .logout-block__profile-icon
+
+    &__profile-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: none;
+
+        @media (max-width: $lg) {
+            display: block;
+        }
+    }
+
+    // .logout-block__name
+
+    &__name {
+    }
+
+    // .logout-block__descr
+
+    &__descr {
+        color: $text-secondary;
+    }
+
+    // .logout-block__btn
+
+    &__btn {
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+
+        @media (max-width: $lg) {
+            margin-left: auto;
+            display: none;
+        }
+
+        &:hover {
+            .s-icon {
+                background-color: $divider;
+            }
+        }
+
+        &:active {
+            .s-icon {
+                background-color: $chip;
+                fill: $text-secondary;
+            }
+        }
+
+        .s-icon {
+            fill: $text-primary;
+        }
+    }
+}

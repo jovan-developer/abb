@@ -90,6 +90,12 @@
 
             &:hover {
                 fill: var(--color);
+                background: radial-gradient(
+                    179.67% 43.85% at -16.98% 6.81%,
+                    #3771c8 0%,
+                    #3771c8 12.8%,
+                    rgba(102, 0, 255, 0) 100%
+                );
             }
         }
 
@@ -101,6 +107,24 @@
     // .footer__link
 
     &__link {
+        position: relative;
+        
+        &:hover {
+            .footer__icon-hover {
+                display: block;
+            }
+        }
+    }
+
+    // .footer__icon-hover
+
+    &__icon-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
     }
 
     // .footer__list
@@ -139,8 +163,8 @@
             }
 
             &:not(.footer__list-link--desktop-off) {
-               color: $text-tertiary;
-               border-color: transparent;
+                color: $text-tertiary;
+                border-color: transparent;
             }
         }
 

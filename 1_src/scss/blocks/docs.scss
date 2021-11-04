@@ -332,6 +332,11 @@
         align-items: center;
         margin-top: 24px;
         margin-bottom: 24px;
+        padding-right: 16px;
+
+        @media (max-width: $md) {
+            padding-right: 0;
+        }
     }
 
     // .docs__nav-btn

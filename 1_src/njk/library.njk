@@ -27,9 +27,14 @@
 <body>
     {% set headerAuth = true %}
     {% set headerPageTitle = "Документы" %}
-    {% include 'parts/header-filters.njk' %}
+    {% set headerFilter = true %}
+    {% set headerSearch = true %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
+
 
         <section class="library">
             <div class="container">
@@ -99,28 +104,29 @@
                             </div>
                             <ul class="product-row__list">
                                 <li class="product-row__row">
-                                   <a href="#" class="product-row__item-link">
-                                    <div class="product-row__title">
-                                        ABB Welcome
-                                    </div>
-                                    <ul class="spec-list">
-                                        <li class="spec-list__item">
-                                            Каталог
-                                        </li>
-                                        <li class="spec-list__item tooltip">
-                                            <svg class="s-icon product-row__icon-right">
-                                                <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
-                                            </svg>
-                                            <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
-                                        </li>
-                                    </ul>
-                                   </a>
-                                   <a class="product-row__link" href="#">
-                                    <span class="visually-hidden">Скачать документ</span>
-                                    <svg class="s-icon">
-                                        <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
-                                    </svg>
-                                </a>
+                                    <a href="#" class="product-row__item-link">
+                                        <div class="product-row__title">
+                                            ABB Welcome
+                                        </div>
+                                        <ul class="spec-list">
+                                            <li class="spec-list__item">
+                                                Каталог
+                                            </li>
+                                            <li class="spec-list__item tooltip">
+                                                <svg class="s-icon product-row__icon-right">
+                                                    <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
+                                                </svg>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <a class="product-row__link" href="#">
+                                        <span class="visually-hidden">Скачать документ</span>
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_external_link"></use>
+                                        </svg>
+                                    </a>
                                 </li>
                                 <li class="product-row__row">
                                     <a class="product-row__item-link" href="#">
@@ -134,7 +140,8 @@
                                                     <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
-                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -159,7 +166,8 @@
                                                     <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
-                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -175,7 +183,8 @@
                                 <li class="product-row__row">
                                     <a class="product-row__item-link" href="#">
                                         <div class="product-row__title">
-                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со
+                                            встроенным УЗО). Длиннное наименование документа в 2 строки
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Презентация</li>
@@ -195,7 +204,8 @@
                                                     <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 ЕАЭС (ТС)
-                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -220,7 +230,8 @@
                                                     <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 Д ЕАЭС (ТС)
-                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>
@@ -236,7 +247,8 @@
                                 <li class="product-row__row">
                                     <a class="product-row__item-link" href="#">
                                         <div class="product-row__title">
-                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со встроенным УЗО). Длиннное наименование документа в 2 строки
+                                            Инструкция для пользователя - Розетка с защитой от токов утеч ки. (Со
+                                            встроенным УЗО). Длиннное наименование документа в 2 строки
                                         </div>
                                         <ul class="spec-list">
                                             <li class="spec-list__item">Презентация</li>
@@ -256,7 +268,8 @@
                                                     <use xlink:href="img/svg/sprite1.svg#ic24_info_hover_g"></use>
                                                 </svg>
                                                 Д ЕАЭС (ТС)
-                                                <span class="tooltip__text">Пример всплывающей подсказки для иконки</span>
+                                                <span class="tooltip__text">Пример всплывающей подсказки для
+                                                    иконки</span>
                                             </li>
                                             <li class="spec-list__item">Бессрочный</li>
                                             <li class="spec-list__item">8,43 MB</li>

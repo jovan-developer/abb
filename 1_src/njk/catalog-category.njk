@@ -26,10 +26,14 @@
 <body>
     {% set headerAuth = true %}
     {% set headerPageTitle = "ABB i-bus EIB/KNX Блоки электропитания" %}
-    {% include 'parts/header-filters.njk' %}
+    {% set headerFilter = true %}
+    {% set headerSearch = true %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
         {% include 'parts/breadcrumbs.njk' %}
+
 
         <section class="catalog-category">
             <div class="container">
@@ -39,7 +43,8 @@
 
                     <div class="catalog-category__content">
                         <form class="catalog-category__search" novalidate>
-                            {% set searchPlaceholder = 'Для поиска по категории укажите код заказа, артикул/тип или описание' %}
+                            {% set searchPlaceholder = 'Для поиска по категории укажите код заказа, артикул/тип или
+                            описание' %}
                             {% include 'parts/components/search-block.njk' %}
                         </form>
 

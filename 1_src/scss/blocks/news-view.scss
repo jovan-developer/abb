@@ -60,6 +60,8 @@
         color: $text-brand;
         @include body14;
 
+        @include red-text-effects;
+
         @media (max-width: $sm) {
             margin-bottom: 20px;
         }

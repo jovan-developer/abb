@@ -25,7 +25,8 @@
 </head>
 
 <body>
-    {% include 'parts/header.njk' %}
+    {% set headerAuth = false %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
         {% include 'parts/breadcrumbs.njk' %}
@@ -36,6 +37,10 @@
     </main>
 
     {% include 'parts/footer.njk' %}
+
+    {% include 'parts/video-modal.njk' %}
+    {% include 'parts/modal.njk' %}
+    {% include 'parts/cookie-alert.njk' %}
 
 
     <script src="plugins/simplebar.js"></script>

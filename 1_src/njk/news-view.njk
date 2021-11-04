@@ -26,9 +26,11 @@
 
 <body>
     {% set headerAuth = true %}
-    {% include 'parts/header-news-view.njk' %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
+        
         {% include 'parts/news-view.njk' %}
 
         {% include 'parts/news-block.njk' %}

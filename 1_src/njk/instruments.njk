@@ -25,10 +25,12 @@
 </head>
 
 <body>
-    {% set headerAuth = true %}
-    {% include 'parts/header.njk' %}
+    {% set headerAuth = false %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/breadcrumbs.njk' %}
+
         <div class="instruments">
             <div class="container">
                 <div class="instruments__inner">

@@ -1,5 +1,5 @@
 .breadcrumbs {
-    margin: 14px 0;
+    margin: 24px 0;
 
     @media (max-width: $md) {
         display: none;
@@ -8,7 +8,7 @@
     .simplebar-track.simplebar-horizontal {
         height: 5px;
     }
-    
+
     // .breadcrumbs__inner
 
     &__inner {
@@ -18,27 +18,22 @@
 
     &__list {
         display: flex;
+        align-items: center;
     }
 
     // .breadcrumbs__item
 
     &__item {
+        min-height: 24px;
+        display: flex;
+        align-items: center;
         flex-shrink: 0;
         position: relative;
 
         color: $text-secondary;
 
         &:not(:last-child) {
-            padding-right: 7px;
-            margin-right: 12px;
-
-            &::after {
-                content: "/";
-                position: absolute;
-                left: 100%;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+            margin-right: 36px;
         }
 
         &:last-child {
@@ -51,11 +46,11 @@
     // .breadcrumbs__link
 
     &__link {
-        @include caption;
+        display: block;
+        @include captionM;
 
         transition: color 0.25s;
 
-        
         @at-root {
             a#{&} {
                 &:hover {
@@ -70,6 +65,24 @@
             }
         }
     }
-}
-.container {
+
+    // .breadcrumbs__home
+
+    &__home {
+        fill: $text-secondary;
+    }
+
+    // .breadcrumbs__arrow
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+
+        width: 24px;
+        height: 24px;
+
+        stroke: $text-tertiary;
+    }
 }

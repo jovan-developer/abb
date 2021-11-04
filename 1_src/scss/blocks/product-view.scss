@@ -11,9 +11,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 16px;
 
         @media (max-width: $md) {
+            padding-top: 16px;
             flex-direction: column;
             margin-bottom: 25px;
         }

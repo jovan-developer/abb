@@ -26,9 +26,12 @@
 <body>
     {% set headerAuth = "true" %}
     {% set headerPageTitle = "Каталог товаров" %}
-    {% include 'parts/header.njk' %}
+    {% set headerSearch = true %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
         {% include 'parts/search-menu.njk' %}
 
         {% include 'parts/main-menu.njk' %}

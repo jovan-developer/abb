@@ -27,9 +27,13 @@
 <body>
     {% set headerAuth = true %}
     {% set headerPageTitle = "Документы" %}
-    {% include 'parts/header-filters.njk' %}
+    {% set headerFilter = true %}
+    {% set headerSearch = true %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
 
         <section class="library">
             <div class="container">

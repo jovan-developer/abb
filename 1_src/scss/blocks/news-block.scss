@@ -104,6 +104,8 @@
     &__link {
         color: $text-brand;
         @include body14;
+
+        @include red-text-effects;
     }
 }
 .container {

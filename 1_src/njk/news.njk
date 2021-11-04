@@ -27,9 +27,14 @@
 <body>
     {% set headerAuth = "true" %}
     {% set headerPageTitle = "Новости" %}
-    {% include 'parts/header-filters-news.njk' %}
+    {% set headerFilter = true %}
+    {% set headerSearch = true %}
+    {% include 'parts/header-account.njk' %}
 
     <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
+
         {% include 'parts/news.njk' %}
     </main>
 

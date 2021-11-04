@@ -1,26 +1,50 @@
 <div class="submenu">
-    <div class="container">
-        <nav class="submenu__navigation" data-da="header__list-wrapper,last,1218">
-            <ul class="submenu__list">
-                <li class="submenu__item">
-                    <a class="submenu__link submenu__link--active" href="#">Данные учетной записи</a>
-                </li>
-                <li class="submenu__item">
-                    <a class="submenu__link" href="#">Документация API</a>
-                </li>
-                <li class="submenu__item">
-                    <a class="submenu__link" href="#">Данные о товарах</a>
-                </li>
-                <li class="submenu__item">
-                    <a class="submenu__link" href="#">Сертификация</a>
-                </li>
-                <li class="submenu__item">
-                    <a class="submenu__link" href="#">Регистрация проектов</a>
-                </li>
-                <li class="submenu__item">
-                    <a class="submenu__link" href="#">Рекламации</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+  <div class="container container-wide">
+    <nav class="submenu__navigation" data-da="header__list-wrapper,last,1218">
+      <ul class="submenu__list">
+        <li class="submenu__item">
+          <a class="submenu__link submenu__link--active" href="#">
+            Новости для вас
+          </a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Документация API</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Данные о товарах</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Сертификация</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Регистрация проектов</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Рекламации</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Данные учетной записи</a>
+        </li>
+      </ul>
+
+      <div class="logout-block submenu__logout">
+        <a class="logout-block__profile" href="#">
+          <div class="logout-block__profile-icon">
+            <svg class="s-icon s-icon--md">
+              <use xlink:href="img/svg/sprite1.svg#ic32_account"></use>
+            </svg>
+          </div>
+          <div class="logout-block__name">Иванов Иван Иванович</div>
+          <div class="logout-block__descr">ООО «Элевел Торговая компания…</div>
+        </a>
+        <button class="logout-block__btn">
+          <svg class="s-icon s-icon--md">
+            <use xlink:href="img/svg/sprite1.svg#ic32_logout"></use>
+          </svg>
+          <span class="visually-hidden">Выйти из профиля</span>
+        </button>
+      </div>
+      <button class="submenu__logout-btn btn btn--secondary">Выйти</button>
+    </nav>
+  </div>
 </div>

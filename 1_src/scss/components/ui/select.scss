@@ -116,8 +116,10 @@
         padding: 10px 50px 10px 12px;
 
         border: 1px solid $divider;
+        border-radius: 0;
 
         transition: none;
+        -webkit-appearance: none;
 
         &::placeholder {
             color: $text-tertiary;

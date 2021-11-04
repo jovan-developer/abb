@@ -18,7 +18,7 @@
         z-index: 2;
 
         &.active {
-            display: block;
+            display: none;
 
             @media (max-width: $sm) {
                 display: none;
