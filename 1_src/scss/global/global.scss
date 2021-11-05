@@ -55,6 +55,7 @@ img {
 [type="search"] {
 	outline-offset: 0;
 	outline: transparent;
+	-webkit-appearance: none;
 
 	&:hover {
 		border-color: #a9a9a9;

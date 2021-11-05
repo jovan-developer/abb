@@ -408,7 +408,12 @@
             display: none;
 
             @media (max-width: $lg) {
-                content: none;
+                left: 0;
+                bottom: 12px;
+                top: 12px;
+                width: 4px;
+                height: auto;
+                transform: translate(0);
             }
         }
 
@@ -417,6 +422,7 @@
         &--active {
             color: $text-primary;
             @include c-default;
+
 
             &:hover {
                 color: $text-primary;

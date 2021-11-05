@@ -70,6 +70,10 @@
 
     &__home {
         fill: $text-secondary;
+
+        &:hover {
+            fill: $text-brand;  
+        }
     }
 
     // .breadcrumbs__arrow
