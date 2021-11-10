@@ -133,6 +133,16 @@ h3 {
 	@media (max-width: $lg) {
 		padding-top: 56px;
 	}
+
+	&__title {
+		@media (max-width: $md) {
+			display: none;
+		}
+	}
+
+	&__container {
+		width: 100%;
+	}
 }
 
 .container {

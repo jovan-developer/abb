@@ -37,14 +37,18 @@
 
         <section class="catalog-category">
             <div class="container">
+                <div class="catalog-category__title page-title">
+                    <h1>Каталог товаров</h1>
+                </div>
                 <div class="catalog-category__inner">
                     {% set sidebarClass = 'catalog-category__sidebar' %}
                     {% include 'parts/sidebar.njk' %}
 
                     <div class="catalog-category__content">
                         <form class="catalog-category__search" novalidate>
-                            {% set searchPlaceholder = 'Для поиска по категории укажите код заказа, артикул/тип или
-                            описание' %}
+                            {% set searchPlaceholder =
+                            'Для поиска по категории укажите код заказа, артикул/тип или описание'
+                            %}
                             {% include 'parts/components/search-block.njk' %}
                         </form>
 
