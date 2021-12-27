@@ -1,0 +1,41 @@
+.warning-block {
+    position: relative;
+    margin: 0 0 24px;
+
+    padding: 12px 32px 20px 60px;
+
+    background-color: $bg;
+
+    @media (max-width: $md) {
+        padding: 12px 16px 16px 52px;
+    }
+
+    &::before {
+        content: url(../img/news/pic_info.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    // .warning-block__title
+
+    &__title {
+        margin: 0 0 8px 0;
+        @include body16m;
+    }
+
+    // .warning-block__content
+
+    &__content {
+        p {
+            margin: 0;
+
+            color: $text-primary;
+            @include caption;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

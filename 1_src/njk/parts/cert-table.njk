@@ -1,0 +1,155 @@
+<div class="cert-table">
+    <div class="cert-table__header">
+        <h3 class="cert-table__title">
+            Заявки
+        </h3>
+
+        <div class="cert-table__type select select--type2">
+            <div class="select__header">
+                <div class="select__content" tabindex="0">
+
+                </div>
+                <svg class="s-icon select__icon">
+                    <use xlink:href="img/svg/sprite1.svg#ic24_dropdown_arrow"></use>
+                </svg>
+            </div>
+            <div class="select__list" data-simplebar>
+                <div class="select__item select__item--def" data-select-value="" tabindex="0">
+                    <span class="select__item-default">Тип сертификации</span>
+                </div>
+                <div class="select__item" data-select-value="shop" tabindex="0">
+                    <span class="select__item-inner">Интернет-магазин </span>
+                </div>
+                <div class="select__item" data-select-value="portal" tabindex="0">
+                    <span class="select__item-inner">B2B-портал</span>
+                </div>
+            </div>
+            <select class="select__data" name="partnerType" required id="url-shop" tabindex="-1">
+                <option value="">Выберите</option>
+                <option value="shop">Интернет-магазин</option>
+                <option value="portal">B2B-портал</option>
+            </select>
+        </div>
+    </div>
+    <div class="cert-table__table">
+        <div class="cert-table__headers">
+            <div class="cert-table__headers-item">
+                №
+            </div>
+            <div class="cert-table__headers-item">
+                Дата подачи
+            </div>
+            <div class="cert-table__headers-item">
+                Тип / URL
+            </div>
+            <div class="cert-table__headers-item">
+                Наименование сертификации
+            </div>
+            <div class="cert-table__headers-item">
+                Статус
+            </div>
+        </div>
+
+        <div class="cert-table__line">
+            <div class="cert-table__col">
+                <div class="cert-table__value">990</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">05.11.2021</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Портал (B2B)</div>
+                <div class="cert-table__row">
+                    <a class="cert-table__link" href="#">www.shopb2b.com</a>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Сертификация B2B-портал 2021 г.</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__row">
+                    <div class="cert-table__badge badge">На рассмотрении</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-table__line">
+            <div class="cert-table__col">
+                <div class="cert-table__value">989</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">20.11.2021</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Интернет-магазин</div>
+                <div class="cert-table__row">
+                    <a class="cert-table__link" href="#">www.shop.com</a>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Сертификация интернет-магазин 2021 г.</div>
+                <div class="cert-table__row">
+                    <a class="cert-table__link" href="#">PDF сертификат</a>
+                    <a class="cert-table__link" href="#">Электронный знак</a>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__row">
+                    <div class="cert-table__badge badge badge--success">
+                        Сертификация действительна до 01.01.2022
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-table__line">
+            <div class="cert-table__col">
+                <div class="cert-table__value">988</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">15.09.2021</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Портал (B2B)</div>
+                <div class="cert-table__row">
+                    <a class="cert-table__link" href="#">www.shopb2b.com</a>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Сертификация B2B-портал 2021 г.</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__row">
+                    <div class="cert-table__badge badge badge--danger">Отказано 20.09.2021</div>
+                    <button class="cert-table__btn-denied js-popup-btn" data-modal="#cert-modal">Причина отказа</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-table__line">
+            <div class="cert-table__col">
+                <div class="cert-table__value">987</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">15.09.2021</div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__value">Портал (B2B)</div>
+                <div class="cert-table__row">
+                    <a class="cert-table__link" href="#">www.shopb2b.com</a>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__row">
+                    <div class="cert-table__value">Сертификация интернет-магазин 2021 г. </div>
+                </div>
+            </div>
+            <div class="cert-table__col">
+                <div class="cert-table__row">
+                    <div class="cert-table__badge badge badge--danger">Отказано 20.09.2021</div>
+                    <button class="cert-table__btn-denied js-popup-btn" data-modal="#cert-modal">Причина отказа</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

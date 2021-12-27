@@ -1,0 +1,39 @@
+.values-block {
+    margin: 0 0 32px;
+    
+    // .values-block__item
+
+    &__item {
+        display: flex;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    // .values-block__name
+
+    &__name {
+        max-width: 184px;
+        width: 100%;
+        margin-right: 20px;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .values-block__value
+
+    &__value {
+        color: $text-primary;
+        @include body14;
+    }
+}

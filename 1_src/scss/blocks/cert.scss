@@ -1,0 +1,607 @@
+.cert {
+    @media (max-width: $md) {
+        padding-top: 10px;
+    }
+
+    .select__content {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    // .cert__inner
+
+    &__inner {
+    }
+
+    // .cert__title
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        // .cert__title--indent-sm
+
+        &--indent-sm {
+            margin-bottom: 32px;
+        }
+    }
+
+    // .cert__chapter
+
+    &__chapter {
+        margin-bottom: 48px;
+
+        @media (max-width: $xs) {
+            margin-bottom: 30px;
+        }
+
+        // .cert__chapter--indent-lg
+
+        &--indent-lg {
+            margin-bottom: 64px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 30px;
+            }
+        }
+
+        // .cert__chapter--indent-md
+
+        &--indent-md {
+            margin-bottom: 56px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    // .cert__heading
+
+    &__heading {
+        margin-bottom: 24px;
+
+        @media (max-width: $xs) {
+            margin-bottom: 15px;
+        }
+
+        &--indent-sm {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .cert__strip
+
+    &__strip {
+        display: flex;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    // .cert__content
+
+    &__content {
+        max-width: 788px;
+        width: 100%;
+        margin-right: 28px;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            margin-bottom: 8px;
+            margin-right: 0;
+            flex-shrink: 1;
+        }
+    }
+
+    // .cert__block
+
+    &__block {
+        background-color: $bg;
+        padding: 20px 28px 28px;
+
+        @media (max-width: $xs) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        // .cert__block--error
+
+        &--error {
+            border: 2px solid $brand-primary;
+        }
+
+        // .cert__block--padding-lg
+
+        &--padding-lg {
+            padding-top: 24px;
+        }
+    }
+
+    // .cert__block-btn
+
+    &__block-btn {
+        &:hover {
+            background-color: darken($bg, 5%);
+        }
+
+        .s-icon {
+            margin-right: 4px;
+            fill: $text-primary;
+        }
+    }
+
+    // .cert__subtitle
+
+    &__subtitle {
+        margin: 0 0 20px;
+
+        color: $text-primary;
+        @include h3;
+
+        // .cert__subtitle--indent-xs
+
+        &--indent-xs {
+            margin-bottom: 8px;
+        }
+
+        // .cert__subtitle--indent-md
+
+        &--indent-md {
+            margin-bottom: 29px;
+        }
+    }
+
+    // .cert__documents
+
+    &__documents {
+        margin-bottom: 24px;
+    }
+
+    // .cert__documents-item
+
+    &__documents-item {
+        display: flex;
+        align-items: center;
+
+        word-break: break-word;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        .s-icon {
+            margin-right: 4px;
+
+            fill: $brand-primary;
+            stroke: $brand-primary;
+        }
+    }
+
+    // .cert__documents-link
+
+    &__documents-link {
+        color: $text-brand;
+        @include body16;
+        @include red-text-effects;
+    }
+
+    // .cert__sidebar
+
+    &__sidebar {
+        width: 100%;
+        max-width: 380px;
+
+        @media (max-width: $lg) {
+            max-width: 788px;
+        }
+    }
+
+    // .cert__person-block
+
+    &__person-block {
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+    }
+
+    // .cert__sidebar-info
+
+    &__sidebar-info {
+        margin-top: 21px;
+
+        @media (max-width: $lg) {
+            margin-top: 10px;
+        }
+    }
+
+    // .cert__row
+
+    &__row {
+        display: flex;
+
+        @media (max-width: $xs) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .cert__control {
+            &:not(:last-child) {
+                margin: 0 28px 0 0;
+
+                @media (max-width: $xs) {
+                    margin: 0 0 14px;
+                }
+            }
+        }
+    }
+
+    // .cert__control
+
+    &__control {
+        width: 100%;
+        margin: 0;
+
+        &:not(:last-child) {
+            margin: 0 0 16px 0;
+        }
+
+        // .cert__control--xs
+
+        &--xs {
+            max-width: calc(50% - 14px);
+
+            @media (max-width: $xs) {
+                max-width: 100%;
+            }
+        }
+
+        // .cert__control--sm
+
+        &--sm {
+            max-width: 74%;
+
+            @media (max-width: $xs) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // .cert__control-row
+
+    &__control-row {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+
+            @media (max-width: $xs) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    // .cert__control-title
+
+    &__control-title {
+        padding-right: 3px;
+        margin-bottom: 10px;
+
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .cert__inscription
+
+    &__inscription {
+        margin: 0 0 16px;
+
+        @include body14;
+        color: $text-secondary;
+    }
+
+    // .cert__radio
+
+    &__radio {
+        min-height: 24px;
+
+        @media (max-width: $xs) {
+            margin: 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 45px;
+
+            @media (max-width: $xs) {
+                margin: 0 0 5px;
+            }
+        }
+
+        // .cert__radio--sm
+
+        &--sm {
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+        }
+
+        // .cert__radio--large
+
+        &--large {
+            &:not(:last-child) {
+                margin-right: 98px;
+            }
+        }
+    }
+
+    // .cert__radio-label
+
+    &__radio-label {
+        display: block;
+        margin-top: 4px;
+
+        color: $text-secondary;
+        @include caption;
+    }
+
+    // .cert__signature
+
+    &__signature {
+        display: block;
+        margin-bottom: 24px;
+
+        color: $text-secondary;
+        @include caption;
+    }
+
+    // .cert__checkbox-list
+
+    &__checkbox-list {
+        display: grid;
+        grid-template-columns: repeat(3, 190px) auto;
+        row-gap: 10px;
+
+        @media (max-width: $md) {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 10px;
+        }
+
+        @media (max-width: $sm) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: $xs) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .cert__checkbox
+
+    &__checkbox {
+        min-height: 24px;
+        // margin-bottom: 14px;
+    }
+
+    // .cert__btn
+
+    &__btn {
+        margin-top: 24px;
+    }
+
+    // .cert__worker-position
+
+    &__worker-position {
+        color: $text-secondary;
+        @include body14;
+    }
+
+    // .cert__worker-name
+
+    &__worker-name {
+        margin-bottom: 24px;
+
+        color: $text-primary;
+        @include body16;
+    }
+
+    // .cert__contacts
+
+    &__contacts {
+        padding-left: 7px;
+    }
+
+    // .cert__contacts-item
+
+    &__contacts-item {
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+
+    // .cert__footer
+
+    &__footer {
+        max-width: 788px;
+        padding-top: 42px;
+
+        border-top: 0.5px solid $divider;
+    }
+
+    // .cert__agreement
+
+    &__agreement {
+        color: $text-primary;
+        @include body14;
+
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: $text-brand;
+            @include red-text-effects;
+        }
+    }
+
+    // .cert__submit
+
+    &__submit {
+        margin-top: 42px;
+    }
+
+    // .cert__status-text
+
+    &__status-text {
+        color: $text-secondary;
+        @include body14;
+
+        margin-bottom: 12px;
+    }
+
+    // .cert__status-list
+
+    &__status-list {
+        display: flex;
+
+        margin-bottom: 24px;
+
+        @media (max-width: $min) {
+            flex-direction: column;
+        }
+    }
+
+    // .cert__status-item
+
+    &__status-item {
+        position: relative;
+
+        padding-left: 32px;
+
+        color: $text-primary;
+
+        &:not(:last-child) {
+            margin-right: 92px;
+
+            @media (max-width: $sm) {
+                margin-right: 50px;
+            }
+
+            @media (max-width: $xs) {
+                margin-right: 10px;
+            }
+
+            @media (max-width: $min) {
+                margin: 0 0 10px;
+            }
+
+        }
+    }
+
+    // .cert__status-icon
+
+    &__status-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        fill: var(--icon-color);
+    }
+
+    // .cert__status-name
+
+    &__status-name {
+        margin-bottom: 2px;
+
+        @include body16m;
+    }
+
+    // .cert__status-requirements
+
+    &__status-requirements {
+        @include caption;
+    }
+
+    // .cert__success
+
+    &__success {
+    }
+
+    // .cert__success-item
+
+    &__success-item {
+        &:not(:last-child) {
+            margin-bottom: 19px;
+        }
+    }
+
+    // .cert__status-footer
+
+    &__status-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0;
+        margin-top: 30px;
+
+        border-top: 0.5px solid $divider;
+
+        @media (max-width: $xs) {
+            margin-top: 20px;
+        }
+    }
+
+    // .cert__status-total
+
+    &__status-total {
+        color: $text-secondary;
+        @include h3;
+
+        b {
+            font-weight: inherit;
+            color: $text-primary;
+        }
+    }
+
+    // .cert__status-final
+
+    &__status-final {
+        position: relative;
+
+        padding-left: 32px;
+
+        @include body16m;
+    }
+
+    // .cert__btn-order
+
+    &__btn-order {
+        margin-left: 15px;
+
+        @media (max-width: $xs) {
+            margin: 15px 0 0;
+        }
+
+        .s-icon {
+            margin-right: 4px;
+            fill: #fff;
+            stroke: #fff;
+        }
+    }
+}

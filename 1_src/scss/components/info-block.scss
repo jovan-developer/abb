@@ -1,0 +1,35 @@
+.info-block {
+    display: flex;
+    // align-items: center;
+
+    &--md {
+        .info-block__text {
+            @include body14;
+        }
+    }
+
+    &--sm {
+        .info-block__icon {
+            margin-top: -3px;
+        }
+    }
+
+    // .info-block__icon
+
+    &__icon {
+        margin-right: 8px;
+    }
+
+    // .info-block__text
+
+    &__text {
+        margin: 0;
+
+        color: $text-secondary;
+        @include caption;
+
+        b {
+            font-weight: 500;
+        }
+    }
+}

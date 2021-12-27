@@ -1,0 +1,213 @@
+.certification {
+    @media (max-width: $md) {
+        padding-top: 10px;
+    }
+
+    // .certification__inner
+
+    &__inner {
+        max-width: 788px;
+    }
+
+    // .certification__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .certification__method
+
+    &__method {
+        &:not(:last-child) {
+            margin-bottom: 42px;
+        }
+    }
+
+    // .certification__method-link
+
+    &__method-link {
+        margin-bottom: 12px;
+
+        @include h3;
+        color: $text-brand;
+    }
+
+    // .certification__content
+
+    &__content {
+        color: $text-secondary;
+        @include body14;
+
+        p {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // .certification__subtitle
+
+    &__subtitle {
+        margin-bottom: 42px;
+
+        color: $text-primary;
+        @include h3;
+
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .certification__list
+
+    &__list {
+        margin-bottom: 56px;
+
+        counter-reset: section;
+
+        @media (max-width: $sm) {
+            margin-bottom: 32px;
+        }
+    }
+
+    // .certification__item
+
+    &__item {
+        position: relative;
+
+        padding-left: 43px;
+
+        @media (max-width: $sm) {
+            padding-left: 30px;
+        }
+
+        @media (max-width: $xs) {
+            padding-left: 0;
+        }
+
+        &::before {
+            content: counter(section);
+            counter-increment: section;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 20px;
+            height: 20px;
+
+            color: #fff;
+            @include body14b;
+            text-align: center;
+
+            background-color: $brand-primary;
+            border-radius: 50%;
+
+            @media (max-width: $xs) {
+                content: none;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 48px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    // .certification__rule
+
+    &__rule {
+        margin-bottom: 16px;
+    }
+
+    // .certification__btn-download
+
+    &__btn-download {
+        margin-bottom: 16px;
+
+        .s-icon {
+            margin-right: 6px;
+            fill: $text-primary;
+        }
+    }
+
+    // .certification__info
+
+    &__info {
+    }
+
+    // .certification__uploaded
+
+    &__uploaded {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    // .certification__upload-field
+
+    &__upload-field {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    // .certification__uploaded-list
+
+    &__uploaded-list {
+        display: flex;
+        margin-right: 24px;
+        
+        @media (max-width: $md) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // .certification__uploaded-item
+
+    &__uploaded-item {
+        display: flex;
+        align-items: center;
+        padding: 2px 4px 2px 8px;
+
+        background-color: $chip;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
+    // .certification__uploaded-btn
+
+    &__uploaded-btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        background-color: transparent;
+
+        &:hover {
+            .s-icon {
+                stroke: $text-secondary;
+            }
+        }
+
+        .s-icon {
+            stroke: $text-tertiary;
+        }
+    }
+
+    // .certification__upload-more
+
+    &__upload-more {
+        display: inline-block;
+        padding: 0;
+
+        color: $text-brand;
+
+        @include red-text-effects;
+    }
+}

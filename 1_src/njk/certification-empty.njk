@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Certification Empty | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% set headerAuth = true %}
+    {% include 'parts/header-account.njk' %}
+
+    <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
+
+        <section class="certification">
+            <div class="container">
+                <div class="certification__inner">
+                    <div class="certification__title page-title">
+                        <h1>Сертификация</h1>
+                    </div>
+
+                    <div class="certification__method">
+                        <a class="certification__method-link" href="#">Сертифицировать интернет-магазин</a>
+                        <div class="certification__content">
+                            <p>
+                                Подходит, если у вас интернет-магазин через который продаются товары (есть каталог,
+                                корзина и прочая атрибутика e-commerce)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="certification__method">
+                        <a class="certification__method-link" href="#">Сертифицировать B2B-портал</a>
+                        <div class="certification__content">
+                            <p>
+                                Подходит, если у вас предусмотрен каталог для юридических лиц или есть личный кабинет через который юридические лица могут осуществлять заказ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

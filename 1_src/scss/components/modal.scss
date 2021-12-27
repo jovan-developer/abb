@@ -81,6 +81,10 @@
     &__title {
         margin: 0;
         @include h2;
+
+        & + .modal__content {
+            margin-top: 32px;
+        }
     }
 
     // .modal__content
@@ -151,5 +155,9 @@
 
     &__btn {
         margin-top: 40px;
+
+        .s-icon {
+            stroke: #fff;
+        }
     }
 }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="description" content="Каталог товаров на сайте DSF">
+
+    <title>Certification Agreement | ABB</title>
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    {% set headerAuth = true %}
+    {% include 'parts/header-account.njk' %}
+
+    <main class="main">
+        {% include 'parts/submenu.njk' %}
+        {% include 'parts/breadcrumbs.njk' %}
+
+        <section class="certification">
+            <div class="container">
+                <div class="certification__inner">
+                    <div class="certification__title page-title">
+                        <h1>Соглашение</h1>
+                    </div>
+
+                    <div class="certification__subtitle">
+                        Перед подачей заявки на сертификацию необходимо:
+                    </div>
+
+                    <ul class="certification__list">
+                        <li class="certification__item">
+                            <div class="certification__rule">
+                                Скачать, подписать и загрузить скан-копию «Обязательство об использовании товарных
+                                знаков ABB»
+                            </div>
+
+                            <button class="certification__btn-download btn btn--secondary btn--icon">
+                                <svg class="s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_download"></use>
+                                </svg>
+                                Скачать шаблон соглашения
+                            </button>
+
+
+                            <div class="certification__uploaded">
+                                <label class="certification__upload-field upload-field">
+                                    <input class="upload-field__input" type="file" multiple>
+                                    <div class="upload-field__icon">
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_file"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="upload-field__content">
+                                        <p>
+                                            Перенесите подписанное соглашение сюда или выберите на диске
+                                        </p>
+                                    </div>
+                                    <div class="upload-field__btn">
+                                        <svg class="s-icon">
+                                            <use xlink:href="img/svg/sprite1.svg#ic24_upload"></use>
+                                        </svg>
+                                        Загрузить подписанное соглашение
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+
+                        <li class="certification__item">
+                            <div class="certification__rule">
+                                Отправить оригинал Соглашения в 2-х экземплярах на адрес: <br>
+                                117335, г. Москва, ул. Нахимовский проспект, д. 58, офис, 5A.R5 в ООО «АББ».
+                            </div>
+
+                            <div class="certification__info info-block">
+                                <svg class="info-block__icon s-icon">
+                                    <use xlink:href="img/svg/sprite1.svg#ic24_info"></use>
+                                </svg>
+
+                                <p class="info-block__text">
+                                    Если вы ранее отправляли данное соглашение, то достаточно загрузить его только в
+                                    электронном виде.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn--primary" disabled>
+                        Перейти к заполнению заявки
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {% include 'parts/footer.njk' %}
+
+
+    <script src="plugins/simplebar.js"></script>
+    <script src="plugins/inputmask.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

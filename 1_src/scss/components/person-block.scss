@@ -1,0 +1,78 @@
+.person-block {
+    max-width: 380px;
+    width: 100%;
+    padding: 16px 8px 24px 24px;
+
+    background-color: $bg;
+
+    @media (max-width: $md) {
+        max-width: 280px;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: $sm) {
+        max-width: 100vw;
+        padding: 12px 16px 4px;
+    }
+
+
+    // .person-block__signature
+
+    &__signature {
+        margin: 0;
+
+        color: $text-secondary;
+        @include caption;
+
+        @media (max-width: $sm) {
+            @include caption;
+        }
+    }
+
+    // .person-block__item
+
+    &__item {
+        padding: 12px 0 0;
+
+        @media (max-width: $sm) {
+            padding: 8px 0 12px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 0.5px solid $divider;
+            padding-bottom: 15px;
+
+            @media (max-width: $sm) {
+                padding: 8px 0 12px;
+            }
+        }
+    }
+
+    // .person-block__name
+
+    &__name {
+        margin-bottom: 8px;
+
+        color: $text-primary;
+        @include body16;
+
+        @media (max-width: $sm) {
+            margin-bottom: 8px;
+            @include body16m;
+        }
+    }
+
+    // .person-block__contacts
+
+    &__contacts {
+        .contact-line {
+            @media (min-width: $m-md) {
+                pointer-events: none;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+}

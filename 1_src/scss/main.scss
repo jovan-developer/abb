@@ -10,6 +10,7 @@
 @import "components/ui/select.scss";
 @import "components/ui/f-control.scss";
 @import "components/ui/f-checkbox.scss";
+@import "components/ui/f-radio.scss";
 @import "components/ui/search-block.scss";
 
 @import "components/logo.scss";
@@ -29,6 +30,13 @@
 @import "components/modal.scss";
 @import "components/search-dropdown.scss";
 @import "components/logout-block.scss";
+@import "components/info-block.scss";
+@import "components/upload-block.scss";
+@import "components/person-block.scss";
+@import "components/values-block.scss";
+@import "components/warning-block.scss";
+@import "components/cert-table.scss";
+@import "components/badge.scss";
 
 @import "blocks/header.scss";
 
@@ -61,5 +69,36 @@
 @import "blocks/error.scss";
 @import "blocks/docs.scss";
 @import "blocks/cookie-alert.scss";
+@import "blocks/certification.scss";
+@import "blocks/cert.scss";
 
 @import "blocks/footer.scss";
+
+
+.plug {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+
+    img {
+        width: 250px;
+
+        @media (max-width: $sm) {
+            width: 200px;
+        }
+    }
+}
+
+.plug__text {
+    margin: 10px 0 0;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+
+    @media (max-width: $sm) {
+        font-size: 30px;
+    }
+}

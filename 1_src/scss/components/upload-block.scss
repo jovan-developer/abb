@@ -1,0 +1,67 @@
+.upload-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px 10px 32px;
+
+    background-color: $bg;
+    cursor: pointer;
+
+    // .upload-field__input
+
+    &__input {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    // .upload-field__icon
+
+    &__icon {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 8px;
+
+        .s-icon {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    // .upload-field__content
+
+    &__content {
+        margin-bottom: 24px;
+        text-align: center;
+        
+        p {
+            margin: 0;
+
+            color: $text-secondary;
+            @include body14;
+        }
+    }
+
+    // .upload-field__btn
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 7px 14px 7px 8px;
+
+        @include body14;
+        color: $text-primary;
+    
+        background-color: transparent;
+        border: 1px solid $divider;
+        border-radius: 20px;
+
+        .s-icon {
+            margin-right: 6px;
+        }
+    }
+}

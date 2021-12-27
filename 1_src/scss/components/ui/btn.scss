@@ -30,6 +30,12 @@
         &:active {
             background-color: #E0000D;
         }
+
+        &:disabled {
+            background-color: $divider;
+            color: #fff;
+            @include c-default;
+        }
     }
 
     // .btn--secondary
